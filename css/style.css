@@ -1,18 +1,82 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: brown;
+:root{
+    --backgroung-negro: #111111;
+    --backgroung-blanco: #FEFEFE;
+    --backgroung-gris: #222222;
+    --grisClaro: #c8c8c8;
+    --grisClarohover: #ACABAB;
+    --azul: #3E60E9;
+    --azulhover: #254BE6;
+
+    --sombraDark: 10px 10px 20px rgba(170,170,170,.15);
+    --sombraLigth: 10px 10px 20px rgba(0,0,0,.16);
+}
+body {
+    background-color: #ffff;
+    transition: .3s ease all;
+    
+}
+.dark{
+    background-color: var(--backgroung-negro);
 }
 header{
     width: 100%;
     /* height: 100px; */
     background-color: #024959;
 }
+.btn-fill{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    display: flex;
+    position: relative;/*para el momento de cambiar el modo*/
+    cursor: pointer;
+    outline: none;/*border que agrega chrome por defecto*/
+  
+}
+
+.btn-fill::after{
+    content: "";
+    display: block;/*se forme un cuadrado*/
+    width: 28px;
+    height: 28px;
+    position: absolute;/*para posicionarlo a la derecha o izquierda*/
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;/*reseteada*/
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,2);
+}
+.btn-fill span{
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    background: none;
+    color: #ffff;   
+}
+.active{
+    background: #c75a07;
+    color: #000;
+    /*sobreescribimos*/
+   
+}
+.active::after{
+    left: unset;
+    right: 0;
+}
+
 header .logo{
     display: flex;
+    padding: 3px;
 }
+
 header nav{
     width: 90%;
     /* height: 150px; */
@@ -36,7 +100,7 @@ header nav ul li a {
     color: #fff;
     font-size: clamp(0.9rem,1.3vw,3rem);
     text-decoration: none;
-    padding: 20px;
+    padding: 11px;
     display: inline-block;
    
 }
