@@ -19,6 +19,7 @@ header nav{
     max-width: 1000px;/*no sobrepase la pantalla*/
     margin: auto;
     text-align: end;
+    font-family: 'Noto Sans', sans-serif;
     /* display: flex;
     flex-wrap: wrap; /*colocar li uno al lado de la otra*/
     /* justify-content: center;coloca menu al final */ 
@@ -33,7 +34,7 @@ header nav ul li{
 }
 header nav ul li a {
     color: #fff;
-    font-size: 15px;
+    font-size: clamp(0.9rem,1.3vw,3rem);
     text-decoration: none;
     padding: 20px;
     display: inline-block;
