@@ -1,33 +1,85 @@
+@import url(/css/colorscheme.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --backgroung-negro: #111111;
-    --backgroung-blanco: #FEFEFE;
-    --backgroung-gris: #222222;
-    --grisClaro: #c8c8c8;
-    --grisClarohover: #ACABAB;
-    --azul: #3E60E9;
-    --azulhover: #254BE6;
-
-    --sombraDark: 10px 10px 20px rgba(170,170,170,.15);
-    --sombraLigth: 10px 10px 20px rgba(0,0,0,.16);
-}
 body {
-    background-color: #ffff;
-    transition: .3s ease all;
-    
+    background-color: var(--color-blanco);
+    transition: .3s ease all;   
 }
 .dark{
-    background-color: var(--backgroung-negro);
+    background-color: var(--color-negro);
+}
+.dark header nav ul li a{
+    color: var(--color-gray)
+}
+.dark .content a{
+    color: var(--color-gray)
+}
+.dark .menu_bar a{
+    color: var(--color-gray)
 }
 header{
     width: 100%;
     /* height: 100px; */
-    background-color: #024959;
+    background-color: var(--color-2);
 }
+header .content{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PT Serif', serif;
+    padding: 3px;
+}
+header .content h3{
+    display: inline;
+}
+header .content a{
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+header nav{
+    width: 90%;
+    /* height: 150px; */
+    max-width: 1000px;/*no sobrepase la pantalla*/
+    margin: auto;
+    text-align: end;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 10px;
+    /* display: flex;
+    flex-wrap: wrap; /*colocar li uno al lado de la otra*/
+    /* justify-content: center;coloca menu al final */ 
+    background-color: var(--color-2);
+}
+.menu_bar{
+    display: none;/*desaparece el menu*/
+}
+header nav ul li{
+    display: inline-block;
+   
+}
+header nav ul li a {
+    color: var(--color-blanco);
+    font-size: clamp(0.9rem,1.3vw,3rem);
+    text-decoration: none;
+    padding: 11px;
+    display: inline-block;
+   
+}
+/* header nav ul li a:hover{
+    background-color: var(--color-5);
+} */
+header nav ul li{
+    margin-right: 10px;
+    
+}
+header nav ul li a:hover{
+    background-color: var(--color-5);
+}
+/*switch para modo oscuro y claro*/
 .btn-fill{
     background: #343D5B;
     border-radius: 1000px;
@@ -36,7 +88,7 @@ header{
     position: relative;/*para el momento de cambiar el modo*/
     cursor: pointer;
     outline: none;/*border que agrega chrome por defecto*/
-  
+    margin-top: 3px;
 }
 
 .btn-fill::after{
@@ -62,60 +114,15 @@ header{
     color: #ffff;   
 }
 .active{
-    background: #c75a07;
+    background: var(--color-amarillo);
     color: #000;
-    /*sobreescribimos*/
-   
 }
+/*sobreescribimos*/
 .active::after{
-    left: unset;
     right: 0;
+    left: unset;
 }
 
-header .logo{
-    display: flex;
-    padding: 3px;
-}
-
-header nav{
-    width: 90%;
-    /* height: 150px; */
-    max-width: 1000px;/*no sobrepase la pantalla*/
-    margin: auto;
-    text-align: end;
-    font-family: 'Noto Sans', sans-serif;
-    /* display: flex;
-    flex-wrap: wrap; /*colocar li uno al lado de la otra*/
-    /* justify-content: center;coloca menu al final */ 
-    background-color: #024959;
-}
-.menu_bar{
-    display: none;/*desaparece el menu*/
-}
-header nav ul li{
-    display: inline-block;
-   
-}
-header nav ul li a {
-    color: #fff;
-    font-size: clamp(0.9rem,1.3vw,3rem);
-    text-decoration: none;
-    padding: 11px;
-    display: inline-block;
-   
-}
-header nav ul li a:hover{
-    background-color: cadetblue;
-}
-header nav ul li{
-    margin-right: 10px;
-    
-}
-header nav ul li a:hover{
-    background-color: #8fe9fd;
-}
-
- 
 @media screen and (max-width:768px) {
     header nav{
         width: 60%;
@@ -134,18 +141,17 @@ header nav ul li a:hover{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
   } 
   header nav ul li a:hover{
-    width: 90%;
-    background-color: cadetblue;
+    width: 100%;
+    background-color: var(--color-5);
 }
   .menu_bar{
     display: block;/*que aparezcan*/
     width: 100%;
-    /* background: #024959; */
   }
   .menu_bar .btn-menu{
       display: block;/*modificar los margenes internos*/
       padding: 10px;
-      color: #fff;
+      color: var(--color-blanco);
       text-decoration: none;
       background: none;
       font-weight: bold;
@@ -158,6 +164,3 @@ header nav ul li a:hover{
   }
 }
 
-/* header nav ul li{
-    float: left;
-} */
