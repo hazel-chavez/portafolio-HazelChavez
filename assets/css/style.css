@@ -1,168 +1,159 @@
 @import url(/assets/css/colorscheme.css);
 @import url(/assets/css/sobreMi.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Serif:wght@700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--color-negro);
-    transition: .3s ease all;   
+  background-color: var(--color-negro);
+  transition: 0.3s ease all;
+  scroll-behavior: smooth;
 }
-.light{
-    background-color: var(--color-blanco);
+.light {
+  background-color: var(--color-blanco);
 }
-.light header nav ul li a{
-    color: var(--color-blanco)
+.light header nav ul li a {
+  color: var(--color-blanco);
 }
-.light .content a{
-    color: var(--color-blanco)
+.light .content a {
+  color: var(--color-blanco);
 }
-.light .menu_bar a{
-    color: var(--color-blanco)
+.light .menu_bar a {
+  color: var(--color-blanco);
 }
-header{
-    width: 100%;
-    /* height: 100px; */
-    background-color: var(--color-primario);
+header {
+  width: 100%;
+  /* height: 100px; */
+  background-color: var(--color-primario);
 }
-header .content{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'PT Serif', serif;
-    padding: 3px;
+header .content {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PT Serif", serif;
+  padding: 3px;
 }
-header .content h1{
-    display: inline;
-    font-size: clamp(1.5rem,1vw,2rem);
+header .content h1 {
+  display: inline;
+  font-size: clamp(1.5rem, 1vw, 2rem);
 }
-header .content a{
-    color: var(--color-blanco);
-    text-decoration: none;
+header .content a {
+  color: var(--color-blanco);
+  text-decoration: none;
 }
 
-header nav{
-    width: 90%;
-    /* height: 150px; */
-    max-width: 1000px;/*no sobrepase la pantalla*/
-    margin: auto;
-    text-align: end;
-    font-family: 'Noto Sans', sans-serif;
-    padding-bottom: 10px;
-    /* display: flex;
+header nav {
+  width: 90%;
+  /* height: 150px; */
+  max-width: 1000px; /*no sobrepase la pantalla*/
+  margin: auto;
+  text-align: end;
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: 10px;
+  /* display: flex;
     flex-wrap: wrap; /*colocar li uno al lado de la otra*/
-    /* justify-content: center;coloca menu al final */ 
-    background-color: var(--color-primario);
+  /* justify-content: center;coloca menu al final */
+  background-color: var(--color-primario);
 }
-.menu_bar{
-    display: none;/*desaparece el menu*/
+.menu_bar {
+  display: none; /*desaparece el menu*/
 }
-header nav ul li{
-    display: inline-block;
-   
+header nav ul li {
+  display: inline-block;
 }
 header nav ul li a {
-    color: var(--color-blanco);
-    font-size: clamp(0.9rem,1.3vw,3rem);
-    text-decoration: none;
-    padding: 11px;
-    display: inline-block;
-   
+  color: var(--color-blanco);
+  font-size: clamp(0.9rem, 1.3vw, 3rem);
+  text-decoration: none;
+  padding: 11px;
+  display: inline-block;
 }
-/* header nav ul li a:hover{
-    background-color: var(--color-5);
-} */
-header nav ul li{
-    margin-right: 10px;
-    
+
+header nav ul li {
+  margin-right: 10px;
 }
-header nav ul li a:hover{
-    background-color: var(--color-5);
+header nav ul li a:hover {
+  background-color: var(--color-5);
 }
 /*switch para modo oscuro y claro*/
-.btn-fill{
-    background: #343D5B;
-    border-radius: 1000px;
-    border: none;
-    display: flex;
-    position: relative;/*para el momento de cambiar el modo*/
-    cursor: pointer;
-    outline: none;/*border que agrega chrome por defecto*/
-    margin-top: 3px;
+.btn-fill {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  display: flex;
+  position: relative; /*para el momento de cambiar el modo*/
+  cursor: pointer;
+  outline: none; /*border que agrega chrome por defecto*/
+  margin-top: 3px;
 }
 
-.btn-fill::after{
-    content: "";
-    display: block;/*se forme un cuadrado*/
-    width: 28px;
-    height: 28px;
-    position: absolute;/*para posicionarlo a la derecha o izquierda*/
-    background: var(--color-negro);
-    top: 0;
-    left: 0;
-    right: unset;/*reseteada*/
-    border-radius: 100px;
-    transition: .3s ease all;
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0,2);
+.btn-fill::after {
+  content: "";
+  display: block; /*se forme un cuadrado*/
+  width: 28px;
+  height: 28px;
+  position: absolute; /*para posicionarlo a la derecha o izquierda*/
+  background: var(--color-blanco);
+  top: 0;
+  left: 0;
+  right: unset; /*reseteada*/
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
 }
-.btn-fill span{
-    width: 30px;
-    height: 30px;
-    display: block;
-    line-height: 30px;
-    background: none;
-    color: #ffff;   
+.btn-fill span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  background: none;
+  color: #ffff;
 }
-.active{
-    background: var(--color-amarillo);
-    color: #000;
+.active {
+  background: var(--color-amarillo);
+  color: #000;
 }
 /*sobreescribimos*/
-.active::after{
-    right: 0;
-    left: unset;
+.active::after {
+  right: 0;
+  left: unset;
 }
 
-@media screen and (max-width:768px) {
-    header nav{
-        width: 60%;
-        height: 100%;
-        text-align: start;
-         /*el menu desaparece fuera de pantalla*/
-        margin: 0;
-        position: fixed;
-    }
-    /* header nav ul li{
-        display:flex;
-        flex-direction: column;
-    /* } */
-   header nav ul li{
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 60%;
+    height: 100%;
+    text-align: start;
+    /*el menu desaparece fuera de pantalla*/
+    margin: 0;
+    position: absolute;
+  }
+  header nav ul li {
     display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
-  } 
-  header nav ul li a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  header nav ul li a:hover {
     width: 100%;
     background-color: var(--color-5);
-}
-  .menu_bar{
-    display: block;/*que aparezcan*/
+  }
+  .menu_bar {
+    display: block; /*que aparezcan*/
     width: 100%;
   }
-  .menu_bar .btn-menu{
-      display: block;/*modificar los margenes internos*/
-      padding: 10px;
-      color: var(--color-blanco);
-      text-decoration: none;
-      background: none;
-      font-weight: bold;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
+  .menu_bar .btn-menu {
+    display: block; /*modificar los margenes internos*/
+    padding: 10px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    background: none;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
-  span{
+  span {
     float: right;
   }
 }
-

@@ -1,16 +1,45 @@
-
-section {
+section#profile-title{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: var(--color-negro);
+  background: linear-gradient(238deg, #000 0%, #290322 100%);
+  height: auto;
+  line-height: 2.5rem;
+  padding: 7rem;
+  margin-left: 3rem;/*verificar*/
+  margin-right: 3rem;
 }
 .profile-container {
-  justify-content: center;
+  /* margin-left: 2rem; */
+  text-align: center;
+  color: var(--color-blanco);
+}
+.profile-container h2 {
+  display: block;
+  font-size: clamp(1.5rem,3vw,2.5rem);
+  margin: auto;
+  color: var(--color-blanco);
+  font-family: "Noto Sans", sans-serif;
+  white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
+  border-right: 4px solid #e865e8;
+  width: 23ch; /*el numero de caracteres*/
+  animation: typing 4s steps(23), blink 5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .redes {
   text-align: center;
+  margin-top: 1rem;
 }
 .redes ul li {
   display: inline-block;
@@ -22,41 +51,46 @@ section {
   padding: 8px;
   cursor: pointer;
   border-radius: 5px;
-  background: var(--color-gray);
+  margin-top: 1rem;
+  background: none;
+  color: var(--color-blanco);
   border: 3px solid var(--color-5);
   box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
   -webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
   -moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 }
-
-.profile img {
-  background: var(--color-5);
+section.about{
+  padding: 8rem;
+  color: var(--color-blanco);
+  background: var(--color-primario);
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
 }
-
-section.title div.title-div div.title-container h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+section.about h3{
+  font-size: 2rem;
 }
-.title-container h2 {
-  display: block;
-  font-size: 2.5rem;
-  font-family: "Noto Sans", sans-serif;
-  white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
-  border-right: 4px solid #e865e8;
-  width: 23ch; /*el numero de caracteres*/
-  animation: typing 4s steps(23), blink 5s infinite step-end alternate;
-  overflow: hidden;
-}
+section.about p{
+  line-height: 2rem;
+} 
 
-@keyframes typing {
-  from {
-    width: 0%;
+@media screen and (max-width: 768px) {
+  .profile img {
+    display: none;
+  }
+  .profile-container h2 {
+    display: block;
+    /* font-size: 1.5rem; */
+    margin: auto;
+    color: var(--color-blanco);
+    font-family: "Noto Sans", sans-serif;
+    white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
+    border-right: 4px solid #e865e8;
+    width: 23ch; /*el numero de caracteres*/
+    animation: typing 4s steps(23), blink 5s infinite step-end alternate;
+    overflow: hidden;
   }
 }
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+
+
+
