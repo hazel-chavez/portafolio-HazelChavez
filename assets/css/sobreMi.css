@@ -3,7 +3,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #e865e8;
+  background: var(--color-negro);
 }
 .profile-container {
   justify-content: center;

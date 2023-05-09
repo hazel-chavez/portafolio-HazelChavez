@@ -8,20 +8,20 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var(--color-blanco);
+    background-color: var(--color-negro);
     transition: .3s ease all;   
 }
-.dark{
-    background-color: var(--color-negro);
+.light{
+    background-color: var(--color-blanco);
 }
-.dark header nav ul li a{
-    color: var(--color-gray)
+.light header nav ul li a{
+    color: var(--color-blanco)
 }
-.dark .content a{
-    color: var(--color-gray)
+.light .content a{
+    color: var(--color-blanco)
 }
-.dark .menu_bar a{
-    color: var(--color-gray)
+.light .menu_bar a{
+    color: var(--color-blanco)
 }
 header{
     width: 100%;
@@ -99,7 +99,7 @@ header nav ul li a:hover{
     width: 28px;
     height: 28px;
     position: absolute;/*para posicionarlo a la derecha o izquierda*/
-    background: #f1f1f1;
+    background: var(--color-negro);
     top: 0;
     left: 0;
     right: unset;/*reseteada*/
