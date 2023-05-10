@@ -6,8 +6,7 @@ section#profile-title{
   height: auto;
   line-height: 2.5rem;
   padding: 7rem;
-  margin-left: 3rem;/*verificar*/
-  margin-right: 3rem;
+  
 }
 .profile-container {
   /* margin-left: 2rem; */
@@ -60,19 +59,38 @@ section#profile-title{
   -moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 }
 section.about{
-  padding: 8rem;
+  padding: 5rem;
+  width: 90vw;
+  height: auto;
+  text-align: justify;
+  border:  var(--color-blanco);
   color: var(--color-blanco);
   background: var(--color-primario);
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 2rem;
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
   
 }
 section.about h3{
   font-size: 2rem;
+ 
 }
 section.about p{
   line-height: 2rem;
+  font-family: 'Cabin', sans-serif;
+  
 } 
+/*Modo claro*/
+.light section.about{
+  border: transparent;
+  background: var(--color-secundario);
+  color: var(--color-negro);
+  box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
+-webkit-box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
+-moz-box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
+}
 
 @media screen and (max-width: 768px) {
   .profile img {
@@ -90,7 +108,17 @@ section.about p{
     animation: typing 4s steps(23), blink 5s infinite step-end alternate;
     overflow: hidden;
   }
+  section.about{
+    /* padding: 1rem; */
+    width: 90vw;
+    height: auto;
+    border:  var(--color-blanco);
+    color: var(--color-blanco);
+    background: var(--color-primario);
+    border-radius: 15px;
+    margin-top: 2rem;
 }
 
 
 
+}

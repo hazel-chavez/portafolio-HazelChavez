@@ -1,0 +1,5 @@
+.skills h3{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(color--secundario)
+}
