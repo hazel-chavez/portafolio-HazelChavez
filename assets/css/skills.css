@@ -1,25 +1,62 @@
-div.skills{
+div.skills-title{
     text-align: center;
     color: var(--color-blanco);
-    padding-top: 2.5rem;
+    background: var(--color-5);
+    margin-top: 2.5rem;
+    border-radius: 5px;
 }
-.skills h3{
+.skills-title h3{
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: bold;  
+} 
+.skills-box{
+    /* width: 15vw; */
+    min-height: 150px;
+    background: var(--color-5);
+    color: var(--color-primario);
+    padding-top: 2rem;
 }
-.skills-lista ul{
+.skills-box ul{
     display: flex;
-    justify-content: space-around;
-    color: var(--color-blanco);
-    padding-top:2.5rem;
+    justify-content: space-evenly;
+    list-style: none;
+    background: var(--color-5);
+}
+.skills-box ul li{
+    width: 8rem;
+    text-align: center;
+    background: var(--color-primario);
+    margin-top: 1rem;
+}
+.skills-box2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background: var(--color-5);
+}
+
+
+/* .skills-box ul li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+} */
+/* .skills-lista ul{
+    display: flex;
+    /* justify-content: space-around; */
+    /* background: var(--color-primario); */
+    /* color: var(--color-blanco); */
+   
+    /* padding-top:2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(1.5rem,2vw,1rem);
-}
-.skills-lista ul li{
+} */
+/* .skills-lista ul li{
     list-style: none;
+    background: var(--color-primario);
    
-}
-.skills-box ul li {
+} */
+/* .skills-box ul li {
     width: 15vw;
     border-radius: 5px;
     height: 8vw;
@@ -32,7 +69,7 @@ div.skills{
 .box{
     display: flex;
     flex-direction: column;
-}
+}   */
 
 /* div.skills-line div.skills-box{
     display: flex;
