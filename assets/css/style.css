@@ -149,6 +149,7 @@ header nav ul li a:hover {
     /*el menu desaparece fuera de pantalla*/
     margin: 0;
     position: absolute;
+    left: -100%
   }
   header nav ul li {
     display: block;

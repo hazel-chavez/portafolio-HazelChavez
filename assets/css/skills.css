@@ -1,86 +1,59 @@
 div.skills-title{
     text-align: center;
     color: var(--color-blanco);
-    background: var(--color-5);
+    background: var(--color-3);
     margin-top: 2.5rem;
     border-radius: 5px;
+    border-color: 1px solid transparent;
+    margin: 1rem;
+   
 }
 .skills-title h3{
-    font-size: 1.5rem;
-    font-weight: bold;  
+    font-size: clamp(2rem,2vw,2rem);
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
 } 
 .skills-box{
-    /* width: 15vw; */
-    min-height: 150px;
-    background: var(--color-5);
+    height: 350px;
     color: var(--color-primario);
     padding-top: 2rem;
+    
 }
 .skills-box ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    background: var(--color-5);
-}
-.skills-box ul li{
-    width: 8rem;
-    text-align: center;
-    background: var(--color-primario);
-    margin-top: 1rem;
-}
-.skills-box2 ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    background: var(--color-5);
-}
-
-
-/* .skills-box ul li{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.5rem;
-} */
-/* .skills-lista ul{
-    display: flex;
-    /* justify-content: space-around; */
-    /* background: var(--color-primario); */
-    /* color: var(--color-blanco); */
-   
-    /* padding-top:2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(1.5rem,2vw,1rem);
-} */
-/* .skills-lista ul li{
-    list-style: none;
-    background: var(--color-primario);
-   
-} */
-/* .skills-box ul li {
-    width: 15vw;
-    border-radius: 5px;
-    height: 8vw;
-    align-items: flex-end;
-    padding: 2.5rem;
-    margin-top: 0;
-    color:black;
-    background: var(--color-primario);
-}
-.box{
-    display: flex;
-    flex-direction: column;
-}   */
-
-/* div.skills-line div.skills-box{
-    display: flex;
-   justify-content: space-evenly;
-   
-}
-.skills-line ul li{
-    width: 150px;
     
-    background: brown;
+}
+.skills-box ul li {
+    width: 5rem;
+    height: 90px;
+    text-align: center;
+    margin-top: 0.1rem;
+    
+}
+.skills-box img{
+    padding: 1rem;
+}
+@media screen and (max-width: 768px){
+    div.skills-title{
+        margin: 1rem; 
+    }
+    .skills-box ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .skills-box ul li {
+        width: 5rem;
+        height: 90px;
+        text-align: center;
+        margin-top: 0.1rem;
+      
+}
 
-} */
+}
 
   

@@ -22,8 +22,8 @@ section#profile-title{
   font-family: "Noto Sans", sans-serif;
   white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
   border-right: 4px solid #e865e8;
-  width: 23ch; /*el numero de caracteres*/
-  animation: typing 4s steps(23), blink 5s infinite step-end alternate;
+  width: 28ch; /*el numero de caracteres*/
+  animation: typing 4s steps(28), blink 5s infinite step-end alternate;
   overflow: hidden;
 }
 @keyframes typing {
@@ -97,16 +97,16 @@ section.about p{
   .profile img {
     display: none;
   }
-  .profile-container h2 {
+  .profile-container h2 span{
     display: block;
     /* font-size: 1.5rem; */
     margin: auto;
     color: var(--color-blanco);
     font-family: "Noto Sans", sans-serif;
     white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
-    border-right: 4px solid #e865e8;
-    width: 23ch; /*el numero de caracteres*/
-    animation: typing 4s steps(23), blink 5s infinite step-end alternate;
+    border-right: 1px solid #e865e8;
+    width: 28ch; /*el numero de caracteres*/
+    animation: typing 4s steps(28), blink 5s infinite step-end alternate;
     overflow: hidden;
   }
   section.about{
