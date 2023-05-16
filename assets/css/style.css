@@ -73,6 +73,7 @@ header nav {
 .menu_bar {
   display: none; /*desaparece el menu*/
 }
+
 header nav ul li {
   display: inline-block;
 }
@@ -173,8 +174,11 @@ header nav ul li a:hover {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin-top: 1rem;
   }
+   
   span {
     float: right;
+   
   }
 }
