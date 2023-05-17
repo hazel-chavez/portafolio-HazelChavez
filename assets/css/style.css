@@ -38,22 +38,28 @@ header {
     rgba(24, 11, 24, 1) 9%,
     rgba(0, 0, 0, 1) 99%
   );
+ 
+  
 }
+
 header .content {
   display: flex;
   justify-content: space-between;
   padding: 3px;
 }
-header .content h1 {
+header .content .logo-title {
   display: inline;
   position: absolute;
   top: 1rem;
   font-family: 'Ubuntu', sans-serif;
   font-size: clamp(1.5rem, 1vw, 2rem);
+
 }
+
 header .content a {
   color: var(--color-blanco);
   text-decoration: none;
+ 
 }
 
 header nav {
@@ -73,6 +79,7 @@ header nav {
 .menu_bar {
   display: none; /*desaparece el menu*/
 }
+
 
 header nav ul li {
   display: inline-block;
