@@ -1,6 +1,7 @@
 @import url(/assets/css/colorscheme.css);
 @import url(/assets/css/sobreMi.css);
 @import url(/assets/css/skills.css);
+@import url(/assets/css/hobbies.css);
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Noto+Sans&family=PT+Serif:wght@700&family=Ubuntu:wght@300&display=swap');
 
 * {
@@ -8,20 +9,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--color-negro);
   transition: 0.3s ease all;
   scroll-behavior: smooth;
 }
+
 .light {
   background-color: var(--color-blanco);
 }
+
 .light header nav ul li a {
   color: var(--color-blanco);
 }
+
 .light .content a {
   color: var(--color-blanco);
 }
+
 .light .menu_bar a {
   color: var(--color-blanco);
 }
@@ -32,14 +38,12 @@ header {
   /* position: fixed;
   top: 0; */
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 1%,
-    rgba(24, 11, 24, 1) 9%,
-    rgba(0, 0, 0, 1) 99%
-  );
- 
-  
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(24, 11, 24, 1) 9%,
+      rgba(0, 0, 0, 1) 99%);
+
+
 }
 
 header .content {
@@ -47,6 +51,7 @@ header .content {
   justify-content: space-between;
   padding: 3px;
 }
+
 header .content .logo-title {
   display: inline;
   position: absolute;
@@ -59,13 +64,14 @@ header .content .logo-title {
 header .content a {
   color: var(--color-blanco);
   text-decoration: none;
- 
+
 }
 
 header nav {
   width: 90%;
   /* height: 150px; */
-  max-width: 1000px; /*no sobrepase la pantalla*/
+  max-width: 1000px;
+  /*no sobrepase la pantalla*/
   margin: auto;
   text-align: end;
   font-family: "Noto Sans", sans-serif;
@@ -76,14 +82,17 @@ header nav {
   /* justify-content: center;coloca menu al final */
   /* background: linear-gradient(238deg, #000 0%, #290322 100%); */
 }
+
 .menu_bar {
-  display: none; /*desaparece el menu*/
+  display: none;
+  /*desaparece el menu*/
 }
 
 
 header nav ul li {
   display: inline-block;
 }
+
 header nav ul li a {
   color: var(--color-blanco);
   font-size: clamp(0.9rem, 1.3vw, 3rem);
@@ -95,35 +104,52 @@ header nav ul li a {
 header nav ul li {
   margin-right: 10px;
 }
+
 header nav ul li a:hover {
-  background-color: var(--color-5);
+  color: var(--color-5);
 }
+
+header nav ul li:nth-child(5) a:hover {
+  color: var(--color-negro);
+}
+
+header nav ul li:nth-child(5) {
+  background-color: var(--color-5);
+  border-radius: 5px;
+}
+
 /*switch para modo oscuro y claro*/
 .btn-fill {
   background: #343d5b;
   border-radius: 1000px;
   border: none;
   display: flex;
-  position: relative; /*para el momento de cambiar el modo*/
+  position: relative;
+  /*para el momento de cambiar el modo*/
   cursor: pointer;
-  outline: none; /*border que agrega chrome por defecto*/
+  outline: none;
+  /*border que agrega chrome por defecto*/
   margin-top: 3px;
 }
 
 .btn-fill::after {
   content: "";
-  display: block; /*se forme un cuadrado*/
+  display: block;
+  /*se forme un cuadrado*/
   width: 28px;
   height: 28px;
-  position: absolute; /*para posicionarlo a la derecha o izquierda*/
+  position: absolute;
+  /*para posicionarlo a la derecha o izquierda*/
   background: var(--color-blanco);
   top: 0;
   left: 0;
-  right: unset; /*reseteada*/
+  right: unset;
+  /*reseteada*/
   border-radius: 100px;
   transition: 0.3s ease all;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
 }
+
 .btn-fill span {
   width: 30px;
   height: 30px;
@@ -132,10 +158,12 @@ header nav ul li a:hover {
   background: none;
   color: #ffff;
 }
+
 .active {
   background: var(--color-amarillo);
   color: #000;
 }
+
 /*sobreescribimos*/
 .active::after {
   right: 0;
@@ -143,36 +171,52 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  /* This CSS code is styling the navigation bar inside the header element for screens with a maximum
+  width of 768px. It sets the width of the navigation bar to 60% of the header's width, sets the
+  height to 100%, aligns the text to the start (left) of the navigation bar, and applies a linear
+  gradient background to it. It also positions the navigation bar absolutely and moves it outside
+  the screen to the left with `left: -100%`, so it is hidden by default. This is used for the mobile
+  menu, which is shown when the user clicks on the menu icon. */
   header nav {
     width: 60%;
     height: 100%;
     text-align: start;
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 1%,
-      rgba(24, 11, 24, 1) 9%,
-      rgba(0, 0, 0, 1) 99%
-    );
+    background: linear-gradient(90deg,
+        rgba(0, 0, 0, 1) 1%,
+        rgba(24, 11, 24, 1) 9%,
+        rgba(0, 0, 0, 1) 99%);
     /*el menu desaparece fuera de pantalla*/
     margin: 0;
     position: absolute;
     left: -100%
   }
+
   header nav ul li {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
   header nav ul li a:hover {
     width: 100%;
+    color: #000;
     background-color: var(--color-5);
   }
+
+  header nav ul li:nth-child(5) {
+    background: none;
+    border-radius: none;
+  }
+
   .menu_bar {
-    display: block; /*que aparezcan*/
+    display: block;
+    /*que aparezcan*/
     width: 100%;
   }
+
   .menu_bar .btn-menu {
-    display: block; /*modificar los margenes internos*/
+    display: block;
+    /*modificar los margenes internos*/
     padding: 10px;
     color: var(--color-blanco);
     text-decoration: none;
@@ -181,11 +225,11 @@ header nav ul li a:hover {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 1rem;
+    margin-top: 1.9rem;
   }
-   
+
   span {
     float: right;
-   
+
   }
 }

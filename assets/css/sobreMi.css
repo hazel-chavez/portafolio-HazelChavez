@@ -3,24 +3,24 @@ section#profile-title{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+   /* background: url(/assets/img/240_F_549232862_oPrsztcpgczoyNUZ9bwAGwDJstLQEeXU.jpg) no-repeat; */
   background: linear-gradient(238deg, #000 0%, #290322 100%);
   height: auto;
   line-height: 2.5rem;
   padding: 7rem;
- animation-name: square-in-center;
- animation-duration: 1s;
+ /* animation-name: square-in-center;
+ animation-duration: 1s; */
 
   
 }
-@keyframes square-in-center {
+/* @keyframes square-in-center {
   from {
     clip-path: inset(100% 100% 100% 100%);
   }
   to {
     clip-path: inset(0 0 0 0);
   }
-}
+} */
 
 [transition-style="in:square:center"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
