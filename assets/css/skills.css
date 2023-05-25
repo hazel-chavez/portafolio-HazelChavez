@@ -6,7 +6,6 @@ div.skills-title{
     border-radius: 5px;
     border-color: 1px solid transparent;
     margin: 1rem;
-   
 }
 .skills-title h3{
     font-size: clamp(2rem,2vw,2rem);
@@ -15,8 +14,9 @@ div.skills-title{
     -webkit-text-fill-color: transparent;
     padding: 1rem;
 } 
+
 .skills-box{
-    height: 350px;
+    height: 400px;
     color: var(--color-primario);
     padding-top: 2rem;
     
@@ -25,18 +25,22 @@ div.skills-title{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    content: "•";
     
 }
 .skills-box ul li {
-    width: 5rem;
-    height: 90px;
+    width: 15rem;
+    height: auto;
     text-align: center;
-    margin-top: 0.1rem;
-    
+    /* margin-top: 0.1rem; */
+    /* background-color: var(--color-blanco); */
+   
 }
 .skills-box img{
     padding: 1rem;
+    
 }
+
 @media screen and (max-width: 768px){
     div.skills-title{
         margin: 1rem; 

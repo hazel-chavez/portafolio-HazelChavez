@@ -1,0 +1,11 @@
+section.formacion-academica h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-blanco);
+}
+div.formacion .formacion-box{
+    display: flex;
+    justify-content: space-around;
+}
