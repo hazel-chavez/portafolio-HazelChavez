@@ -1,17 +1,14 @@
-
-section#profile-title{
+section#profile-title {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-   /* background: url(/assets/img/240_F_549232862_oPrsztcpgczoyNUZ9bwAGwDJstLQEeXU.jpg) no-repeat; */
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(/assets/img/240_F_549232862_oPrsztcpgczoyNUZ9bwAGwDJstLQEeXU.jpg) no-repeat; */
   background: linear-gradient(238deg, #000 0%, #290322 100%);
   height: auto;
-  line-height: 2.5rem;
+  line-height: 2rem;
   padding: 7rem;
- /* animation-name: square-in-center;
+  /* animation-name: square-in-center;
  animation-duration: 1s; */
-
-  
 }
 /* @keyframes square-in-center {
   from {
@@ -23,23 +20,28 @@ section#profile-title{
 } */
 
 [transition-style="in:square:center"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
 }
 .profile-container {
   /* margin-left: 2rem; */
+  width: auto;
   text-align: center;
   color: var(--color-blanco);
 }
-.profile-container h2 {
+.profile-container p:first-letter {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.profile-container p {
   display: block;
-  font-size: clamp(1.5rem,3vw,2.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
   margin: auto;
   color: var(--color-blanco);
   font-family: "Noto Sans", sans-serif;
   white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
   border-right: 4px solid #e865e8;
-  width: 28ch; /*el numero de caracteres*/
-  animation: typing 4s steps(28), blink 5s infinite step-end alternate;
+  width: 29ch; /*el numero de caracteres*/
+  animation: typing 4s steps(29), blink 5s infinite step-end alternate;
   overflow: hidden;
 }
 @keyframes typing {
@@ -63,7 +65,16 @@ section#profile-title{
   justify-content: center;
   margin: 10px;
 }
-.redes button {
+.redes i {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--color-blanco);
+}
+.redes i:hover {
+  background: none;
+  border: 2px solid var(--color3);
+}
+.btn-cv {
   padding: 8px;
   cursor: pointer;
   border-radius: 5px;
@@ -74,13 +85,21 @@ section#profile-title{
   box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
   -webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
   -moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
+  transition: 1s all;
 }
-section.about{
+.btn-cv:hover {
+  background-color: var(--color3);
+  transform: scale(1.2);
+}
+.profile {
+  width: 20%;
+}
+section.about {
   padding: 5rem;
   width: 90vw;
   height: auto;
   text-align: justify;
-  border:  var(--color-blanco);
+  border: var(--color-blanco);
   color: var(--color-blanco);
   background: var(--color-primario);
   margin: 0 auto;
@@ -88,32 +107,33 @@ section.about{
   margin-top: 2rem;
   /* margin-left: 3rem;
   margin-right: 3rem; */
-  
 }
-section.about h3{
+section.about h3 {
   font-size: 2rem;
- 
 }
-section.about p{
+section.about p {
   line-height: 2rem;
-  font-family: 'Cabin', sans-serif;
-  
-} 
+  font-family: "Cabin", sans-serif;
+}
 /*Modo claro*/
-.light section.about{
+.light section.about {
   border: transparent;
   background: var(--color-secundario);
   color: var(--color-negro);
-  box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
-  -webkit-box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
-  -moz-box-shadow: -3px 2px 28px 0px rgba(143,89,89,0.75);
+  box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
+  -webkit-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
+  -moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
 
 @media screen and (max-width: 768px) {
   .profile img {
     display: none;
   }
-  .profile-container h2 span{
+  .profile-container p span:first-letter {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+  .profile-container p span{
     display: block;
     /* font-size: 1.5rem; */
     margin: auto;
@@ -121,21 +141,18 @@ section.about p{
     font-family: "Noto Sans", sans-serif;
     white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
     border-right: 1px solid #e865e8;
-    width: 28ch; /*el numero de caracteres*/
-    animation: typing 4s steps(28), blink 5s infinite step-end alternate;
+    width: 29ch; /*el numero de caracteres*/
+    animation: typing 4s steps(29), blink 5s infinite step-end alternate;
     overflow: hidden;
   }
-  section.about{
+  section.about {
     /* padding: 1rem; */
     width: 90vw;
     height: auto;
-    border:  var(--color-blanco);
+    border: var(--color-blanco);
     color: var(--color-blanco);
     background: var(--color-primario);
     border-radius: 15px;
     margin-top: 2rem;
-}
-
-
-
+  }
 }

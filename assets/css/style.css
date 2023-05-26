@@ -35,16 +35,14 @@ body {
 
 header {
   width: 100%;
-  /* height: 100px; */
-  /* position: fixed;
-  top: 0; */
+  /* height: 100px; 
+  position: fixed;
+  top: 0;  */
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg,
       rgba(0, 0, 0, 1) 1%,
       rgba(24, 11, 24, 1) 9%,
       rgba(0, 0, 0, 1) 99%);
-
-
 }
 
 header .content {
@@ -71,6 +69,7 @@ header .content a {
 header nav {
   width: 90%;
   /* height: 150px; */
+  
   max-width: 1000px;
   /*no sobrepase la pantalla*/
   margin: auto;
@@ -107,7 +106,7 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-  color: var(--color-5);
+  color: var(--color4);
 }
 
 header nav ul li:nth-child(5) a:hover {
