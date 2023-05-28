@@ -1,43 +1,40 @@
-section.formacion-academica h3{
-    font-size: clamp(1.5rem,3vw,2rem);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--color-blanco);
+section.formacion-academica h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-blanco);
 }
-div.formacion .formacion-box{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    
+div.formacion .formacion-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
-div.formacion .formacion-box ul{
-    list-style: none;
-    background-color: blueviolet;
-    width: 22vw;
-    height: 250px;
-} 
-div.formacion .formacion-box ul li img{
-   padding-top: 2rem;
-}  
+div.formacion .formacion-box ul {
+  list-style: none;
+  background-color: blueviolet;
+  width: 22vw;
+  height: 250px;
+}
+div.formacion .formacion-box ul li img {
+  padding-top: 2rem;
+}
 
-div.formacion .formacion-box .title-formacion{
+div.formacion .formacion-box .title-formacion {
   font-weight: bold;
   line-height: 2rem;
   align-items: flex-end;
 }
 /* modo claro */
-.light section.formacion-academica h3{
-    color: var(--color3);
-  }
+.light section.formacion-academica h3 {
+  color: var(--color3);
+}
 @media screen and (max-width: 768px) {
-    
-    div.formacion .formacion-box ul{
-        width: 30vw;
-        height: 210px;
-    } 
-    div.formacion .formacion-box ul li img{
-        width: 120px;
-    }
-
+  div.formacion .formacion-box ul {
+    width: 30vw;
+    height: 210px;
+  }
+  div.formacion .formacion-box ul li img {
+    width: 120px;
+  }
 }

@@ -14,7 +14,7 @@
 body {
   background-color: var(--color-negro);
   transition: 0.3s ease all;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .light {
@@ -35,9 +35,9 @@ body {
 
 header {
   width: 100%;
-  /* height: 100px; 
+  height: 100px; 
   position: fixed;
-  top: 0;  */
+  top: 0; 
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg,
       rgba(0, 0, 0, 1) 1%,
@@ -179,7 +179,7 @@ header nav ul li:nth-child(5) {
   menu, which is shown when the user clicks on the menu icon. */
   header nav {
     width: 60%;
-    height: 100%;
+    height: 350px;
     text-align: start;
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg,
@@ -225,7 +225,7 @@ header nav ul li:nth-child(5) {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 1.9rem;
+    margin-top: 1.5rem;
   }
 
   span {

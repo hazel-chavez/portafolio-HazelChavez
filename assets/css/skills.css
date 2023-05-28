@@ -25,7 +25,7 @@ div.skills-title{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    content: "•";
+   
     
 }
 .skills-box ul li {
@@ -38,8 +38,9 @@ div.skills-title{
 }
 .skills-box img{
     padding: 1rem;
-    
 }
+
+
 
 @media screen and (max-width: 768px){
     div.skills-title{

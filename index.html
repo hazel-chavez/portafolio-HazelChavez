@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Hazel</title>
+    <link  rel= "stylesheet"  href= "http://anijs.github.io/lib/anicollection/anicollection.css" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/icon.css" />
-
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
@@ -41,9 +42,9 @@
       </nav>
     </header>
 
-    <section id="profile-title">
-      <div class="profile-container">
-          <p><span>¡Hola! Mi nombre es Hazel Chavez</span></p>
+    <section id="profile-container">
+      <div class="profile-title">
+        <p><span>¡Hola! mi nombre es Hazel Chavez</span></p>
         <h3>
           Actualmente soy egresada del programa alura latam Lorem ipsum dolor
           djiedjjjjjjjjjjjjjdkkkkkkkkkkkkkkkkkkkklllllllllllllllllll
@@ -82,10 +83,10 @@
         <img src="/assets/img/profile.webp" alt="profile" />
       </div>
     </section>
-    <section class="about" id="sobre-mi">
-      <div class="about-container">
+    <section class="about" id="sobre-mi" >
+      <div class="about-container" data-anijs= "if: scroll, on: window, do: swing animation, before: scrollReveal"s>
         <h3>Sobre mi</h3>
-        <p>
+        <p> 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
           Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper
@@ -210,8 +211,13 @@
       src="https://kit.fontawesome.com/2c36e9b7b1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/btn-fill.js"></script>
+    <script src="/assets/js/aios.js"></script>
+
+    <script  src= "bower_components/anijs/dist/anijs-min.js" ></script> 
+    <script  src= "bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js" ></script>
   </body>
 </html>

@@ -31,20 +31,20 @@ div.hobbies-line .hobbies-item ul li {
 
 .hobbies-item ul li img {
   margin-top: 2rem;
-  /* animation: bounce;
-  animation-duration: 1s; */
+  animation: bounce;
+  animation-duration: 1s;
 }
-/* @keyframes bounce {
+@keyframes bounce {
   from{
-    transform: scale3d(-3deg) 
+    transform: scale3d(3deg) 
   }
   to{
-    transform: scale3d(3deg);
+    transform: scale3d(-3deg);
   }
-} */
-.hobbies-item ul li img:hover{
-  transform: scale(1.2);
 }
+/* .hobbies-item ul li img:hover{
+  transform: scale(1.2);
+} */
 
 /* modo claro */
 .light .section-hobbies h3 {
