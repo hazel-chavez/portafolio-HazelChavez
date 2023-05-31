@@ -8,7 +8,7 @@
 
 div.hobbies-line {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: var(--color-blanco);
   margin-top: 1.5rem;
 }

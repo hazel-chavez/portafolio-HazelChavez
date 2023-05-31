@@ -6,11 +6,11 @@ section#profile-container {
   background: linear-gradient(238deg, #000 0%, #290322 100%);
   height: 40vw;
   line-height: 2rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
   /* animation-name: square-in-center;
  animation-duration: 1s; */
 }
- /* @keyframes square-in-center {
+/* @keyframes square-in-center {
   from {
     clip-path: inset(100% 100% 100% 100%);
   }
@@ -40,8 +40,8 @@ section#profile-container {
   font-family: "Noto Sans", sans-serif;
   white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
   border-right: 4px solid #e865e8;
-  width: 29ch; /*el numero de caracteres*/
-  animation: typing 4s steps(29), blink 5s infinite step-end alternate;
+  width: 30ch; /*el numero de caracteres*/
+  animation: typing 4s steps(30), blink 5s infinite step-end alternate;
   overflow: hidden;
   justify-content: center;
 }
@@ -80,6 +80,7 @@ section#profile-container {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 1rem;
+  margin-bottom: 0.6rem;
   background: none;
   color: var(--color-blanco);
   border: 3px solid var(--color-5);
@@ -99,10 +100,14 @@ section.about {
   padding: 5rem;
   width: 90vw;
   height: auto;
-  text-align: justify;
   border: var(--color-blanco);
   color: var(--color-blanco);
-  background: var(--color-primario);
+  background: rgb(42, 26, 76);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 26, 76, 1) 0%,
+    rgba(218, 124, 207, 1) 100%
+  );
   margin: 0 auto;
   border-radius: 15px;
   margin-top: 2rem;
@@ -110,7 +115,6 @@ section.about {
   animation-duration: 1s; */
   /* margin-left: 3rem;
   margin-right: 3rem; */
-  
 }
 /* @keyframes square-in-hesitate {
   0% {
@@ -133,7 +137,20 @@ section.about h3 {
 section.about p {
   line-height: 2rem;
   font-family: "Cabin", sans-serif;
+  text-align: justify;
 }
+.about-skills ul {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+
+  justify-content: space-evenly;
+  list-style: none;
+}
+.about-skills ul li {
+  margin-top: 1rem;
+}
+
 /*Modo claro*/
 .light section.about {
   border: transparent;
@@ -149,7 +166,7 @@ section.about p {
     display: flex;
     height: 100vw;
     padding-left: 0.2rem;
-    padding-top: 11rem;
+    padding-top: 7rem;
   }
   .profile img {
     display: none;
@@ -169,7 +186,6 @@ section.about p {
     width: 29ch; /*el numero de caracteres*/
     animation: typing 4s steps(29), blink 5s infinite step-end alternate;
     overflow: hidden;
-
   }
   section.about {
     /* padding: 1rem; */
@@ -177,7 +193,12 @@ section.about p {
     height: auto;
     border: var(--color-blanco);
     color: var(--color-blanco);
-    background: var(--color-primario);
+    background: rgb(42, 26, 76);
+    background: linear-gradient(
+      0deg,
+      rgba(42, 26, 76, 1) 0%,
+      rgba(218, 124, 207, 1) 100%
+    );
     border-radius: 15px;
     margin-top: 2rem;
   }

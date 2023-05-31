@@ -3,7 +3,8 @@
 @import url(/assets/css/skills.css);
 @import url(/assets/css/hobbies.css);
 @import url(/assets/css/formacion.css);
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Noto+Sans&family=PT+Serif:wght@700&family=Ubuntu:wght@300&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cabin&family=Noto+Sans&family=PT+Serif:wght@700&family=Ubuntu:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -35,48 +36,54 @@ body {
 
 header {
   width: 100%;
-  height: 100px; 
-  position: fixed;
-  top: 0; 
+  height: 100px;
+  position: sticky;
+  top: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg,
-      rgba(0, 0, 0, 1) 1%,
-      rgba(24, 11, 24, 1) 9%,
-      rgba(0, 0, 0, 1) 99%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(24, 11, 24, 1) 9%,
+    rgba(0, 0, 0, 1) 99%
+  );
 }
 
 header .content {
   display: flex;
   justify-content: space-between;
-  padding: 3px;
 }
 
-header .content .logo {
+header .content .logo-title {
   display: inline;
   position: absolute;
   top: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  
-
-}
-header .content .logo-title{
-  display: inline;
-  background-color: var(--color4);
+  left: 1rem;
+  background: #000000;
+  background: radial-gradient(
+    ellipse farthest-corner at center center,
+    #000000 0%,
+    #da7ccf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   border-radius: 25px;
   padding: 0.3rem;
-  font-size: clamp(1.2rem, 1vw, 1rem);
+  font-family: "Alice", serif;
+}
+header .content .logo-title {
 }
 
 header .content a {
   color: var(--color-blanco);
   text-decoration: none;
-
 }
 
 header nav {
   width: 90%;
   /* height: 150px; */
-  
+
   max-width: 1000px;
   /*no sobrepase la pantalla*/
   margin: auto;
@@ -94,7 +101,6 @@ header nav {
   display: none;
   /*desaparece el menu*/
 }
-
 
 header nav ul li {
   display: inline-block;
@@ -189,14 +195,16 @@ header nav ul li:nth-child(5) {
     height: 350px;
     text-align: start;
     background: rgb(0, 0, 0);
-    background: linear-gradient(90deg,
-        rgba(0, 0, 0, 1) 1%,
-        rgba(24, 11, 24, 1) 9%,
-        rgba(0, 0, 0, 1) 99%);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(24, 11, 24, 1) 9%,
+      rgba(0, 0, 0, 1) 99%
+    );
     /*el menu desaparece fuera de pantalla*/
     margin: 0;
     position: absolute;
-    left: -100%
+    left: -100%;
   }
 
   header nav ul li {
@@ -224,7 +232,7 @@ header nav ul li:nth-child(5) {
   .menu_bar .btn-menu {
     display: block;
     /*modificar los margenes internos*/
-    padding: 10px;
+    padding: 5px;
     color: var(--color-blanco);
     text-decoration: none;
     background: none;
@@ -237,6 +245,5 @@ header nav ul li:nth-child(5) {
 
   span {
     float: right;
-
   }
 }

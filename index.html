@@ -1,102 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Hazel</title>
-    <link  rel= "stylesheet"  href= "http://anijs.github.io/lib/anicollection/anicollection.css" >
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/icon.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header>
-      <div class="content">
-        <a href="#">
-          <span class="logo"><i class="fas fa-code"></i> 
-            <!---<!-- <i class="fas fa-laptop-code"></i>  -->
-            <span class="logo-title">HC</span>
-          </span>
-        </a>
-        <div>
-          <button class="switch" id="switch">
-            <span><i class="fas fa-sun"></i></span>
-            <span><i class="fas fa-moon"></i></span>
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Hazel</title>
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/icon.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <a href="#">
+  
+          <!---<!-- <i class="fas fa-laptop-code"></i>  -->
+          <span class="logo-title">HC</span>
+        </span>
+      </a>
+      <div>
+        <button class="switch" id="switch">
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
       </div>
-      <div class="menu_bar">
-        <a href="#" class="btn-menu"><span class="icon-bars"></span>Menu</a>
-      </div>
-      <nav>
+    </div>
+    <div class="menu_bar">
+      <a href="#" class="btn-menu"><span class="icon-bars"></span>Menu</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre Mi</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile-container">
+    <div class="profile-title">
+      <p><span>¡Hola! mi nombre es Hazel Chavez</span></p>
+      <h3>
+        Actualmente soy egresada del programa alura latam Lorem ipsum dolor
+        djiedjjjjjjjjjjjjjdkkkkkkkkkkkkkkkkkkkklllllllllllllllllll
+      </h3>
+      <div class="redes">
         <ul>
-          <li><a href="#sobre-mi">Sobre Mi</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Hobbies</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+          <li>
+            <a href="https://www.linkedin.com/in/hazel-chavez-alvarado" target="_blank"><i class="fa fa-linkedin fa-lg"
+                aria-hidden="true"></i>
 
-    <section id="profile-container">
-      <div class="profile-title">
-        <p><span>¡Hola! mi nombre es Hazel Chavez</span></p>
-        <h3>
-          Actualmente soy egresada del programa alura latam Lorem ipsum dolor
-          djiedjjjjjjjjjjjjjdkkkkkkkkkkkkkkkkkkkklllllllllllllllllll
-        </h3>
-        <div class="redes">
+
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hazelchavez@gmail.com" target="_blank"><i class="fa far fa-envelope fa-lg"
+                style="color: rgb(82, 24, 137);"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/hazel-chavez" target="_blank"><i class="fa fa-github fa-lg"
+                aria-hidden="true"></i></a>
+          </li>
+          <br />
+        </ul>
+        <button class="btn-cv">Download CV</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="/assets/img/profile.webp" alt="profile" />
+    </div>
+  </section>
+  <section class="about" id="sobre-mi" data-aos="zoom-in">
+    <div class="about-container">
+      <h3>Sobre mi</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
+        Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper
+        sagittis ligula et lacinia.
+      </p>
+      <div class="about-skills">
+        <ul>
+          <li>
+            <img src="/assets/img/photoshop.webp" alt="photoshop" />
+            <ul>
+              <li><img src="/assets/img/react.webp" alt="react" </li>
+            </ul>
+
+          <li><img src="/assets/img/xd.webp" alt="javascript" />
+            <ul>
+              <li><img src="/assets/img/mysql.webp" alt="mysql" /></li>
+            </ul>
+          </li>
           <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/hazel-chavez-alvarado"
-                target="_blank"
-                ><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                  
-                
-              </a>
+            <li><img src="/assets/img/html (1).webp" alt="css3" />
+              <ul>
+                <li><img src="/assets/img/servidor-sql.webp" alt="sql" /></li>
+              </ul>
             </li>
-            <li>
-              <a href="mailto:hazelchavez@gmail.com" target="_blank"
-                ><i class="fa far fa-envelope fa-lg" style="color: rgb(82, 24, 137);"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/hazel-chavez" target="_blank"
-                ><i
-                  class="fa fa-github fa-lg"
-                  aria-hidden="true"
-                 
-                ></i
-              ></a>
-            </li>
-            <br />
           </ul>
-          <button class="btn-cv">Download CV</button>
-        </div>
+          <ul>
+            <li><img src="/assets/img/css-3.webp" alt="css3" />
+              <ul>
+                <li><img src="/assets/img/php (1).webp" alt="php" /></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li><img src="/assets/img/bootstrap.webp" alt="boostrap">
+              <ul>
+                <li><img src="/assets/img/wordpress.webp" alt="wordpress"></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+          <li>
+            <img src="/assets/img/js.webp" alt="js" />
+            <ul>
+              <li><img src="/assets/img/github.webp" alt="github"></li>
+            </ul>
+          </li>
+          <ul>
+            <li><img src="/assets/img/typescript.webp" alt="typescript " />
+              <ul>
+                <li><img src="/assets/img/git.webp" alt="git"></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+        </ul>
       </div>
-      <div class="profile">
-        <img src="/assets/img/profile.webp" alt="profile" />
-      </div>
-    </section>
-    <section class="about" id="sobre-mi" >
-      <div class="about-container" data-anijs= "if: scroll, on: window, do: swing animation, before: scrollReveal"s>
-        <h3>Sobre mi</h3>
-        <p> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
-          Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper
-          sagittis ligula et lacinia.
-        </p>
-        <p>
-        
-      </div>
-    </section>
-    <div class="skills-title">
+    </div>
+  </section>
+  <!-- <div class="skills-title">
       <h3>Habilidades</h3>
 
       <div class="skills-box">
@@ -148,71 +191,69 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="section-hobbies">
-      <h3>Hobbies</h3>
-      <div class="hobbies-line">
-        <div class="hobbies-item">
-          <ul>
-            <li><img src="/assets/img/leer.webp" /><br />Leer</li>
-          </ul>
-        </div>
-        <div class="hobbies-item">
-          <ul>
-            <li>
-              <img src="/assets/img/musica.webp" /><br />
-              <p>Escuchar musica</p>
-            </li>
-          </ul>
-        </div>
-        <div class="hobbies-item">
-          <ul>
-            <li><img src="/assets/img/meditacion.webp" /><br />Meditar</li>
-          </ul>
-        </div>
-        <div class="hobbies-item">
-          <ul>
-            <li><img src="/assets/img/ver series.webp" /><br />Ver Series</li>
-          </ul>
-        </div>
+    </div> -->
+  <div class="section-hobbies">
+    <h3>Hobbies</h3>
+    <div class="hobbies-line">
+      <div class="hobbies-item">
+        <ul>
+          <li><img src="/assets/img/leer.webp" /><br />Leer</li>
+        </ul>
+      </div>
+      <div class="hobbies-item">
+        <ul>
+          <li>
+            <img src="/assets/img/musica.webp" /><br />
+            <p>Escuchar musica</p>
+          </li>
+        </ul>
+      </div>
+      <div class="hobbies-item">
+        <ul>
+          <li><img src="/assets/img/meditacion.webp" /><br />Meditar</li>
+        </ul>
+      </div>
+      <div class="hobbies-item">
+        <ul>
+          <li><img src="/assets/img/ver series.webp" /><br />Ver Series</li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <section class="formacion-academica">
-      <h3 class="title-formacion">Formaciòn Acadèmica</h3>
-      <div class="formacion">
-        <div class="formacion-box">
-          <ul>
-            <li><img src="/assets/img/Alura.webp"></li>
-            <li class="title-formacion">Formacion Desarrollo Front End</li>
-            <li>2022-2023</li>
-          </ul>
-          <ul>
-            <li><img src="/assets/img/INA_Logo.webp"></li>
-            <li class="title-formacion">Desarrollo Front End</li>
-            <li>2021-2022</li>
-          </ul>
-          <ul>
-            <li><img src="/assets/img/logo-utn.webp"></li>
-            <li class="title-formacion">Tècnico en Infòrmatica</li>
-            <li>2013-2014</li>
-          </ul>
-        </div>
+  <section class="formacion-academica">
+    <h3 class="title-formacion">Formaciòn Acadèmica</h3>
+    <div class="formacion">
+      <div class="formacion-box">
+        <ul>
+          <li><img src="/assets/img/Alura.webp"></li>
+          <li class="title-formacion">Formacion Desarrollo Front End</li>
+          <li>2022-2023</li>
+        </ul>
+        <ul>
+          <li><img src="/assets/img/INA_Logo.webp"></li>
+          <li class="title-formacion">Desarrollo Front End</li>
+          <li>2021-2022</li>
+        </ul>
+        <ul>
+          <li><img src="/assets/img/logo-utn.webp"></li>
+          <li class="title-formacion">Tècnico en Infòrmatica</li>
+          <li>2013-2014</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2c36e9b7b1.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/Switch.js"></script>
-    <script src="/assets/js/aios.js"></script>
+  <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/Switch.js"></script>
+  <script src="/assets/js/aios.js"></script>
 
-    <script  src= "bower_components/anijs/dist/anijs-min.js" ></script> 
-    <script  src= "bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js" ></script>
-  </body>
+  <script src="bower_components/anijs/dist/anijs-min.js"></script>
+  <script src="bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+</body>
+
 </html>
