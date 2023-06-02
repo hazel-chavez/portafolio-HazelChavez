@@ -34,7 +34,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#sobre-mi">Sobre Mi</a></li>
+        <li><a href="#Sobre-mi">Sobre Mi</a></li>
         <li><a href="#">Proyectos</a></li>
         <li><a href="#">Hobbies</a></li>
         <li><a href="#">Habilidades</a></li>
@@ -73,11 +73,11 @@
         <button class="btn-cv">Download CV</button>
       </div>
     </div>
-    <div class="profile">
+    <div class="profile" id="Sobre-mi">
       <img src="/assets/img/profile.webp" alt="profile" />
     </div>
   </section>
-  <section class="about" id="sobre-mi" data-aos="zoom-in">
+  <section class="about" data-aos="zoom-in">
     <div class="about-container">
       <h3>Sobre mi</h3>
       <p>
@@ -228,21 +228,36 @@
         <ul>
           <li><img src="/assets/img/Alura.webp"></li>
           <li class="title-formacion">Formacion Desarrollo Front End</li>
-          <li>2022-2023</li>
+          <li class="title-formacion">2022-2023</li>
         </ul>
         <ul>
           <li><img src="/assets/img/INA_Logo.webp"></li>
           <li class="title-formacion">Desarrollo Front End</li>
-          <li>2021-2022</li>
+          <li class="title-formacion">2021-2022</li>
         </ul>
         <ul>
           <li><img src="/assets/img/logo-utn.webp"></li>
           <li class="title-formacion">Tècnico en Infòrmatica</li>
-          <li>2013-2014</li>
+          <li  class="title-formacion">2013-2014</li>
         </ul>
       </div>
     </div>
   </section>
+<section class="experience">
+  <h2 class="title-experience">Proyectos</h2>
+  <div class="experience-box">
+    <img src="/assets/img/Encriptador.webp" alt="encriptador">
+    <div class="info-container">
+    <h2>Encriptador de Texto</h2>
+    <h3>Challenge Alura Codificador</h3>
+    <div class="experience-description">
+      <span class="experience-repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam "><button>Repositório<i class="fa fa-github-square fa-lg" aria-hidden="true"></i></button></a></span>
+      <span class="experience-demo"><a href=""><button>Ver demo<img src="/assets/img/arrow.webp" alt="arrow"></button></a></span>
+    </div>
+  </div>
+  </div>
+</section>
+
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
@@ -251,9 +266,11 @@
   <script src="/assets/js/menu.js"></script>
   <script src="/assets/js/Switch.js"></script>
   <script src="/assets/js/aios.js"></script>
+  <script src="/assets/js/scroll.js"></script>
 
   <script src="bower_components/anijs/dist/anijs-min.js"></script>
   <script src="bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+ 
 </body>
 
 </html>
