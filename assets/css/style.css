@@ -73,8 +73,8 @@ header .content .logo-title {
   padding: 0.3rem;
   font-family: "Alice", serif;
 }
-header .content .logo-title {
-}
+/* header .content .logo-title {
+} */
 
 header .content a {
   color: var(--color-blanco);
@@ -246,5 +246,10 @@ header nav ul li:nth-child(5) {
 
   span {
     float: right;
+  }
+}
+@media screen and (max-width: 600px){
+  body{
+    background-color: blue;
   }
 }

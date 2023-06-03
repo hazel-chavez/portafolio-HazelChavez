@@ -161,6 +161,11 @@ section.about p {
   -webkit-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
   -moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
+@media screen and (max-width: 600px){
+  body{
+    background-color: blue;
+  }
+}
 
 @media screen and (max-width: 768px) {
   section#profile-container {
@@ -204,3 +209,4 @@ section.about p {
     margin-top: 2rem;
   }
 }
+
