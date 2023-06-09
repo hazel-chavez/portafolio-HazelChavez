@@ -22,17 +22,24 @@ section#profile-container {
 /* [transition-style="in:square:center"] {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
 } */
-.profile-title {
+.title-content{
+   display: flex;
+   justify-content: center;
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.profile-title{
   /* margin-left: 2rem; */
   width: auto;
   text-align: center;
   color: var(--color-blanco);
 }
-.profile-title p:first-letter {
+/* .profile-title p:first-letter {
   text-transform: uppercase;
   font-size: 2.5rem;
-}
-.profile-title p {
+} */
+.profile-title span {
   display: block;
   font-size: clamp(1.5rem, 3vw, 1.5rem);
   margin: auto;
@@ -40,8 +47,8 @@ section#profile-container {
   font-family: "Noto Sans", sans-serif;
   white-space: nowrap; /*cómo se maneja el espacio en blanco dentro de un elemento*/
   border-right: 4px solid #e865e8;
-  width: 30ch; /*el numero de caracteres*/
-  animation: typing 4s steps(30), blink 5s infinite step-end alternate;
+  width: 27ch; /*el numero de caracteres*/
+  animation: typing 4s steps(27), blink 5s infinite step-end alternate;
   overflow: hidden;
   justify-content: center;
 }
@@ -111,7 +118,7 @@ section.about {
   margin: 0 auto;
   border-radius: 15px;
   margin-top: 2rem;
- 
+
   /* animation: square-in-hesitate;
   animation-duration: 1s; */
   /* margin-left: 3rem;
@@ -161,9 +168,12 @@ section.about p {
   -webkit-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
   -moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
-@media screen and (max-width: 600px){
-  body{
+@media screen and (max-width: 600px) {
+  body {
     background-color: blue;
+  }
+  .about-skills ul li img{
+   margin-right: 0.5rem;
   }
 }
 
@@ -209,4 +219,3 @@ section.about p {
     margin-top: 2rem;
   }
 }
-

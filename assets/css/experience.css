@@ -27,20 +27,19 @@ div.info-container div.experience-description .experience-demo button {
   background-color: var(--color-5);
 }
 @media screen and (max-width: 768px) {
-  section.experience div.experience-box{
+  section.experience div.experience-box {
     display: flex;
     flex-direction: wrap;
     align-items: center;
-   padding: 0.7rem;
+    padding: 0.7rem;
   }
-  section.experience div.experience-box img.img-proyecto{
+  section.experience div.experience-box img.img-proyecto {
     width: 450px;
   }
-  div.info-container div.experience-description button{
+  div.info-container div.experience-description button {
     margin-right: none;
   }
-  div.info-container div.experience-description .experience-demo button{
+  div.info-container div.experience-description .experience-demo button {
     margin-right: 0.2rem;
   }
 }
-
