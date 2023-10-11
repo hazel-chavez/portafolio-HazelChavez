@@ -1,45 +1,322 @@
-section.experience .title-experience {
-  color: var(--color-blanco);
-  text-align: center;
-  margin-bottom: 1rem;
+section.experience {
+	color: var(--color-blanco);
+	text-align: center;
+	margin-top: 5rem;
+	background-color: var(--color-primario);
+	padding: 1rem 3rem 5rem 1rem;
+	
 }
+section.experience  .title-experience{
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	text-align: center;
+	text-shadow: 0px 4px 2px var(--color-gray);
+	color: var(--color-blanco);
+	-webkit-text-stroke: 1px var(--color-gray-2);
+}
+
+/* .title-experience img{
+  animation: rotation 3s linear infinite;
+} */
+/* @keyframes rotation {
+  0% {transform: rotate(0deg);}
+  100% { transform:rotate(360deg);}
+} */
 section.experience div.experience-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: var(--color-gray);
+	border-radius: 8px;
+	backdrop-filter: blur(16px) saturate(19%);
+    -webkit-backdrop-filter: blur(16px) saturate(19%);
+    background-color: rgba(37, 35, 35, 0.31);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--color-blanco);
+	padding: 1rem;
+	margin-top: 1em;
+}
+
+section.experience div.experience-box img{
+	border-radius: 10px;
 }
 div.experience-box .info-container {
+	margin: 5rem 1rem 0 3rem;
+	text-align: center;
+}
+div.experience-box .info-container h3{
   color: var(--color-blanco);
-  margin: 5rem 1rem 0 3rem;
+
+}
+.info-container #icons-web {
+	margin-top: 0.5rem;
 }
 div.info-container div.experience-description {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 div.info-container div.experience-description button {
-  padding: 0.5rem;
-  align-content: flex-end;
+	padding: 0.5rem;
+	align-content: flex-end;
 }
 div.info-container div.experience-description .experience-repo button {
-  border: 3px solid var(--color-5);
-  margin-right: 0.2rem;
+	border-radius: 5px;
+	border: 3px solid var(--color-5);
+	margin-right: 0.2rem;
+	cursor: pointer;
 }
 div.info-container div.experience-description .experience-demo button {
-  background-color: var(--color-5);
+	cursor: pointer;
+	background-color: var(--color-5);
+	border-radius: 5px;
+	border: none;
 }
-@media screen and (max-width: 768px) {
-  section.experience div.experience-box {
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
-    padding: 0.7rem;
+div.info-container div.experience-description .experience-demo .arrow {
+	animation: movimiento 1s infinite;
+}
+@keyframes movimiento {
+	to {
+		transform: translateX(0);
+	}
+	from {
+		transform: translateY(20%);
+	}
+}
+/*segundo proyecto*/
+div.experience-box-second {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	background-color: var(--color-gray);
+	backdrop-filter: blur(16px) saturate(19%);
+    -webkit-backdrop-filter: blur(16px) saturate(19%);
+    background-color: rgba(37, 35, 35, 0.31);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+	border-radius: 8px;
+	padding: 1rem;
+	margin-top: 5rem;
+}
+div.experience-box-second h2 {
+	margin-top: 5rem;
+	color: var(--color-blanco);
+}
+div.experience-box-second h3 {
+	color: var(--color-blanco);
+	text-align: center;
+	/* margin: 5rem 1rem 0 3rem; */
+}
+div.experience-box-second .img-second_project {
+	margin-left: 6rem;
+	border-radius: 10px;
+}
+div.info-container-second div.experience-description-second {
+	margin-top: 2rem;
+	/* margin: 5rem 1rem 0 3rem; */
+}
+div.info-container-second div.experience-description-second button {
+	padding: 0.5rem;
+}
+div.experience-box-second
+	div.experience-description-second
+	.experience-repo-second
+	button {
+		cursor: pointer;
+		border: 3px solid var(--color-5);
+		border-radius: 5px;
+}
+div.experience-box-second
+	div.experience-description-second
+	.experience-demo-second
+	button {
+	cursor: pointer;
+	background-color: var(--color-5);
+	border-radius: 5px;
+	border: none;
+}
+.info-container-second {
+	text-align: center;
+}
+.info-container-second #icons-web-second {
+	margin-top: 0.5rem;
+}
+div.info-container-second div.experience-description-second .experience-demo-second .arrow {
+	animation: movimiento 1s infinite;
+}
+
+/*third project*/
+div.experience-box-third {
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+   padding: 1rem;
+   background-color: var(--color-gray);
+   backdrop-filter: blur(16px) saturate(19%);
+    -webkit-backdrop-filter: blur(16px) saturate(19%);
+    background-color: rgba(37, 35, 35, 0.31);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.img-project-third {
+	border-radius: 10px;
+}
+div.info-container-third h2{
+	color: var(--color-blanco);
+	text-align: center;
+}
+div.info-container-third h3{
+  color: var(--color-blanco);
+	text-align: center;
+}
+div.experience-box-third .info-container-third {
+	margin: 5rem 1rem 0 3rem;
+	text-align: center;
+}
+.info-container-third #icons-web-third {
+  margin-top: 0.5rem;
+}
+.info-container-third .experience-description-third{
+   margin-top: 2rem;
+}
+.info-container-third
+.experience-demo-third button{
+	cursor: pointer;
+	background-color: var(--color-5);
+	border-radius: 5px;
+	border: none;
+    padding: 0.5rem;
+	font-family: var(--fuente-secundaria);
+}
+  div.info-container-third div.experience-description-third .experience-demo-third .arrow {
+	animation: movimiento 1s infinite;
+} 
+
+
+
+/*modo claro*/
+.light section.experience {
+	background-color: var(--color-secundario);
+}
+.light section.experience .title-experience {
+	color: var(--color-negro);
+}
+
+.light div.experience-box .info-container h2 {
+	color: var(--color-gray);
+}
+.light div.experience-box .info-container h3 {
+	color: var(--color-gray);
+}
+.light section.experience div.experience-box {
+	background-color: var(--color-blanco);
+}
+
+.light div.experience-box-second {
+	background-color: var(--color-blanco);
+}
+.light div.experience-box-second h2 {
+	color: var(--color-gray);
+}
+.light div.experience-box-second h3 {
+	color: var(--color-gray);
+}
+/*tercer proyecto*/
+.light .experience-box-third{
+	background-color: var(--color-blanco);
+	
+}
+.light div.info-container-third h2{
+  color: var(--color-gray);
+}
+.light div.info-container-third h3{
+  color: var(--color-gray);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	
+	section.experience div.experience-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	section.experience div.experience-box img.img-proyecto {
+		width: 350px;
+		
+	}
+	div.experience-box .info-container {
+		margin: 2rem 0 0 0;
+	}
+
+	div.info-container h2 h3 {
+		text-align: center;
+	}
+
+	div.info-container div.experience-description .experience-demo {
+       margin-right: 0.5rem;
+		border: none;
+	}
+	/* segundo proyecto */
+	div.experience-box-second {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: none;
+	}
+	div.experience-box-second .info-container-second h2{
+		margin: 1rem 0 0 0;
+	}
+	div.experience-box-second img.img-second_project {
+		width: 350px;
+		margin: auto;
+	}
+  div.experience-box-second
+	div.experience-description-second
+	.experience-repo-second
+	button{
+   margin-right: 0.5rem;
+   padding: none;
   }
-  section.experience div.experience-box img.img-proyecto {
-    width: 450px;
+  /* tercer proyecto */
+  div.experience-box-third{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
   }
-  div.info-container div.experience-description button {
-    margin-right: none;
+  div.experience-box-third .info-container-third {
+	margin: 1rem 0 0 0;
   }
-  div.info-container div.experience-description .experience-demo button {
-    margin-right: 0.2rem;
+  .img-project-third{
+	width: 350px;
+  }
+  .info-container-third
+.experience-demo-third button{
+	margin-right: 4rem;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 900px) {
+	section.experience div.experience-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+       
+	}
+	section.experience div.experience-box img.img-proyecto {
+		width: 350px;
+	 
+	} 
+	
+	div.experience-box-second{
+		padding: none;
+	
+	}
+	div.experience-box-second img.img-second_project {
+		width: 350px;
+		margin: auto;
+	}
+	
+
+
+}
+
+

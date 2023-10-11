@@ -1,0 +1,208 @@
+section.formation-academica {
+  display: flex;
+  flex-direction: column;
+  height: 45vw;
+  background-color: var(--color-primario);
+  margin-top: 5rem;
+  /* padding: 1rem 3rem 5rem 1rem; */
+  border-radius: 5px;
+  box-shadow: 10px 10px 99px 0px rgba(37, 35, 35, 0.75);
+  -webkit-box-shadow: 10px 10px 99px 0px rgba(37, 35, 35, 0.75);
+  -moz-box-shadow: 10px 10px 99px 0px rgba(37, 35, 35, 0.75);
+}
+
+section.formation-academica h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  /* margin-top: 2rem;
+	margin-bottom: 2rem; */
+  padding: 1em;
+  text-align: center;
+  text-shadow: 0px 4px 2px var(--color-gray);
+  color: var(--color-blanco);
+  -webkit-text-stroke: 1px var(--color-gray-2);
+}
+/*First box */
+div.formation .formation-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.formation .formation-box ul {
+  display: flex;
+  padding: 0.8rem;
+  align-items: flex-start;
+  width: 40vw;
+  height: 200px;
+  border-radius: 3px;
+  background-color: var(--color-gray);
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  /* margin-top: 2rem; */
+}
+
+div.formation .formation-box ul li:nth-child(odd) {
+  line-height: 2rem;
+}
+div.formation .formation-box .title-date {
+  color: var(--color-blanco);
+  background-color: var(--color-4);
+  width: 8rem;
+  text-align: center;
+  color: #ffff;
+  background-color: var(--color-4);
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  /*continuar codigo pendiente*/
+}
+div.formation .formation-box .name-title {
+  text-transform: uppercase;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: var(--color-secundario);
+  margin-top: 0.7rem;
+  font-family: var(--fuente-primaria2);
+}
+
+div.formation .formation-box .name-university {
+  text-transform: capitalize;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+  font-weight: bold;
+  font-family: var(--fuente-primaria);
+  color: var(--color-4);
+  margin: 1rem 0 1rem;
+}
+
+/* div.formacion .formacion-box .title-date {
+  margin-top: 0.5rem;
+  width: 6rem;
+  
+  color: var(--color-blanco);
+  padding: 0.1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--color-blanco);
+  text-align: center;
+
+} */
+
+
+
+div.formation .formation-box .container-description {
+  color: var(--color-gray-2);
+  font-family: var(--fuente-secundaria2);
+}
+
+/* div.formacion .formacion-box .title-formacion-alura {
+	text-align: center;
+	background: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: clamp(0.9rem, 2vw, 1.2rem);
+	padding-top: 2.7rem;
+	text-shadow: 0px -4px 2px rgba(147, 88, 151, 0.6);
+	color: transparent;
+	-webkit-text-stroke: 1px var(--color1);
+} */
+/* configuracion claro */
+.light section.formation-academica{
+  background-color: var(--color-secundario);
+}
+.light section.formation-academica h3{
+  text-shadow: 0px 4px 2px var(--color-gray);
+  color: var(--color-negro);
+  -webkit-text-stroke: 1px var(--color-gray);
+}
+.light div.formation .formation-box ul{
+  background-color: var(--color-blanco);
+}
+.light div.formation .formation-box .name-title{
+  color:var(--color-gray)
+
+}
+/* second box */
+div.formation .formation-box-second {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.formation .formation-box-second ul {
+  display: flex;
+  width: 40vw;
+  height: 200px;
+  padding: 0.7rem;
+  background-color: var(--color-gray);
+  flex-direction: column;
+  margin-top: 2rem;
+  /* gap: 3em ; */
+  border-radius: 3px;
+  list-style: none;
+}
+
+/* div.formacion .formacion-box-second ul li:nth-child(3){
+  line-height: 2rem;
+
+} */
+div.formation .formation-box-second .title-date {
+  margin-top: 0.5rem;
+  width: 6rem;
+  color: var(--color-blanco);
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: var(--color-4);
+  width: 8rem;
+  text-align: center;
+}
+div.formation .formation-box-second .name-title {
+  text-transform: uppercase;
+  font-family: var(--fuente-secundaria);
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: var(--color-secundario);
+  margin-top: 0.7rem;
+}
+
+div.formation .formation-box-second .name-university {
+  text-transform: capitalize;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+  font-family: var(--fuente-primaria);
+  margin: 1rem 0 1rem;
+  font-weight: bold;
+  color: var(--color-5);
+}
+
+div.formation .formation-box-second .container-description {
+  color: var(--color-gray-2);
+  font-family:var(--fuente-secundaria2);
+}
+/* configuracion clara second box */
+.light div.formation .formation-box-second ul{
+  background-color: var(--color-blanco);
+}
+.light div.formation .formation-box-second .name-title{
+  color: var(--color-gray)
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  section.formation-academica{
+    height: auto;
+    flex-direction: column;
+  }
+  div.formation .formation-box ul{
+    display: flex;
+    flex-wrap: nowrap;
+   height: auto;
+   
+  }
+  div.formation .formation-box-second ul{
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 900px){
+
+  div.formation .formation-box ul{
+    display: flex;
+   flex-direction: column;
+  }
+}

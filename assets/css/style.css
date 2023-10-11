@@ -1,255 +1,305 @@
 @import url(/assets/css/colorscheme.css);
-@import url(/assets/css/sobreMi.css);
-@import url(/assets/css/skills.css);
-@import url(/assets/css/hobbies.css);
-@import url(/assets/css/formacion.css);
+@import url(/assets/css/about.css);
+@import url(/assets/css/formation.css);
 @import url(/assets/css/experience.css);
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cabin&family=Noto+Sans&family=PT+Serif:wght@700&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
-
+@import url(/assets/css/contact.css);
+@import url(/assets/css/footer.css);
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-negro);
-  /* transition: 0.3s ease all;
-  scroll-behavior: smooth; */
-}
-
-.light {
-  background-color: var(--color-blanco);
-}
-
-.light header nav ul li a {
-  color: var(--color-blanco);
-}
-
-.light .content a {
-  color: var(--color-blanco);
-}
-
-.light .menu_bar a {
-  color: var(--color-blanco);
+	background-color: var(--color-negro);
 }
 
 header {
-  width: 100%;
-  height: 100px;
-  position: sticky;
-  top: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 1%,
-    rgba(24, 11, 24, 1) 9%,
-    rgba(0, 0, 0, 1) 99%
-  );
+	width: 100%;
+	height: 100px;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 1%,
+		rgba(24, 11, 24, 1) 9%,
+		rgba(0, 0, 0, 1) 99%
+	);
 }
 
 header .content {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 header .content .logo-title {
-  display: inline;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: #000000;
-  background: radial-gradient(
-    ellipse farthest-corner at center center,
-    #000000 0%,
-    #da7ccf 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  border-radius: 25px;
-  padding: 0.3rem;
-  font-family: "Alice", serif;
+	display: inline;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background: #000000;
+	background: radial-gradient(
+		ellipse farthest-corner at center center,
+		#000000 0%,
+		#da7ccf 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: clamp(1.5rem, 2vw, 2rem);
+	border-radius: 25px;
+	padding: 0.3rem;
+	font-family: var(--fuente-primaria);
 }
-/* header .content .logo-title {
-} */
 
 header .content a {
-  color: var(--color-blanco);
-  text-decoration: none;
+	color: var(--color-blanco);
+	text-decoration: none;
 }
 
 header nav {
-  width: 90%;
-  /* height: 150px; */
-
-  max-width: 1000px;
-  /*no sobrepase la pantalla*/
-  margin: auto;
-  text-align: end;
-  font-family: "Noto Sans", sans-serif;
-  padding-bottom: 10px;
-
-  /* display: flex;
-    flex-wrap: wrap; /*colocar li uno al lado de la otra*/
-  /* justify-content: center;coloca menu al final */
-  /* background: linear-gradient(238deg, #000 0%, #290322 100%); */
+	width: 90%;
+	max-width: 1000px;
+	/*no sobrepase la pantalla*/
+	margin: auto;
+	text-align: end;
+	font-family: var(--fuente-primaria1);
+	padding-bottom: 10px;
 }
 
 .menu_bar {
-  display: none;
-  /*desaparece el menu*/
+	display: none;
+	/*desaparece el menu*/
 }
 
 header nav ul li {
-  display: inline-block;
+	display: inline-block;
 }
 
 header nav ul li a {
-  color: var(--color-blanco);
-  font-size: clamp(0.9rem, 1.3vw, 3rem);
-  text-decoration: none;
-  padding: 11px;
-  display: inline-block;
+	color: var(--color-blanco);
+	font-size: clamp(0.9rem, 1.3vw, 3rem);
+	text-decoration: none;
+	padding: 11px;
+	display: inline-block;
 }
 
 header nav ul li {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 header nav ul li a:hover {
-  color: var(--color4);
+	color: var(--color4);
+
+	/* border-bottom: 2px inset var(--color-5);
+	box-shadow: 2px 2px 2px var(--color-3); */
 }
 
 header nav ul li:nth-child(5) a:hover {
-  color: var(--color-negro);
+	color: var(--color-negro);
+	border-bottom: none;
+	box-shadow: none;
 }
 
 header nav ul li:nth-child(5) {
-  background-color: var(--color-5);
-  border-radius: 5px;
+	background-color: var(--color-5);
+	border-radius: 5px;
 }
 
 /*switch para modo oscuro y claro*/
 .switch {
-  background: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  display: flex;
-  position: relative;
-  /*para el momento de cambiar el modo*/
-  cursor: pointer;
-  outline: none;
-  /*border que agrega chrome por defecto*/
-  margin-top: 3px;
+	background: #343d5b;
+	border-radius: 1000px;
+	border: none;
+	display: flex;
+	position: relative;
+	/*para el momento de cambiar el modo*/
+	cursor: pointer;
+	outline: none;
+	/*border que agrega chrome por defecto*/
+	margin-top: 3px;
 }
 
 .switch::after {
-  content: "";
-  display: block;
-  /*se forme un cuadrado*/
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  /*para posicionarlo a la derecha o izquierda*/
-  background: var(--color-blanco);
-  top: 0;
-  left: 0;
-  right: unset;
-  /*reseteada*/
-  border-radius: 100px;
-  transition: 0.3s ease all;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
+	content: '';
+	display: block;
+	/*se forme un cuadrado*/
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	/*para posicionarlo a la derecha o izquierda*/
+	background: var(--color-blanco);
+	top: 0;
+	left: 0;
+	/* La propiedad `right: unset;` se utiliza para restablecer el valor de posicionamiento `right` de un
+	elemento. Al configurarlo como "desarmado", el elemento ya no tendrá una posición "derecha"
+	específica y, en cambio, seguirá el flujo normal del documento. Esto es útil cuando desea eliminar
+	cualquier posicionamiento "correcto" previamente establecido y permitir que el elemento se
+	posicione según su comportamiento predeterminado. */
+	right: unset;
+	/*reseteada*/
+	border-radius: 100px;
+	transition: 0.3s ease all;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
 }
 
 .switch span {
-  width: 30px;
-  height: 30px;
-  display: block;
-  line-height: 30px;
-  background: none;
-  color: #ffff;
+	width: 30px;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	background: none;
+	color: var(--color-blanco);
 }
 
 .active {
-  background: var(--color-amarillo);
-  color: #000;
+	background: var(--color-amarillo);
+	color: var(--color-negro);
 }
 
 /*sobreescribimos*/
 .active::after {
-  right: 0;
-  left: unset;
+	right: 0;
+	left: unset;
 }
 
-@media screen and (max-width: 768px) {
-  /* This CSS code is styling the navigation bar inside the header element for screens with a maximum
+.light header {
+	background: var(--color-4);
+}
+.light header nav ul li a:hover {
+	border: none;
+	box-shadow: none;
+	color: var(--color4);
+}
+.light {
+	background-color: var(--color-blanco);
+}
+
+.light header nav ul li a {
+	color: var(--color-blanco);
+}
+
+.light .content a {
+	color: var(--color-blanco);
+}
+
+.light .menu_bar a {
+	color: var(--color-blanco);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	header {
+		height: auto;
+	}
+
+	header nav {
+		width: 60%;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 1) 1%,
+			rgba(24, 11, 24, 1) 9%,
+			rgba(0, 0, 0, 1) 99%
+		);
+		position: absolute;
+		padding-bottom: 40rem;
+		left: -100%;
+	}
+
+	header nav ul li {
+		display: block;
+		text-align: left;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.menu_bar {
+		display: block;
+		/*que aparezcan*/
+		width: 100%;
+	}
+
+	.menu_bar .btn-menu {
+		display: block;
+		color: var(--color-blanco);
+		text-decoration: none;
+	}
+
+	span {
+		float: right;
+	}
+
+	.light header nav {
+		background: var(--color-4);
+	}
+}
+
+@media screen and (max-width: 768px) and (max-width: 900px) {
+	body {
+		background-color: red;
+	}
+	/* This CSS code is styling the navigation bar inside the header element for screens with a maximum
   width of 768px. It sets the width of the navigation bar to 60% of the header's width, sets the
   height to 100%, aligns the text to the start (left) of the navigation bar, and applies a linear
   gradient background to it. It also positions the navigation bar absolutely and moves it outside
   the screen to the left with `left: -100%`, so it is hidden by default. This is used for the mobile
   menu, which is shown when the user clicks on the menu icon. */
-  header nav {
-    width: 60%;
-    height: 350px;
-    text-align: start;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 1%,
-      rgba(24, 11, 24, 1) 9%,
-      rgba(0, 0, 0, 1) 99%
-    );
-    /*el menu desaparece fuera de pantalla*/
-    margin: 0;
-    position: absolute;
-    left: -100%;
-  }
+	header nav {
+		width: 40%;
+		height: 450px;
+		text-align: start;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 1) 1%,
+			rgba(24, 11, 24, 1) 9%,
+			rgba(0, 0, 0, 1) 99%
+		);
+		/*el menu desaparece fuera de pantalla*/
+		margin: 0;
+		position: absolute;
+		left: -100%;
+	}
 
-  header nav ul li {
-    display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
+	header nav ul li {
+		display: block;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
 
-  header nav ul li a:hover {
-    width: 100%;
-    color: #000;
-    background-color: var(--color-5);
-  }
+	header nav ul li a:hover {
+		width: 100%;
+		color: #000;
+		background-color: var(--color-5);
+	}
 
-  header nav ul li:nth-child(5) {
-    background: none;
-    border-radius: none;
-  }
+	header nav ul li:nth-child(5) {
+		background: none;
+		border-radius: none;
+	}
 
-  .menu_bar {
-    display: block;
-    /*que aparezcan*/
-    width: 100%;
-  }
+	.menu_bar {
+		display: block;
+		/*que aparezcan*/
+		width: 100%;
+	}
 
-  .menu_bar .btn-menu {
-    display: block;
-    /*modificar los margenes internos*/
-    padding: 5px;
-    color: var(--color-blanco);
-    text-decoration: none;
-    background: none;
-    font-weight: bold;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 1.5rem;
-  }
+	.menu_bar .btn-menu {
+		display: block;
+		/*modificar los margenes internos*/
+		padding: 5px;
+		color: var(--color-blanco);
+		text-decoration: none;
+		background: none;
+		font-weight: bold;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top: 1.5rem;
+	}
 
-  span {
-    float: right;
-  }
-}
-@media screen and (max-width: 600px){
-  body{
-    background-color: blue;
-  }
+	.icon-bars {
+		float: right;
+	}
 }

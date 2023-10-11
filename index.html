@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Hazel</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/icon.css" />
     <link rel="stylesheet"
         href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/icon.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- <link rel="icon" type="image/png" sizes="16x16"
+        href="/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
 </head>
 <body>
     <header>
@@ -30,59 +33,57 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#Sobre-mi">Sobre Mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a id="Inicio">Inicio</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#formation">Formacion</a></li>
+                <li><a href="#experience">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section id="profile-container">
-        <!-- <div class="profile-content"><h1>Hola</h1></div> -->
+    <section id="profile-container" class="profile-container">
         <div class="profile-title">
-            <h1 class="title-content">
-                <p>!Hola!<span>mi nombre es Hazel Chavez</span></p>
-              </h1>
-            <h3>
-                Actualmente soy egresada del programa alura latam Lorem ipsum
-                dolor
-                djiedjjjjjjjjjjjjjdkkkkkkkkkkkkkkkkkkkklllllllllllllllllll
-            </h3>
+            <p>Hola👋mi nombre es,&nbsp;<span class="title-content">
+                    Hazel Chavez</span></p>
+            <p class="description">
+                Soy desarrolladora front end, egresada del programa alura latam
+                oracle,con conocimientos en otras tecnologias de back end
+            </p>
             <div class="redes">
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/hazel-chavez-alvarado"
                             target="_blank"><i class="fa fa-linkedin fa-lg"
                                 aria-hidden="true"
-                                style="color: rgb(82, 24, 137);"></i>
+                                style="color: rgb(145, 69, 216);"></i>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:hazelchavez@gmail.com"
                             target="_blank"><i class="fa far fa-envelope fa-lg"
-                                style="color: rgb(82, 24, 137);"></i>
+                                style="color: rgb(145, 69, 216);"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/hazel-chavez"
                             target="_blank"><i class="fa fa-github fa-lg"
                                 aria-hidden="true"
-                                style="color: rgb(82, 24, 137);"></i></a>
+                                style="color: rgb(145, 69, 216);"></i></a>
                     </li>
                     <br />
                 </ul>
-                <button class="btn-cv">Download CV</button>
+                <button class="btn-cv">Download CV<i class="fa fa-download"
+                        aria-hidden="true"></i></button>
             </div>
         </div>
-        <div class="profile" id="Sobre-mi">
+        <div class="profile" id="about">
             <img src="/assets/img/profile.webp" alt="profile" />
         </div>
     </section>
     <section class="about" data-aos="zoom-in">
         <div class="about-container">
-            <h3>Sobre mi</h3>
-            <p>
+            <h3 data-aos="zoom-in-right">Sobre mi</h3>
+            <p data-aos="zoom-in-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque
                 velit velit, volutpat semper dignissim dictum, imperdiet ut
@@ -91,7 +92,7 @@
                 semper
                 sagittis ligula et lacinia.
             </p>
-            <div class="about-skills">
+            <div class="about-skills" data-aos="zoom-out-right">
                 <ul>
                     <li>
                         <img src="/assets/img/photoshop.webp" alt="photoshop" />
@@ -99,14 +100,14 @@
                             <li><img src="/assets/img/react.webp" alt="react">
                             </li>
                         </ul>
-                    <li><img src="/assets/img/xd.webp" alt="javascript" />
+                    <li><img src="/assets/img/xd.webp" alt="xd" />
                         <ul>
                             <li><img src="/assets/img/mysql.webp" alt="mysql" />
                             </li>
                         </ul>
                     </li>
                     <ul>
-                        <li><img src="/assets/img/html (1).webp" alt="css3" />
+                        <li><img src="/assets/img/html (1).webp" alt="html5" />
                             <ul>
                                 <li><img src="/assets/img/servidor-sql.webp"
                                         alt="sql" /></li>
@@ -122,79 +123,252 @@
                         </li>
                     </ul>
                     <ul>
-                        <li><img src="/assets/img/bootstrap.webp"
-                                alt="boostrap">
+                        <li><img src="/assets/img/bootstrap.webp" alt="boostrap" ">
                             <ul>
-                                <li><img src="/assets/img/wordpress.webp"
-                                        alt="wordpress"></li>
-                            </ul>
-                        </li>
+                                <li><img src=" /assets/img/wordpress.webp"
+                                alt="wordpress"></li>
                     </ul>
                     </li>
-                    <li>
-                        <img src="/assets/img/js.webp" alt="js" />
+                </ul>
+                </li>
+                <li>
+                    <img src="/assets/img/js.webp" alt="js" />
+                    <ul>
+                        <li><img src="/assets/img/github.webp" alt="github">
+                        </li>
+                    </ul>
+                </li>
+                <ul>
+                    <li><img src="/assets/img/typescript.webp"
+                            alt="typescript" />
                         <ul>
-                            <li><img src="/assets/img/github.webp" alt="github">
+                            <li><img src="/assets/img/git.webp" alt="git">
                             </li>
                         </ul>
                     </li>
-                    <ul>
-                        <li><img src="/assets/img/typescript.webp"
-                                alt="typescript " />
-                            <ul>
-                                <li><img src="/assets/img/git.webp" alt="git">
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </li>
+                </ul>
+                </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="formacion-academica">
-        <h3 class="title-formacion">Formaciòn Acadèmica</h3>
-        <div class="formacion">
-            <div class="formacion-box">
+    <section class="formation-academica" id="formation">
+        <h3 class="title-formation" data-aos="fade-right">Formaciòn Acadèmica
+        </h3>
+        <div class="formation" data-aos="fade-up-right">
+            <div class="formation-box">
                 <ul>
-                    <li><img src="/assets/img/Alura.webp"></li>
-                    <li class="title-formacion">Formacion Desarrollo Front End
+                    <li class="title-date">2022-2023</li>
+                    <li class="name-title">Desarrollo Web
+                        Front End
                     </li>
-                    <li class="title-formacion">2022-2023</li>
+                    <li class="name-university">Alura Oracle One Next Education
+                    </li>
+                    <li class="container-description">Logica Computacional</li>
+                    <!-- <li><img src="/assets/img/Alura.webp" alt="ina-logo"></li> -->
                 </ul>
                 <ul>
-                    <li><img src="/assets/img/INA_Logo.webp"></li>
-                    <li class="title-formacion">Desarrollo Front End</li>
-                    <li class="title-formacion">2021-2022</li>
+                    <li class="title-date">2021-2022</li>
+                    <li class="name-title"><i
+                            class="fa fa-graduation-cap fa-xxl"
+                            aria-hidden="true"
+                            style="color: var(--color-4);"></i>Desarrollo
+                        Front End</li>
+                    <li class="name-university">Instituto Nacional de
+                        Aprendizaje
+                    </li>
+                    <li class="container-description">Logica de programacion,
+                        Flexbox,React</li>
+                </ul>
+            </div>
+            <!-- continuar codigo -->
+            <div class="formation-box-second">
+                <ul>
+                    <li class="title-date">2020-2021</li>
+                    <li class="name-title"><i
+                            class="fa fa-graduation-cap fa-xxl"
+                            aria-hidden="true"
+                            style="color: var(--color-4);"></i>Operador de
+                        Tecnologias de Informacion y Comunicacion</li>
+                    <li class="name-university">Instituto Nacional de
+                        Aprendizaje</li>
+                    <li class="container-description">Logica Computacional</li>
                 </ul>
                 <ul>
-                    <li><img src="/assets/img/logo-utn.webp"></li>
-                    <li class="title-formacion">Tècnico en Infòrmatica</li>
-                    <li class="title-formacion">2013-2014</li>
+                    <li class="title-date">2013-2014</li>
+                    <li class="name-title"><i
+                            class="fa fa-graduation-cap fa-xxl"
+                            aria-hidden="true"
+                            style="color: var(--color-4);"></i>Tecnico en
+                        Informatica</li>
+                    <li class="name-university">Universidad Tecnica Nacional
+                    </li>
+                    <li class="container-description">Logica Computacional</li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="experience">
-        <h2 class="title-experience">Proyectos</h2>
+        <h2 class="title-experience" data-aos="fade-down"  id="experience">Proyectos</h2>
         <div class="experience-box">
             <img class="img-proyecto" src="/assets/img/Encriptador.webp"
-                alt="encriptador">
-            <div class="info-container">
+                alt="encriptador" data-aos="fade-right">
+            <div class="info-container" data-aos="fade-left">
                 <h2>Encriptador de Texto</h2>
                 <h3>Challenge Alura Codificador</h3>
+                <i id="icons-web" class="fa fab fa-html5"
+                    style="color: var(--color-4)"></i>
+                <i id="icons-web" class="fa fab fa-css3"
+                    style="color: var(--color-4)"></i>
+                <i id="icons-web" class="fab fa-js"
+                    style="color: var(--color-4)"></i>
                 <div class="experience-description">
                     <span class="experience-repo"><a
-                            href="https://github.com/alura-challenges/challenge-one-encriptador-latam "><button>Repositório<i
+                            href="https://github.com/hazel-chavez/challengeonecodificador4.github-io"
+                            target="_blank"><button>Repositório<i
                                     class="fa fa-github-square fa-lg"
                                     aria-hidden="true"></i></button></a></span>
-                    <span class="experience-demo"><a href=""><button>Ver
-                                demo<img src="/assets/img/arrow.webp"
+                    <span class="experience-demo"><a
+                            href="https://hazel-chavez.github.io/challengeonecodificador4.github-io/"><button>Ver
+                                proyecto<img class="arrow"
+                                    src="/assets/img/arrow.webp"
+                                    alt="arrow"></button></a></span>
+                </div>
+            </div>
+        </div>
+        <!--Segundo Proyecto-->
+        <div class="experience-box-second">
+            <!-- <img class="img-proyecto img-second" src="/assets/img/proyecto-php.webp" alt="proyecto"> -->
+            <img class="img-second_project" src="assets/img/proyecto-php.webp"
+                alt="proyecto-php" data-aos="fade-right">
+            <div class="info-container-second" data-aos="fade-left">
+                <h2>Calculadora</h2>
+                <h3>Proyecto Curso Back end</h3>
+                <i id="icons-web-second" class="fa fab fa-html5"
+                    style="color: var(--color-4)"></i>
+                <i id="icons-web-second" class="fa fab fa-css3"
+                    style="color: var(--color-4)"></i>
+                <i id="icons-web-second" class="fab fa-php"
+                    style="color: var(--color-4)"></i>
+                <i id="icons-web-second" class="fa fa-database"
+                    aria-hidden="true" style="color: var(--color-4)"></i>
+                <div class="experience-description-second">
+                    <span class="experience-demo-second"><a
+                            href="http://nutrisalud.free.nf/?i=1"
+                            target="_blank"><button>Ver
+                                proyecto<img class="arrow"
+                                    src="/assets/img/arrow.webp"
+                                    alt="arrow"></button></a></span>
+                    <span class="experience-repo-second"><a
+                            href="https://github.com/hazel-chavez/Proyecto.CalculadoraIMC"
+                            target="_blank"><button>Repositório<i
+                                    class="fa fa-github-square fa-lg"
+                                    aria-hidden="true"></i></button></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="experience-box-third">
+            <img class="img-project-third" src="/assets/img/innovatech.webp"
+                alt="page-innovatech" data-aos="fade-right">
+            <div class="info-container-third" data-aos="fade-left">
+                <h2>Pagina Web tecnologia</h2>
+                <h3>Proyecto</h3>
+                <i id="icons-web-third" class="fa fa-database"
+                    aria-hidden="true" style="color: var(--color-4)"></i>
+                <i id="icons-web-third" class="fa fa-wordpress"
+                    aria-hidden="true" style="color: var(--color-4);"></i>
+                <i id="icons-web-third" class="fab fa-php"
+                    style="color: var(--color-4)"></i>
+                <div class="experience-description-third">
+                    <span class="experience-demo-third"><a
+                            href="http://innovatech.x10.mx/wp/"
+                            target="_blank"><button>Ver
+                                proyecto<img class="arrow"
+                                    src="/assets/img/arrow.webp"
                                     alt="arrow"></button></a></span>
                 </div>
             </div>
         </div>
     </section>
+    <section class="form-contacto" id="form-contacto">
+        <div class="datos-content">
+            <ul>
+                <li>
+                    <h4>Direccion</h4>
+                </li>
+                <li><img src="assets/img/icons8-marcador-18.png"
+                        alt="icons-address">&nbsp;San miguel de Cañas,
+                    Guanacaste</img></li>
+                <li><i class="fa fa-phone"
+                        style="color: var(--color-4);"></i>&nbsp;+50685520126
+                </li>
+                <li><i class="fa fa-envelope" aria-hidden="true"
+                        style="color: var(--color-4);"></i>&nbsp;hazelchavez56@gmail.com
+                </li>
+                <li>
+                    <h4>Social</h4>
+                    <ul class="social">
+                        <li><i id="facebook" class="fa fa-facebook"
+                                aria-hidden="true"
+                                style="font-size: large;"></i><span>facebook</span>
+                        </li>
+                        <li><i id="gmail" class="fa fa-google"
+                                aria-hidden="true"></i><span>Gmail</span></li>
+                        <li><i id="github" class="fa fa-github-alt"
+                                aria-hidden="true"
+                                style="font-size: large;"></i><span>Github</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="form-content">
+            <form id="form"
+                action="https://formsubmit.co/fdf096c7d5f27cb2688887a5438f477f"
+                method="POST">
+                <h1>Contact</h1>
+                <p>&nbsp;Envia tu mensaje</p>
+                <div class="info">
+                    <label for="nombre">
+                        <input type="text" name="nombre" id="nombre" required
+                            placeholder="Nombre">
+                    </label>
+                    <label for="email">
+                        <input type="email" name="gmail" id="email" required
+                            placeholder="@">
+                    </label>
+                </div>
+                <div class="mensaje-content">
+                    <textarea name="mensaje" id="mensaje" cols="62" rows="8"
+                        placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit">Enviar<i
+                            class="fas fa-location-arrow"></i></button>
+                    
+                </div>
+                <input  type="hidden" name="_next"
+                        value="http://127.0.0.1:5501/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+    <footer class="footer-content">
+        <!-- <div class="linea"></div> -->
+        <div class="copy">
+            <p>Copyright &copy; 2023</p>
+            <p>&nbsp;Hazel Chavez Alvarado</p>
+        </div>
+        <div class="name-reserve">
+            <p>Todos los Derechos Reservados</p>&nbsp;
+            <div class="arrow">
+                <span><i class="fa fa-arrow-circle-up fa-lg"
+                        aria-hidden="true"></i></span>
+            </div>
+        </div>
+        <!-- componer codigo colocando medidas width -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"
         crossorigin="anonymous"></script>
@@ -203,6 +377,7 @@
     <script src="/assets/js/Switch.js"></script>
     <script src="/assets/js/aios.js"></script>
     <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/formSubmit.js"></script>
     <script src="bower_components/anijs/dist/anijs-min.js"></script>
     <script
         src="bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js">

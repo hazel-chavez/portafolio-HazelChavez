@@ -1,3 +1,4 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alice&family=Montserrat&family=Noto+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet">');
 :root {
   --color-primario: #161717;
   --color-negro: #000000;
@@ -13,5 +14,16 @@
   /* --color2: #613d6c; */
   --color3: #935897;
   --color4: #da7ccf; 
-  /* --color5: #ffacff;  */
+  --color5: #ffacff; 
+  --color-gray-2: #494848;
+  --color-facebook: #4267B2;
+  --color-gmail: #DB4437;
+  --color-github: #171515;
+  --fuente-primaria:'Alice', serif ;
+  --fuente-primaria1:'Noto Sans', sans-serif;
+  --fuente-primaria2:'AR One Sans', sans-serif;
+  --fuente-secundaria: 'Raleway', sans-serif;
+  --fuente-secundaria2:'Montserrat', sans-serif;
 }
+
+

@@ -1,0 +1,6 @@
+{
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	"livePreview.defaultPreviewPath": "/index.html",
+	"liveServer.settings.port": 5501
+}

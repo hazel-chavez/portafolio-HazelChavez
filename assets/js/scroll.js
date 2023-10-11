@@ -1,9 +1,10 @@
-window.addEventListener("scroll", () => {
-  let scrolling = window.pageYOffset || document.documentElement.scrollTop;
-  if(scrolling > lastScrollTop ){
-    document.querySelector(".header").style.top = "-100%";
-  }else {
-    document.querySelector(".header").style.top = "0";
+document.querySelector('.fa.fa-arrow-circle-up.fa-lg').addEventListener('click',scrollToTop)
+function scrollToTop ()  {
+    window.scrollTo({ top: 0, behavior:'smooth' });
   }
-  lastScrollTop = scrolling;
-},false)
+  
+
+
+
+// When the user scrolls down, hide the arrow icon
+
