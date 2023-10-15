@@ -2,19 +2,15 @@ section#profile-container {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
-    
 	background: linear-gradient(238deg, #000 0%, #290322 100%);
-
 	height: 40vw;
 	line-height: 2rem;
 	padding-top: 10rem;
-
 }
 
 .profile-title {
 	width: auto;
 	position: relative;
-	
 	padding-left: 2rem;
 	color: var(--color-blanco);
 }
@@ -28,9 +24,7 @@ section#profile-container {
 }
 
 .title-content {
-	
 	font-size: clamp(1.3rem, 3vw, 1.5rem);
-
 	color: var(--color-blanco);
 	font-family: var(--fuente-primaria1);
 	white-space: nowrap;
@@ -47,7 +41,6 @@ section#profile-container {
 	from {
 		width: 0%;
 	}
-	
 }
 
 @keyframes blink {
@@ -113,7 +106,6 @@ section#profile-container {
 }
 
 .btn-cv:hover {
-	/* background-color: var(--color-4); */
 	transform: scale(1.2);
 }
 
@@ -127,36 +119,12 @@ section.about {
 	height: auto;
 	border: var(--color-blanco);
 	color: var(--color-blanco);
-	/* background: rgb(42, 26, 76);
-  background: linear-gradient(0deg,
-      rgba(42, 26, 76, 1) 0%,
-      rgba(218, 124, 207, 1) 100%); */
 	background-color: var(--color-primario);
 	margin: 0 auto;
 	border-radius: 15px;
 	margin-top: 5rem;
-
-	/* animation: square-in-hesitate;
-  animation-duration: 1s; */
-	/* margin-left: 3rem;
-  margin-right: 3rem; */
 }
 
-/* @keyframes square-in-hesitate {
-  0% {
-    clip-path: inset(100% 100% 100% 100%);
-  }
-  40% {
-    clip-path: inset(33% 33% 33% 33%);
-  }
-  100% {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-[transition-style="in:square:hesitate"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
-} */
 section.about h3 {
 	font-size: 2rem;
 	color: var(--color-blanco);
@@ -205,7 +173,6 @@ section.about p {
 	}
 
 	.profile-title {
-	
 		text-align: center;
 		margin-left: none;
 		padding-right: 1rem;
@@ -218,16 +185,15 @@ section.about p {
 	.profile img {
 		display: none;
 	}
-
 	.about-skills ul li img {
 		margin-right: 0.5rem;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	section#profile-container {
 		display: flex;
-		height: 70vw;
+		height: auto;
 		justify-content: center;
 		padding-left: 1.5rem;
 		padding-top: 7rem;
@@ -244,7 +210,9 @@ section.about p {
 		animation: typing 4s steps(12), blink 5s infinite step-end alternate;
 		overflow: hidden;
 	}
-
+	.profile-title .description {
+		margin: 0 auto;
+	}
 	.profile-title .description p {
 		font-family: 'Courier New', Courier, monospace;
 		margin-left: none;
@@ -260,10 +228,8 @@ section.about p {
 		height: auto;
 		border: var(--color-blanco);
 		color: var(--color-blanco);
-		background: rgb(42, 26, 76);
-		background: linear-gradient(0deg,
-				rgba(42, 26, 76, 1) 0%,
-				rgba(218, 124, 207, 1) 100%);
+
+		background-color: var(--color-primario);
 		border-radius: 15px;
 		margin-top: 2rem;
 	}

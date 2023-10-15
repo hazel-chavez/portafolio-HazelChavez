@@ -1,6 +1,6 @@
 section#form-contacto {
 	display: flex;
-	width: 100%;
+	width: auto;
 	height: auto;
 	margin-top: 7rem;
 }
@@ -37,28 +37,26 @@ section#form-contacto div.datos-content .social {
 section#form-contacto div.datos-content .social li {
 	margin-right: 1.2rem !important;
 }
+section#form-contacto div.datos-content .social li a {
+	text-decoration: none;
+	color: var(--color-blanco);
+}
+
 /*continuar con tooltip*/
 section#form-contacto div.datos-content .social li span {
 	color: var(--color-blanco);
 	font-size: clamp(1rem, 1vw, 1rem);
 	text-align: center;
-	/* background-color: var(--color-negro);
-    color:var(--color-4);
-    transform: translate(120px);
-    padding: 3px 0;
-    text-align: center;
-    opacity: 0;  */
-	/* continuar codigo contacto */
 	position: absolute;
 	z-index: 1;
-	top: -100%;
-	left: 12.5%;
+	top: -135%; /* revisar codigo de toolpi*/
+	left: 0%;
 	border-radius: 1px;
 	background-color: var(--color-negro);
 	opacity: 0;
 	transition: opacity 0.3s ease;
 	border-radius: 8px;
-	padding: 0 3px;
+	padding: 4px 4px;
 }
 section#form-contacto div.datos-content .social li span::after {
 	content: '';
@@ -86,14 +84,11 @@ section#form-contacto div.datos-content .social :has(> span) {
 	cursor: pointer;
 }
 section#form-contacto div.datos-content .social :has(> span):hover span {
-	/* transform: translate(-150px);
-    opacity: 1; */
 	opacity: 1;
 	filter: opacity(85%);
 	-webkit-filter: opacity(85%);
 	-moz-filter: opacity(85%);
 }
-
 
 section#form-contacto div.form-content {
 	width: 55%;
@@ -107,13 +102,12 @@ section#form-contacto div.form-content form h1 {
 	font-weight: bold;
 	margin-bottom: 1.8rem;
 	color: var(--color-5);
-	/* display: flex;
-    justify-content: left; */
 }
 section#form-contacto div.form-content form p {
 	width: 100%;
 	font-size: clamp(1rem, 2vw, 1rem); /* tamaño de letra */
 	font-weight: bold; /* negrita */
+	font-family: var(--fuente-secundaria2);
 	margin-bottom: 0.5rem;
 	color: var(--color-blanco);
 }
@@ -127,6 +121,7 @@ section#form-contacto div.form-content form {
 div.form-content div.info {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 div.form-content div.info input[type='text'],
@@ -141,7 +136,7 @@ input[type='email'] {
 	padding: 0.5rem;
 	color: var(--color-blanco);
 }
-div.form-content div.info input#nombre:focus, 
+div.form-content div.info input#nombre:focus,
 input[type='email']:focus {
 	border-color: var(--color-5);
 	box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px var(--color-5);
@@ -151,23 +146,21 @@ input[type='email']:focus {
 	background-color: var(--color-primario);
 }
 
-
 div.form-content div.info input::placeholder {
-	color: gray;
-	/* padding: 0.5rem; */
+	color: var(--color-gray-2);
 }
 
-div.form-content div.mensaje-content {
+div.form-content div.messaje-content {
 	min-width: 100%;
 	margin-top: 1rem;
 }
-div.form-content div.mensaje-content textarea {
+div.form-content div.messaje-content textarea {
 	background-color: var(--color-primario);
 	padding: 0.5rem;
 	border-radius: 3px;
 	border: none;
 	color: var(--color-blanco);
-	form-sizing: content;
+	resize: horizontal;
 }
 textarea:focus {
 	border-color: var(--color-5);
@@ -195,7 +188,6 @@ section#form-contacto div.form-content div.submit button {
 	margin: 1rem;
 	align-items: center;
 	color: var(--color-blanco);
-	
 }
 
 section#form-contacto div.form-content div.submit button:hover {
@@ -209,7 +201,7 @@ section#form-contacto div.form-content div.submit button:hover {
 .light section#form-contacto div.form-content form p {
 	color: var(--color-negro);
 }
-.light div.form-content div.mensaje-content textarea {
+.light div.form-content div.messaje-content textarea {
 	background-color: var(--color-blanco);
 	color: var(--color-gray);
 }
@@ -217,8 +209,8 @@ section#form-contacto div.form-content div.submit button:hover {
 	background-color: var(--color-blanco);
 	color: var(--color-negro);
 }
-.light div.form-content div.info input#nombre:focus,input#email:focus
-input[type='email']::after{
+.light div.form-content div.info input#nombre:focus,
+input#email:focus input[type='email']::after {
 	background-color: var(--color-blanco);
 	color: var(--color-negro) !important;
 	border-bottom: solid 0.2em rgb(var(--color-5));
@@ -233,41 +225,57 @@ input[type='email']::after{
 	section#form-contacto div.datos-content {
 		display: flex;
 		width: auto;
-		/* justify-content: center; */
+
 	}
 	section#form-contacto div.form-content {
 		width: auto;
 		display: flex;
 		justify-content: center;
-	  
 	}
 	div.form-content div.info {
 		display: flex;
 		flex-wrap: nowrap;
-		
+		justify-content: center;
 	}
 	div.form-content div.info input[type='text'],
 	input[type='email'] {
 		width: 11rem;
 	}
-	div.form-content div.mensaje-content {
+	div.form-content div.messaje-content {
 		display: flex;
 		justify-content: center;
 		max-width: 30vw;
 	}
-	section#form-contacto div.datos-content .social{
+	section#form-contacto div.datos-content .social {
 		padding-bottom: 1rem;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 900px) {
-	section#form-contacto {
-		display: flex;
-		flex-direction: column-reverse;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	section#form-contacto div.form-content form h1 {
+		padding-left: 0.5rem;
 	}
-	section#form-contacto div.form-content {
-		display: flex;
-		justify-content: center;
-
+	section#form-contacto div.form-content form p {
+		padding-left: 0.5rem;
 	}
-
+	div.form-content div.info {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: start;
+		padding-left: 1rem;
+		min-width: 100%;
+	}
+	div.form-content div.info input[type='text'],
+	input[type='email'] {
+		width: 11rem;
+	}
+	div.form-content div.messaje-content {
+		padding-left: 1rem;
+	}
+	div.form-content div.messaje-content textarea {
+		resize: horizontal;
+		width: 90%;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+	/* arreglar parte responsiva */
 }

@@ -191,6 +191,9 @@ header nav ul li:nth-child(5) {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+	body {
+		background: green;
+	}
 	header {
 		height: auto;
 	}
@@ -214,7 +217,15 @@ header nav ul li:nth-child(5) {
 		text-align: left;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
-
+	header nav ul li:nth-child(5) {
+		background: none;
+	}
+	header nav ul li:nth-child(5) a:hover {
+		color: var(--color4);
+	}
+	.switch {
+		margin-bottom: 1em;
+	}
 	.menu_bar {
 		display: block;
 		/*que aparezcan*/
@@ -225,6 +236,7 @@ header nav ul li:nth-child(5) {
 		display: block;
 		color: var(--color-blanco);
 		text-decoration: none;
+		/* margin-top: 0.5rem; */
 	}
 
 	span {
@@ -236,7 +248,7 @@ header nav ul li:nth-child(5) {
 	}
 }
 
-@media screen and (max-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	body {
 		background-color: red;
 	}
@@ -278,7 +290,9 @@ header nav ul li:nth-child(5) {
 		background: none;
 		border-radius: none;
 	}
-
+	header nav ul li:nth-child(5) a:hover {
+		color: var(--color4);
+	}
 	.menu_bar {
 		display: block;
 		/*que aparezcan*/
@@ -302,4 +316,11 @@ header nav ul li:nth-child(5) {
 	.icon-bars {
 		float: right;
 	}
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+	body {
+		background-color: yellow;
+	}
+	/* Estilos específicos para pantallas de escritorio */
 }
