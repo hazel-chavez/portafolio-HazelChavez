@@ -52,6 +52,7 @@ section#profile-container {
 .profile-title .description {
 	font-size: clamp(1.2rem, 3vw, 1.5rem);
 	margin-left: 4rem;
+	/* letter-spacing: -1px; */
 	/* cambiar margin-left: ; */
 }
 
@@ -103,6 +104,11 @@ section#profile-container {
 	-webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	-moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	transition: 1s all;
+	
+}
+.btn-cv a {
+	text-decoration: none;
+	color: var(--color-5)
 }
 
 .btn-cv:hover {
@@ -115,7 +121,7 @@ section#profile-container {
 
 section.about {
 	padding: 5rem;
-	width: 90vw;
+	max-width:90vw;
 	height: auto;
 	border: var(--color-blanco);
 	color: var(--color-blanco);
@@ -123,18 +129,38 @@ section.about {
 	margin: 0 auto;
 	border-radius: 15px;
 	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	
 }
 
 section.about h3 {
 	font-size: 2rem;
+	text-transform: uppercase;
 	color: var(--color-blanco);
-	text-align: start;
+	line-height: 3rem;
+	color: var(--color-4);
+}
+section.about  span.line{
+	position: absolute;
+	width: 2rem;
+	height: 5px;
+	border-radius: 1px 2px 1px 2px;
+	background-color: var(--color-5);
+	left:7%;
 }
 
-section.about p {
-	line-height: 2rem;
+section.about p{
+	line-height: 2.2rem;
 	font-family: var(--fuente-secundaria2);
-	text-align: justify;
+	font-size: clamp(1rem,2vw,1.2rem);
+	margin-bottom: 0.8rem;
+	letter-spacing: -1px;
+	margin-top: 0.6rem;
+}
+section.about  p + p{
+	font-size: clamp(1.5rem,2vw,1.2rem);
+	color: var(--color-gray-2)
 }
 
 .about-skills ul {
@@ -161,9 +187,7 @@ section.about p {
 	-moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
 
-.light section.about h3 {
-	color: var(--color-negro);
-}
+
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	section#profile-container {
@@ -187,6 +211,14 @@ section.about p {
 	}
 	.about-skills ul li img {
 		margin-right: 0.5rem;
+	}
+	section.about  span.line{
+		left:13%;
+	}
+	section.about p{
+		font-family: var(--fuente-secundaria2);
+		letter-spacing: -1px;
+		
 	}
 }
 
@@ -233,4 +265,12 @@ section.about p {
 		border-radius: 15px;
 		margin-top: 2rem;
 	}
+	section.about  span.line{
+		left:10%;
+	}
+	section.about p{
+		letter-spacing: -1px;
+		font-family: var(--fuente-secundaria2);
+	}
+
 }

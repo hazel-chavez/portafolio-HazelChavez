@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="menu_bar">
-            <a href="#" class="btn-menu"><span class="icon-bars"></span>Menu</a>
+            <a href="#" class="btn-menu"><span class="icon-bars"></span>&nbsp;</a>
         </div>
         <nav>
             <ul>
@@ -37,7 +37,7 @@
                 <li><a href="#about">Sobre mi</a></li>
                 <li><a href="#formation">Formacion</a></li>
                 <li><a href="#experience">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#form-contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -46,8 +46,7 @@
             <p>Hola👋mi nombre es,&nbsp;<span class="title-content">
                     Hazel Chavez</span></p>
             <p class="description">
-                Soy desarrolladora front end, egresada del programa alura latam
-                oracle,con conocimientos en otras tecnologias de back end
+                Desarrollador Web Front End, con experiencia diferentes lenguajes de programación,tecnologías Front y Back end.
             </p>
             <div class="redes">
                 <ul>
@@ -72,8 +71,8 @@
                     </li>
                     <br />
                 </ul>
-                <button class="btn-cv">Download CV<i class="fa fa-download"
-                        aria-hidden="true"></i></button>
+                <button class="btn-cv"><a href="/assets/Curriculum-HazelChavez.pdf">Download CV<i class="fa fa-download"
+                        aria-hidden="true"></i></a></button>
             </div>
         </div>
         <div class="profile" id="about">
@@ -82,15 +81,12 @@
     </section>
     <section class="about" data-aos="zoom-in">
         <div class="about-container">
-            <h3 data-aos="zoom-in-right">Sobre mi</h3>
+            <h3 data-aos="zoom-in-right">Sobre mi</h3><span class="line"></span>
             <p data-aos="zoom-in-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque
-                velit velit, volutpat semper dignissim dictum, imperdiet ut
-                lacus.
-                Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
-                semper
-                sagittis ligula et lacinia.
+                Como Desarrollador Front End cuento con una sólido conocimiento en la creación de interfaces web adaptables a diferentes tamaños de pantalla desarrollados en diferentes lenguajes  de programación y tecnologías.Conocimiento en herramientas de 
+                diseño.  
+               Actualmente continuó formándome de forma autodidacta. 
+                <p>Mis habilidades técnicas:</p>
             </p>
             <div class="about-skills" data-aos="zoom-out-right">
                 <ul>
@@ -159,13 +155,15 @@
             <div class="formation-box">
                 <ul>
                     <li class="title-date">2022-2023</li>
-                    <li class="name-title">Desarrollo Web
+                    <li class="name-title"><i
+                        class="fa fa-graduation-cap fa-xxl"
+                        aria-hidden="true"
+                        style="color: var(--color-4);"></i>Desarrollo Web
                         Front End
                     </li>
                     <li class="name-university">Alura Oracle One Next Education
                     </li>
-                    <li class="container-description">Logica Computacional</li>
-                    <!-- <li><img src="/assets/img/Alura.webp" alt="ina-logo"></li> -->
+                    <li class="container-description"></li>
                 </ul>
                 <ul>
                     <li class="title-date">2021-2022</li>
@@ -177,8 +175,8 @@
                     <li class="name-university">Instituto Nacional de
                         Aprendizaje
                     </li>
-                    <li class="container-description">Logica de programacion,
-                        Flexbox,React</li>
+                    <!-- <li class="container-description">Logica de programacion,
+                        Flexbox,React</li> -->
                 </ul>
             </div>
             <!-- continuar codigo -->
@@ -192,7 +190,7 @@
                         Tecnologias de Informacion y Comunicacion</li>
                     <li class="name-university">Instituto Nacional de
                         Aprendizaje</li>
-                    <li class="container-description">Logica Computacional</li>
+                    <!-- <li class="container-description">Logica Computacional</li> -->
                 </ul>
                 <ul>
                     <li class="title-date">2013-2014</li>
@@ -201,16 +199,17 @@
                             aria-hidden="true"
                             style="color: var(--color-4);"></i>Tecnico en
                         Informatica</li>
-                    <li class="name-university">Universidad Tecnica Nacional
+                    <li class="name-university">Universidad 
+                        Tecnica Nacional
                     </li>
-                    <li class="container-description">Logica Computacional</li>
+                    
                 </ul>
             </div>
         </div>
     </section>
-    <section class="experience">
-        <h2 class="title-experience" id="experience">Proyectos</h2>
-        <div class="experience-box">
+    <section class="experience" data-aos="fade-right">
+        <h2 class="title-experience" id="experience" >Proyectos</h2>
+        <div class="experience-box"> 
             <img class="img-proyecto" src="/assets/img/Encriptador.webp"
                 alt="encriptador">
             <div class="info-container">
@@ -238,7 +237,7 @@
         </div>
         <!--Segundo Proyecto-->
         <div class="experience-box-second">
-            <!-- <img class="img-proyecto img-second" src="/assets/img/proyecto-php.webp" alt="proyecto"> -->
+            
             <img class="img-second_project" src="assets/img/proyecto-php.webp"
                 alt="proyecto-php">
             <div class="info-container-second">
@@ -328,7 +327,7 @@
             <form id="form"
                 action="https://formsubmit.co/fdf096c7d5f27cb2688887a5438f477f"
                 method="POST">
-                <h1>Contact</h1>
+                <h1>Contacto</h1>
                 <p>&nbsp;Envia tu mensaje</p>
                 <div class="info">
                     <label for="nombre">
@@ -345,11 +344,11 @@
                         placeholder="Escribe tu mensaje"></textarea>
                 </div>
                 <div class="submit">
-                    <button type="submit">Enviar<i
+                    <button type="submit">Enviar&nbsp<i
                             class="fas fa-location-arrow"></i></button>
                 </div>
                 <input type="hidden" name="_next"
-                    value="http://127.0.0.1:5501/index.html">
+                    value="http://index.html">
                 <input type="hidden" name="_captcha" value="false">
             </form>
         </div>

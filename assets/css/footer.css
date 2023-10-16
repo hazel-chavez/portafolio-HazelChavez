@@ -32,9 +32,7 @@ div.name-reserve div.arrows{
 	position: fixed;
     text-align: end;
     bottom: 1%;
-	right: 2%;
-	
-
+	right: 1%;
  
 }
 i.fa.fa-arrow-circle-up.fa-lg {
@@ -58,6 +56,7 @@ i.fa.fa-arrow-circle-up.fa-lg {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
+	
 	
 	
 		
