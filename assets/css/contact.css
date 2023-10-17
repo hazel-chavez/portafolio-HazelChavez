@@ -124,8 +124,8 @@ div.form-content div.info {
 	justify-content: center;
 }
 
-div.form-content div.info input[type='text'],
-input[type='email'] {
+div.form-content div.info input#nombre,
+input#email {
 	width: 15rem;
 	height: 25px;
 	display: flex;
@@ -137,13 +137,11 @@ input[type='email'] {
 	color: var(--color-blanco);
 }
 div.form-content div.info input#nombre:focus,
-input[type='email']:focus{
+input#email:focus {
 	border-color: var(--color-5);
 	box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px var(--color-5);
 	outline: 0 none;
 	padding: 0.5rem;
-	color: var(--color-blanco);
-	background: var(--color-primario);
 }
 
 div.form-content div.info input::placeholder {
@@ -188,13 +186,12 @@ section#form-contacto div.form-content div.submit button {
 	margin: 1rem;
 	align-items: center;
 	color: var(--color-blanco);
-	border: 1px solid var(--color-gray-2)
+	border: 1px solid var(--color-gray-2);
 }
 
 section#form-contacto div.form-content div.submit button:hover {
 	background-color: var(--color-4);
 	transition: ease-out 1s;
-	
 }
 .light section#form-contacto div.form-content {
 	background-color: var(--color-secundario);
@@ -207,16 +204,21 @@ section#form-contacto div.form-content div.submit button:hover {
 	background-color: var(--color-blanco);
 	color: var(--color-gray);
 }
-.light div.form-content div.info input {
+.light div.form-content div.info input#nombre {
 	background-color: var(--color-blanco);
 	color: var(--color-negro);
 }
-.light div.form-content div.info input#nombre:focus,
-input#email:focus input[type='email']::after {
+.light div.form-content div.info input#email {
+	background-color: var(--color-blanco);
+	color: var(--color-negro);
+}
+
+.light div.form-content div.info input#nombre:focus input#email:focus {
 	background-color: var(--color-blanco);
 	color: var(--color-negro) !important;
 	border-bottom: solid 0.2em rgb(var(--color-5));
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	section#form-contacto {
 		display: flex;
@@ -227,7 +229,6 @@ input#email:focus input[type='email']::after {
 	section#form-contacto div.datos-content {
 		display: flex;
 		width: auto;
-
 	}
 	section#form-contacto div.form-content {
 		width: auto;
@@ -239,8 +240,8 @@ input#email:focus input[type='email']::after {
 		flex-wrap: nowrap;
 		justify-content: center;
 	}
-	div.form-content div.info input[type='text'],
-	input[type='email'] {
+	div.form-content div.info input#nombre,
+	input#email {
 		width: 11rem;
 	}
 	div.form-content div.messaje-content {
@@ -266,8 +267,8 @@ input#email:focus input[type='email']::after {
 		padding-left: 1rem;
 		min-width: 100%;
 	}
-	div.form-content div.info input[type='text'],
-	input[type='email'] {
+	div.form-content div.info input#nombre,
+	input#email {
 		width: 11rem;
 	}
 	div.form-content div.messaje-content {
