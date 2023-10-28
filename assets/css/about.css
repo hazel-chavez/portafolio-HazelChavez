@@ -1,3 +1,4 @@
+/* El código CSS aplica estilo al elemento `sección#perfil-contenedor`. */
 section#profile-container {
 	display: flex;
 	justify-content: space-around;
@@ -8,6 +9,12 @@ section#profile-container {
 	padding-top: 10rem;
 }
 
+/* El código CSS `.profile-title` apunta a un elemento con la clase "profile-title". Establece el ancho
+del elemento en "automático", lo que significa que ajustará su ancho según su contenido. También
+establece la posición en "relativa", lo que significa que el elemento se colocará en relación con su
+posición normal. La propiedad padding-left agrega 2rem de relleno al lado izquierdo del elemento.
+Finalmente, la propiedad color establece el color del texto al valor de la variable CSS
+"--color-blanco". */
 .profile-title {
 	width: auto;
 	position: relative;
@@ -15,11 +22,19 @@ section#profile-container {
 	color: var(--color-blanco);
 }
 
+/* El código CSS `.profile-title p` está dirigido a `<p> `elemento dentro de un elemento con la clase
+&quot;título-perfil&quot;. Establece la propiedad de visualización en flex, lo que permite que el
+elemento sea flexible y ajuste su contenido horizontalmente. La propiedad de alineación de texto
+está configurada en el centro, lo que alinea horizontalmente el texto dentro del elemento. La
+propiedad justify-content está configurada en center, lo que centra horizontalmente el contenido
+dentro del contenedor flexible. La propiedad de tamaño de fuente se establece mediante la función de
+sujeción, que establece un rango de tamaños de fuente según el ancho de la ventana gráfica. El
+tamaño de fuente será 1,3rem cuando el ancho de la ventana gráfica sea menor que 3vw, y será 3vw
+cuando el ancho de la ventana gráfica sea mayor que 3vw. El tamaño mínimo de fuente es 1rem. */
 .profile-title p {
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	/* flex: 1 100; */
 	font-size: clamp(1.3rem, 3vw, 1rem);
 }
 
@@ -37,25 +52,37 @@ section#profile-container {
 	color: var(--color-5);
 }
 
+/* La regla `@keyframes escribiendo` define una animación llamada "escribiendo". Especifica el
+comportamiento de la animación en un conjunto de fotogramas clave. En este caso, la animación
+comienza con un ancho del 0% y aumentará gradualmente el ancho del elemento que se está animando.
+Esto crea un efecto de escritura en el que el elemento parece revelarse gradualmente de izquierda a
+derecha. */
 @keyframes typing {
 	from {
 		width: 0%;
 	}
 }
 
+/* La regla `@keyframes parpadeo` define una animación llamada "parpadeo". Especifica el comportamiento
+de la animación en un fotograma clave específico, que es el 50% de la duración de la animación. En
+este caso, establece la propiedad "color de borde" del elemento que se está animando en
+"transparente" en el fotograma clave del 50%. Esto crea un efecto de parpadeo donde el color del
+borde del elemento desaparece y reaparece. */
 @keyframes blink {
 	50% {
 		border-color: transparent;
 	}
 }
 
+/* El código CSS `.profile-title .description` está dirigido a un elemento con la clase "descripción"
+que es descendiente de un elemento con la clase "profile-title". */
 .profile-title .description {
 	font-size: clamp(1.2rem, 3vw, 1.5rem);
 	margin-left: 4rem;
-	/* letter-spacing: -1px; */
-	/* cambiar margin-left: ; */
 }
 
+/* El código CSS `.redes` apunta a un elemento con la clase "redes". Establece la alineación del texto
+en el centro y agrega un margen superior de 1rem al elemento. */
 .redes {
 	text-align: center;
 	margin-top: 1rem;
@@ -74,17 +101,24 @@ section#profile-container {
 	background-color: var(--color-blanco);
 }
 
+/* <html>El código CSS `.redes i:hover` apunta al <i>elemento ` ` dentro de un elemento con la clase
+&quot;redes&quot; cuando se coloca el cursor sobre él.</i> */
 .redes i:hover {
 	background: none;
 	border: 2px solid var(--color-blanco);
 }
 
+/* <html>El código CSS `.btn-cv i:last-of-type` apunta al último ` <i>` elemento dentro de un elemento
+con la clase &quot;btn-cv&quot;. Está eliminando las propiedades de radio de borde, relleno y fondo
+de ese elemento.</i> */
 .btn-cv i:last-of-type {
 	border-radius: none;
 	padding: 5px;
 	background: none;
 }
 
+/* <html>El código CSS `.btn-cv i:last-of-type:hover` apunta al último ` <i>` elemento dentro de un
+elemento con la clase &quot;btn-cv&quot; cuando se pasa el cursor sobre él.</i> */
 .btn-cv i:last-of-type:hover {
 	background-color: none;
 	border: none;
@@ -104,11 +138,10 @@ section#profile-container {
 	-webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	-moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	transition: 1s all;
-	
 }
 .btn-cv a {
 	text-decoration: none;
-	color: var(--color-5)
+	color: var(--color-5);
 }
 
 .btn-cv:hover {
@@ -119,9 +152,10 @@ section#profile-container {
 	width: auto;
 }
 
+/* El código CSS `section.about` aplica estilo a un elemento de sección con la clase "about". */
 section.about {
 	padding: 5rem;
-	max-width:90vw;
+	max-width: 90vw;
 	height: auto;
 	border: var(--color-blanco);
 	color: var(--color-blanco);
@@ -131,9 +165,10 @@ section.about {
 	margin-top: 5rem;
 	display: flex;
 	justify-content: center;
-	
 }
 
+/* El código CSS `section.about h3` está dirigido a `<h3> `elemento dentro de una sección con la clase
+&quot;acerca de&quot;. Establece los siguientes estilos para ese elemento: */
 section.about h3 {
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -141,26 +176,31 @@ section.about h3 {
 	line-height: 3rem;
 	color: var(--color-4);
 }
-section.about  span.line{
+/* El código CSS `section.about span.line` aplica estilo a un elemento `span` con la clase "line" que
+es descendiente de un elemento `section` con la clase "about". */
+section.about span.line {
 	position: absolute;
 	width: 2rem;
 	height: 5px;
 	border-radius: 1px 2px 1px 2px;
 	background-color: var(--color-5);
-	left:7%;
+	left: 7%;
 }
 
-section.about p{
+/* El código CSS `section.about p` está dirigido a `<p> ` elementos que son descendientes de un
+`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
+`<p> `elementos: */
+section.about p {
 	line-height: 2.2rem;
 	font-family: var(--fuente-secundaria2);
-	font-size: clamp(1rem,2vw,1.2rem);
+	font-size: clamp(1rem, 2vw, 1.2rem);
 	margin-bottom: 0.8rem;
 	letter-spacing: -1px;
 	margin-top: 0.6rem;
 }
-section.about  p + p{
-	font-size: clamp(1.5rem,2vw,1.2rem);
-	color: var(--color-gray-2)
+section.about p + p {
+	font-size: clamp(1.5rem, 2vw, 1.2rem);
+	color: var(--color-gray-2);
 }
 
 .about-skills ul {
@@ -169,6 +209,9 @@ section.about  p + p{
 	list-style: none;
 }
 
+/* El código CSS `.about-skills ul li` está dirigido a `<li> ` elementos que son descendientes de un
+`<ul> `elemento con la clase &quot;about-skills&quot;. Establece un margen superior de 1rem para
+aquellos `<li> `elementos, creando espacio entre ellos. */
 .about-skills ul li {
 	margin-top: 1rem;
 }
@@ -187,9 +230,11 @@ section.about  p + p{
 	-moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
 
-
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
+	/* El código CSS `sección#profile-container` está dirigido a un elemento con el ID
+	&quot;profile-container&quot; dentro de un `<section> `elemento. Establece la altura del elemento
+	en &quot;automático&quot;, lo que significa que ajustará su altura según su contenido. También
+	agrega un relleno de 2rem en la parte superior y 1,2rem en la parte inferior del elemento. */
 	section#profile-container {
 		height: auto;
 		padding-top: 2rem;
@@ -212,17 +257,25 @@ section.about  p + p{
 	.about-skills ul li img {
 		margin-right: 0.5rem;
 	}
-	section.about  span.line{
-		left:13%;
+	/* El código CSS `section.about p` está dirigido a `<p> ` elementos que son descendientes de un
+	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
+	`<p> `elementos: */
+	section.about span.line {
+		left: 13%;
 	}
-	section.about p{
+	/* El código CSS `section.about p` está dirigido a `<p> ` elementos que son descendientes de un
+	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
+	`<p> `elementos: */
+	section.about p {
 		font-family: var(--fuente-secundaria2);
 		letter-spacing: -1px;
-		
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	/* El código CSS `sección#profile-container` está dirigido a un elemento con el ID
+	&quot;profile-container&quot; dentro de un `<section> `elemento. Establece los siguientes estilos
+	para ese elemento: */
 	section#profile-container {
 		display: flex;
 		height: auto;
@@ -245,6 +298,9 @@ section.about  p + p{
 	.profile-title .description {
 		margin: 0 auto;
 	}
+	/* El código CSS `.profile-title .description p` está dirigido a `<p> ` elemento que es descendiente
+	de un elemento con la clase &quot;descripción&quot;, que es descendiente de un elemento con la
+	clase &quot;perfil-título&quot;. */
 	.profile-title .description p {
 		font-family: 'Courier New', Courier, monospace;
 		margin-left: none;
@@ -253,6 +309,8 @@ section.about  p + p{
 	.profile img {
 		display: none;
 	}
+	/* El código `section.about` está dirigido a un `<section> ` elemento con la clase &quot;about&quot; y
+aplicándole los siguientes estilos: */
 
 	section.about {
 		/* padding: 1rem; */
@@ -265,12 +323,14 @@ section.about  p + p{
 		border-radius: 15px;
 		margin-top: 2rem;
 	}
-	section.about  span.line{
-		left:10%;
+	/* El código CSS `section.about span.line { izquierda: 10%; }` está configurando la posición izquierda
+	del elemento `span` con la clase "línea" que es descendiente de un elemento `sección` con la clase
+	"acerca de". */
+	section.about span.line {
+		left: 10%;
 	}
-	section.about p{
+	section.about p {
 		letter-spacing: -1px;
 		font-family: var(--fuente-secundaria2);
 	}
-
 }

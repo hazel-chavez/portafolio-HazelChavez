@@ -1,9 +1,13 @@
+/* El código CSS `sección#form-contacto` está dirigido a una sección específica con el ID
+`form-contacto`. */
 section#form-contacto {
 	display: flex;
 	width: auto;
 	height: auto;
 	margin-top: 7rem;
 }
+/* El código CSS `sección#form-contacto div.datos-content` está dirigido a una sección específica con
+el ID `form-contacto` y su elemento hijo `div.datos-content`. */
 section#form-contacto div.datos-content {
 	width: 45%;
 	display: flex;
@@ -28,6 +32,9 @@ section#form-contacto div.datos-content ul li:nth-child(1) {
 section#form-contacto div.datos-content ul li h4 {
 	margin-top: 1rem;
 }
+/* El código CSS `sección#form-contacto div.datos-content .social` está dirigido a una sección
+específica con el ID `form-contacto`, su elemento hijo `div.datos-content` y su elemento
+descendiente con la clase ` .sociales`. */
 section#form-contacto div.datos-content .social {
 	display: flex;
 	flex-direction: row;
@@ -58,6 +65,8 @@ section#form-contacto div.datos-content .social li span {
 	border-radius: 8px;
 	padding: 4px 4px;
 }
+/* El código CSS `section#form-contacto div.datos-content .social li span::after` está creando un
+pseudo-elemento `::after` para el elemento `span` dentro del elemento `li` con la clase `social `. */
 section#form-contacto div.datos-content .social li span::after {
 	content: '';
 	position: absolute;
@@ -69,6 +78,9 @@ section#form-contacto div.datos-content .social li span::after {
 	border-color: black transparent transparent transparent;
 }
 
+/* El código `i#facebook:hover`, `i#gmail:hover` y `i#github:hover` son selectores CSS que apuntan a
+los elementos `i` con los ID `facebook`, `gmail` y `github. `respectivamente cuando el usuario pasa
+el cursor sobre ellos. */
 i#facebook:hover {
 	color: var(--color-facebook);
 }
@@ -79,10 +91,17 @@ i#github:hover {
 	color: var(--color-github);
 }
 
+/* El código CSS `sección#form-contacto div.datos-content .social :has(> span)` está seleccionando
+cualquier elemento con la clase `social` que sea descendiente de `div.datos-content` que tenga un
+elemento hijo `lapso`. Establece la posición en relativa y el cursor en puntero. */
 section#form-contacto div.datos-content .social :has(> span) {
 	position: relative;
 	cursor: pointer;
 }
+/* El código CSS `section#form-contacto div.datos-content .social :has(> span):hover span` está
+dirigido al elemento `span` que es hijo directo de un elemento con la clase `social`, que es un
+descendiente del elemento `div` con la clase `datos-content`, el cual es descendiente del elemento
+`section` con el ID `form-contacto`. */
 section#form-contacto div.datos-content .social :has(> span):hover span {
 	opacity: 1;
 	filter: opacity(85%);
@@ -90,12 +109,17 @@ section#form-contacto div.datos-content .social :has(> span):hover span {
 	-moz-filter: opacity(85%);
 }
 
+/* El código CSS `sección#form-contacto div.form-content` está dirigido a una sección específica con el
+ID `form-contacto` y su elemento secundario `div.form-content`. */
 section#form-contacto div.form-content {
 	width: 55%;
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--color-gray);
 }
+/* El código CSS `section#form-contacto div.form-content form h1` está dirigido al elemento `h1` dentro
+del elemento `form` que es hijo del elemento `div` con la clase `form-content`, que es un hijo del
+elemento `sección` con el ID `form-contacto`. */
 section#form-contacto div.form-content form h1 {
 	width: 100%;
 	text-transform: uppercase;
@@ -111,6 +135,9 @@ section#form-contacto div.form-content form p {
 	margin-bottom: 0.5rem;
 	color: var(--color-blanco);
 }
+/* El código CSS `sección#form-contacto div.form-content form` está dirigido a una sección específica
+con el ID `form-contacto`, su elemento hijo `div` con la clase `form-content` y su descendiente
+`form `elemento. */
 section#form-contacto div.form-content form {
 	display: flex;
 	flex-direction: column;
@@ -118,12 +145,17 @@ section#form-contacto div.form-content form {
 	align-items: flex-end;
 	padding-top: 5rem;
 }
+/* El código CSS `div.form-content div.info` apunta a un elemento `div` con la clase `info` que es
+descendiente de otro elemento `div` con la clase `form-content`. */
 div.form-content div.info {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+/* El código CSS `div.form-content div.info input#nombre, input#email` está dirigido a los elementos de
+entrada con los ID `nombre` y `email` que son descendientes del elemento `div` con la clase `info` ,
+que es descendiente del elemento `div` con la clase `form-content`. */
 div.form-content div.info input#nombre,
 input#email {
 	width: 15rem;
@@ -136,6 +168,9 @@ input#email {
 	padding: 0.5rem;
 	color: var(--color-blanco);
 }
+/* El código CSS `div.form-content div.info input#nombre:focus, input#email:focus` está dirigido a los
+elementos `input` con los ID `nombre` y `email` que son descendientes del elemento `div` con la
+clase `info`, que es descendiente del elemento `div` con la clase `form-content`. */
 div.form-content div.info input#nombre:focus,
 input#email:focus {
 	border-color: var(--color-5);
@@ -144,14 +179,22 @@ input#email:focus {
 	padding: 0.5rem;
 }
 
+/* El código CSS `div.form-content div.info input::placeholder` apunta al texto del marcador de
+posición de los elementos de entrada que son descendientes del elemento `div` con la clase `info`,
+que es descendiente del `div ` elemento con la clase `form-content`. */
 div.form-content div.info input::placeholder {
 	color: var(--color-gray-2);
 }
 
+/* El código CSS `div.form-content div.messaje-content` está dirigido al elemento `div` con la clase
+`messaje-content` que es descendiente de otro elemento `div` con la clase `form-content`. */
 div.form-content div.messaje-content {
 	min-width: 100%;
 	margin-top: 1rem;
 }
+/* El código CSS `div.form-content div.messaje-content textarea` está dirigido al elemento `textarea`
+que es descendiente del elemento `div` con la clase `messaje-content`, que es descendiente de otro
+`div ` elemento con la clase `form-content`. */
 div.form-content div.messaje-content textarea {
 	background-color: var(--color-primario);
 	padding: 0.5rem;
@@ -160,6 +203,8 @@ div.form-content div.messaje-content textarea {
 	color: var(--color-blanco);
 	resize: horizontal;
 }
+/* El código CSS `textarea:focus` apunta al elemento `textarea` cuando está enfocado (cuando el usuario
+hace clic en él o tabula). */
 textarea:focus {
 	border-color: var(--color-5);
 	box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px var(--color-5);
@@ -169,6 +214,9 @@ textarea:focus {
 }
 /* continuar codigo de formulario */
 
+/* El código CSS `section#form-contacto div.form-content div.submit` está dirigido al elemento con la
+clase `submit` que es descendiente del elemento `div` con la clase `form-content`, que es un
+descendiente del elemento `sección` con el ID `form-contacto`. */
 section#form-contacto div.form-content div.submit {
 	width: 100%;
 	height: auto;
@@ -176,6 +224,9 @@ section#form-contacto div.form-content div.submit {
 	justify-content: flex-start;
 	margin-top: 0.6rem;
 }
+/* El código CSS que proporcionó está diseñando un elemento de botón que es descendiente del elemento
+div con la clase "enviar", que es descendiente del elemento div con la clase "form-content", que es
+descendiente del elemento de sección con el ID "formulario-contacto". */
 section#form-contacto div.form-content div.submit button {
 	width: 5rem;
 	height: 2rem;
@@ -193,6 +244,12 @@ section#form-contacto div.form-content div.submit button:hover {
 	background-color: var(--color-4);
 	transition: ease-out 1s;
 }
+/* El código anterior define estilos CSS para una sección de formulario con la identificación
+"form-contacto" en un tema ligero. Establece el color de fondo, el borde y el color del texto para
+la sección del formulario y su contenido. También establece el color de fondo y el color del texto
+para el área de texto y los campos de entrada dentro del formulario. Además, define un estilo de
+enfoque para los campos de entrada, cambiando el color de fondo, el color del texto y agregando un
+borde inferior cuando los campos están enfocados. */
 .light section#form-contacto div.form-content {
 	background-color: var(--color-secundario);
 	border: 1px solid var(--color-gray-2);
@@ -220,21 +277,35 @@ section#form-contacto div.form-content div.submit button:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+	/* El código CSS `sección#form-contacto` está dirigido a una sección específica con el ID
+	`form-contacto`. Establece la propiedad de visualización en flex, lo que permite que la sección sea
+	un contenedor flexible. La propiedad `justify-content: center;` centra los elementos flexibles
+	verticalmente dentro de la sección. La propiedad `flex-direction: column-reverse;` organiza los
+	elementos flexibles en un diseño de columnas, pero en orden inverso. La propiedad `width: auto;`
+	permite que la sección ajuste su ancho automáticamente según su contenido. */
 	section#form-contacto {
 		display: flex;
 		justify-content: center;
 		flex-direction: column-reverse;
 		width: auto;
 	}
+	/* El código anterior define una regla CSS para una sección específica con el ID "form-contacto" y un
+	div secundario con la clase "datos-content". La regla establece la propiedad de visualización en
+	"flex" y la propiedad de ancho en "auto", lo que significa que el div y su contenido se mostrarán
+	en un diseño flexible y el ancho se determinará automáticamente. */
 	section#form-contacto div.datos-content {
 		display: flex;
 		width: auto;
 	}
+	/* El código anterior define una regla CSS para una sección específica con el ID "form-contacto" y un
+	div secundario con la clase "form-content". Establece el ancho del div en automático y aplica
+	propiedades de flexbox para centrar su contenido horizontalmente. */
 	section#form-contacto div.form-content {
 		width: auto;
 		display: flex;
 		justify-content: center;
 	}
+	/* El código anterior define estilos CSS para un formulario. */
 	div.form-content div.info {
 		display: flex;
 		flex-wrap: nowrap;
@@ -244,6 +315,7 @@ section#form-contacto div.form-content div.submit button:hover {
 	input#email {
 		width: 11rem;
 	}
+	/* El código anterior define estilos CSS para ciertos elementos en una página web. */
 	div.form-content div.messaje-content {
 		display: flex;
 		justify-content: center;
@@ -254,6 +326,7 @@ section#form-contacto div.form-content div.submit button:hover {
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	/* El código anterior define estilos CSS para una sección de formulario con el ID "form-contacto". */
 	section#form-contacto div.form-content form h1 {
 		padding-left: 0.5rem;
 	}
@@ -267,6 +340,7 @@ section#form-contacto div.form-content div.submit button:hover {
 		padding-left: 1rem;
 		min-width: 100%;
 	}
+	/* El código anterior define estilos CSS para ciertos elementos en un formulario. */
 	div.form-content div.info input#nombre,
 	input#email {
 		width: 11rem;
