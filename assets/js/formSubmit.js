@@ -1,6 +1,6 @@
 
 function showCustomPopup() {
-	alert('Gracias por contactarme');
+	alert('Thanks for contacting me');
 }
 
 document.getElementById('#submit').addEventListener('click', showCustomPopup);
