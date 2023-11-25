@@ -19,9 +19,8 @@ section.formation-academica h3 {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	padding: 1em;
 	text-align: center;
-	text-shadow: 0px 4px 2px var(--color-gray);
+
 	color: var(--color-blanco);
-	-webkit-text-stroke: 1px var(--color-gray-2);
 }
 /*First box */
 /* El código CSS `div.formation .formation-box` está dirigido a un `<div> ` elemento con la clase
@@ -98,9 +97,7 @@ div.formation .formation-box .container-description {
 	background-color: var(--color-secundario);
 }
 .light section.formation-academica h3 {
-	text-shadow: 0px 4px 2px var(--color-gray);
 	color: var(--color-negro);
-	-webkit-text-stroke: 1px var(--color-gray);
 }
 .light div.formation .formation-box ul {
 	background-color: var(--color-blanco);

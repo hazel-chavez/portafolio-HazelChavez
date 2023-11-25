@@ -118,6 +118,7 @@ header nav ul li:nth-child(5) a:hover {
 header nav ul li:nth-child(5) {
 	background-color: var(--color-5);
 	border-radius: 5px;
+	padding: 0 0.5rem;
 }
 
 /*switch para modo oscuro y claro*/
@@ -253,7 +254,9 @@ header nav ul li:nth-child(5) {
 	span {
 		float: right;
 	}
-
+    .icon-bars{
+		padding-right: 0.3rem;
+	}
 	.light header nav {
 		background: var(--color-4);
 	}
@@ -334,6 +337,7 @@ header nav ul li:nth-child(5) {
 	su contenedor. */
 	.icon-bars {
 		float: right;
+		padding-right: 0.2rem;
 	}
 }
 

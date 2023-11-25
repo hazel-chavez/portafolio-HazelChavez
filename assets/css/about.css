@@ -18,7 +18,7 @@ Finalmente, la propiedad color establece el color del texto al valor de la varia
 .profile-title {
 	width: auto;
 	position: relative;
-	padding-left: 2rem;
+	padding-left: 2.8rem;
 	color: var(--color-blanco);
 }
 
@@ -98,14 +98,15 @@ en el centro y agrega un margen superior de 1rem al elemento. */
 .redes i {
 	border-radius: 5px;
 	padding: 5px;
-	background-color: var(--color-blanco);
+	/* background-color: var(--color-blanco); */
 }
 
 /* <html>El código CSS `.redes i:hover` apunta al <i>elemento ` ` dentro de un elemento con la clase
 &quot;redes&quot; cuando se coloca el cursor sobre él.</i> */
-.redes i:hover {
-	background: none;
-	border: 2px solid var(--color-blanco);
+
+.redes i:hover:before {
+	color: var(--color-blanco);
+	transition: ease-in;
 }
 
 /* <html>El código CSS `.btn-cv i:last-of-type` apunta al último ` <i>` elemento dentro de un elemento
@@ -119,9 +120,10 @@ de ese elemento.</i> */
 
 /* <html>El código CSS `.btn-cv i:last-of-type:hover` apunta al último ` <i>` elemento dentro de un
 elemento con la clase &quot;btn-cv&quot; cuando se pasa el cursor sobre él.</i> */
-.btn-cv i:last-of-type:hover {
+i.fa.fa-download:hover::before {
 	background-color: none;
 	border: none;
+	color: none;
 }
 
 .btn-cv {
@@ -132,8 +134,8 @@ elemento con la clase &quot;btn-cv&quot; cuando se pasa el cursor sobre él.</i>
 	margin-bottom: 0.6rem;
 	background: none;
 	color: var(--color-5);
+	font-size: clamp(1rem, 2vw, 1rem);
 	border: none;
-	border: 3px solid var(--color-5);
 	box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	-webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	-moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
@@ -229,7 +231,9 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	-webkit-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 	-moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 }
-
+.light .btn-cv a:hover {
+	color: var(--color-blanco);
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	/* El código CSS `sección#profile-container` está dirigido a un elemento con el ID
 	&quot;profile-container&quot; dentro de un `<section> `elemento. Establece la altura del elemento
@@ -261,7 +265,7 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
 	`<p> `elementos: */
 	section.about span.line {
-		left: 15%
+		left: 15%;
 	}
 	/* El código CSS `section.about p` está dirigido a `<p> ` elementos que son descendientes de un
 	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos

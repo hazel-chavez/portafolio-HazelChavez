@@ -11,9 +11,9 @@ section.experience {
 section.experience  .title-experience{
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	text-align: center;
-	text-shadow: 0px 4px 2px var(--color-gray);
+	
 	color: var(--color-blanco);
-	-webkit-text-stroke: 1px var(--color-gray-2);
+	
 }
 
 
