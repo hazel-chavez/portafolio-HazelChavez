@@ -1,7 +1,8 @@
 /* El código CSS aplica estilo al elemento `sección#perfil-contenedor`. */
 section#profile-container {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: center; */
+	
 	margin: 0 auto;
 	background: linear-gradient(238deg, #000 0%, #290322 100%);
 	height: 40vw;
@@ -18,8 +19,9 @@ Finalmente, la propiedad color establece el color del texto al valor de la varia
 .profile-title {
 	width: auto;
 	position: relative;
-	padding-left: 2.8rem;
+	/* padding-left: 2.8rem; */
 	color: var(--color-blanco);
+
 }
 
 /* El código CSS `.profile-title p` está dirigido a `<p> `elemento dentro de un elemento con la clase
@@ -79,6 +81,7 @@ que es descendiente de un elemento con la clase "profile-title". */
 .profile-title .description {
 	font-size: clamp(1.2rem, 3vw, 1.5rem);
 	margin-left: 4rem;
+	letter-spacing: 1px;
 }
 
 /* El código CSS `.redes` apunta a un elemento con la clase "redes". Establece la alineación del texto
@@ -151,8 +154,10 @@ i.fa.fa-download:hover::before {
 }
 
 .profile {
+	
 	width: auto;
 }
+/*modificando about*/
 
 /* El código CSS `section.about` aplica estilo a un elemento de sección con la clase "about". */
 section.about {
@@ -240,6 +245,7 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	en &quot;automático&quot;, lo que significa que ajustará su altura según su contenido. También
 	agrega un relleno de 2rem en la parte superior y 1,2rem en la parte inferior del elemento. */
 	section#profile-container {
+		width: auto;
 		height: auto;
 		padding-top: 2rem;
 		padding-bottom: 1.2rem;
