@@ -20,7 +20,7 @@ section.formation-academica h3 {
 	padding: 1em;
 	text-align: center;
 
-	color: var(--color-blanco);
+	color: var(--color-5);
 }
 /*First box */
 /* El código CSS `div.formation .formation-box` está dirigido a un `<div> ` elemento con la clase
@@ -95,9 +95,6 @@ div.formation .formation-box .container-description {
 /* configuracion claro */
 .light section.formation-academica {
 	background-color: var(--color-secundario);
-}
-.light section.formation-academica h3 {
-	color: var(--color-negro);
 }
 .light div.formation .formation-box ul {
 	background-color: var(--color-blanco);

@@ -9,7 +9,7 @@ footer.footer-content {
 	align-items: center;
 	background-color: var(--color-primario);
 	font-family: 'Raleway', sans-serif;
-	margin-top: 8rem;
+	/* margin-top: 8rem; */
 }
 
 /* El código CSS `div.copy` apunta a un elemento `div` con la clase "copiar". Establece la propiedad de

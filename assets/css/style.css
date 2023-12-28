@@ -23,17 +23,17 @@ header {
 	z-index: 1;
 	top: 0;
 	background: rgb(0, 0, 0);
-	background: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 1) 1%,
-		rgba(24, 11, 24, 1) 9%,
-		rgba(0, 0, 0, 1) 99%
-	);
+	background: linear-gradient(90deg,
+			rgba(0, 0, 0, 1) 1%,
+			rgba(24, 11, 24, 1) 9%,
+			rgba(0, 0, 0, 1) 99%);
 }
 
 header .content {
 	display: flex;
 	justify-content: space-between;
+	padding: 0.3rem;
+	/*agregue padding continuar codigo*/
 }
 
 /* El código CSS `header .content .logo-title` está dirigido al elemento con la clase "logo-title" que
@@ -42,13 +42,9 @@ header .content .logo-title {
 	display: inline;
 	position: absolute;
 	top: 1rem;
-	left: 1rem;
-	background: #000000;
-	background: radial-gradient(
-		ellipse farthest-corner at center center,
-		#000000 0%,
-		#da7ccf 100%
-	);
+	left: 2rem;
+	background: rgb(65, 43, 80);
+	background: radial-gradient(circle, rgba(65, 43, 80, 1) 0%, rgba(147, 88, 151, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
@@ -73,7 +69,7 @@ header nav {
 	/*no sobrepase la pantalla*/
 	margin: auto;
 	text-align: end;
-	font-family: var(--fuente-primaria1);
+	font-family: var(--fuente-primaria3);
 	padding-bottom: 10px;
 }
 
@@ -181,11 +177,22 @@ header nav ul li:nth-child(5) {
 .light header {
 	background: var(--color-4);
 }
+
+.light header .content .logo-title {
+	background: #5f439b;
+	background: radial-gradient(ellipse farthest-corner at center center,
+	#5f439b 0%,
+	#da7ccf 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .light header nav ul li a:hover {
 	border: none;
 	box-shadow: none;
 	color: var(--color4);
 }
+
 .light {
 	background-color: var(--color-blanco);
 }
@@ -203,6 +210,7 @@ header nav ul li:nth-child(5) {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
 	/* body {
 		background: green;
 	} */
@@ -213,12 +221,10 @@ header nav ul li:nth-child(5) {
 	header nav {
 		width: 60%;
 		background: rgb(0, 0, 0);
-		background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 1) 1%,
-			rgba(24, 11, 24, 1) 9%,
-			rgba(0, 0, 0, 1) 99%
-		);
+		background: linear-gradient(90deg,
+				rgba(0, 0, 0, 1) 1%,
+				rgba(24, 11, 24, 1) 9%,
+				rgba(0, 0, 0, 1) 99%);
 		position: absolute;
 		padding-bottom: 40rem;
 		left: -100%;
@@ -229,15 +235,19 @@ header nav ul li:nth-child(5) {
 		text-align: left;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
+
 	header nav ul li:nth-child(5) {
 		background: none;
 	}
+
 	header nav ul li:nth-child(5) a:hover {
 		color: var(--color4);
 	}
+
 	.switch {
 		margin-bottom: 1em;
 	}
+
 	.menu_bar {
 		display: block;
 		/*que aparezcan*/
@@ -254,15 +264,18 @@ header nav ul li:nth-child(5) {
 	span {
 		float: right;
 	}
-    .icon-bars{
+
+	.icon-bars {
 		padding-right: 0.3rem;
 	}
+
 	.light header nav {
 		background: var(--color-4);
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
 	/* body {
 		background-color: red;
 	}*/
@@ -271,12 +284,10 @@ header nav ul li:nth-child(5) {
 		height: 450px;
 		text-align: start;
 		background: rgb(0, 0, 0);
-		background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 1) 1%,
-			rgba(24, 11, 24, 1) 9%,
-			rgba(0, 0, 0, 1) 99%
-		);
+		background: linear-gradient(90deg,
+				rgba(0, 0, 0, 1) 1%,
+				rgba(24, 11, 24, 1) 9%,
+				rgba(0, 0, 0, 1) 99%);
 		/*el menu desaparece fuera de pantalla*/
 		margin: 0;
 		position: absolute;
@@ -306,12 +317,14 @@ header nav ul li:nth-child(5) {
 		background: none;
 		border-radius: none;
 	}
+
 	/* El código CSS `header nav ul li:nth-child(5) a:hover` apunta al elemento ancla (`a`) sobre el que
 	se pasa el cursor cuando es el quinto hijo (`nth-child(5)`) de su elemento de lista principal
 	(`li`) dentro del elemento de navegación (`nav`) dentro del encabezado. */
 	header nav ul li:nth-child(5) a:hover {
 		color: var(--color4);
 	}
+
 	.menu_bar {
 		display: block;
 		/*que aparezcan*/

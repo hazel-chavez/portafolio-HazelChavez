@@ -6,17 +6,13 @@ section.experience {
 	margin-top: 5rem;
 	background-color: var(--color-primario);
 	padding: 1rem 3rem 5rem 1rem;
-	
 }
-section.experience  .title-experience{
+section.experience .title-experience {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	text-align: center;
-	
-	color: var(--color-blanco);
-	
+
+	color: var(--color-5);
 }
-
-
 
 /* El código CSS `section.experience div.experience-box` está dirigido a un `<div> `elemento con la
 clase &quot;experience-box&quot; que es hijo de un `<section> `elemento con la clase
@@ -28,10 +24,10 @@ section.experience div.experience-box {
 	background-color: var(--color-gray);
 	border-radius: 8px;
 	backdrop-filter: blur(16px) saturate(19%);
-    -webkit-backdrop-filter: blur(16px) saturate(19%);
-    background-color: rgba(37, 35, 35, 0.31);
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    color: var(--color-blanco);
+	-webkit-backdrop-filter: blur(16px) saturate(19%);
+	background-color: rgba(37, 35, 35, 0.31);
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	color: var(--color-blanco);
 	padding: 1rem;
 	margin-top: 1em;
 }
@@ -39,7 +35,7 @@ section.experience div.experience-box {
 /* El código CSS `section.experience div.experience-box img` está dirigido a un `<img> ` elemento que
 es hijo de `<div> `elemento con la clase &quot;experience-box&quot;, que a su vez es hijo de un
 `<section> `elemento con la clase &quot;experiencia&quot;. */
-section.experience div.experience-box img{
+section.experience div.experience-box img {
 	border-radius: 10px;
 }
 /* El código CSS `div.experience-box .info-container` está dirigido a un `<div> `elemento con la clase
@@ -49,9 +45,8 @@ div.experience-box .info-container {
 	margin: 5rem 1rem 0 3rem;
 	text-align: center;
 }
-div.experience-box .info-container h3{
-  color: var(--color-blanco);
-
+div.experience-box .info-container h3 {
+	color: var(--color-blanco);
 }
 /* El código CSS `.info-container #icons-web` está dirigido a un elemento con el id `icons-web` que es
 descendiente de un elemento con la clase `info-container`. Establece la propiedad margin-top en
@@ -76,10 +71,14 @@ div.info-container div.experience-description button {
 	align-content: flex-end;
 }
 div.info-container div.experience-description .experience-repo button {
-	border-radius: 5px;
-	border: 3px solid var(--color-5);
+	border-radius: 2px;
+	border: none;
 	margin-right: 0.2rem;
 	cursor: pointer;
+}
+
+div.info-container div.experience-description .experience-repo button:hover {
+	color: var(--color3);
 }
 div.info-container div.experience-description .experience-demo button {
 	cursor: pointer;
@@ -87,6 +86,7 @@ div.info-container div.experience-description .experience-demo button {
 	border-radius: 5px;
 	border: none;
 }
+
 div.info-container div.experience-description .experience-demo .arrow {
 	animation: movimiento 1s infinite;
 }
@@ -107,9 +107,9 @@ div.experience-box-second {
 	justify-content: center;
 	background-color: var(--color-gray);
 	backdrop-filter: blur(16px) saturate(19%);
-    -webkit-backdrop-filter: blur(16px) saturate(19%);
-    background-color: rgba(37, 35, 35, 0.31);
-    border: 1px solid rgba(255, 255, 255, 0.125);
+	-webkit-backdrop-filter: blur(16px) saturate(19%);
+	background-color: rgba(37, 35, 35, 0.31);
+	border: 1px solid rgba(255, 255, 255, 0.125);
 	border-radius: 8px;
 	padding: 1rem;
 	margin-top: 5rem;
@@ -161,9 +161,15 @@ div.experience-box-second
 	div.experience-description-second
 	.experience-repo-second
 	button {
-		cursor: pointer;
-		border: 3px solid var(--color-5);
-		border-radius: 5px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: none;
+}
+div.experience-box-second
+	div.experience-description-second
+	.experience-repo-second
+	button:hover {
+	color: var(--color3);
 }
 /* El código anterior define estilos CSS para elementos en una página web. Específicamente, se dirige a
 un elemento div con la clase "experiencia-cuadro-segundo", un elemento div secundario con la clase
@@ -188,7 +194,10 @@ div.experience-box-second
 elemento con la clase "flecha" dentro de la clase "experiencia-demo-segundo", que está dentro de la
 clase "experiencia-descripción-segundo", que es dentro de un div con la clase
 "info-contenedor-segundo". La animación durará 1 segundo y se repetirá infinitamente. */
-div.info-container-second div.experience-description-second .experience-demo-second .arrow {
+div.info-container-second
+	div.experience-description-second
+	.experience-demo-second
+	.arrow {
 	animation: movimiento 1s infinite;
 }
 
@@ -196,27 +205,26 @@ div.info-container-second div.experience-description-second .experience-demo-sec
 /* El código anterior define una clase CSS llamada "experience-box-third" para un elemento div. Esta
 clase se utiliza para diseñar la apariencia del elemento div. */
 div.experience-box-third {
-   display: flex;
-   justify-content: center;
-   margin-top: 5rem;
-   padding: 1rem;
-   background-color: var(--color-gray);
-   backdrop-filter: blur(16px) saturate(19%);
-    -webkit-backdrop-filter: blur(16px) saturate(19%);
-    background-color: rgba(37, 35, 35, 0.31);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	padding: 1rem;
+	background-color: var(--color-gray);
+	backdrop-filter: blur(16px) saturate(19%);
+	-webkit-backdrop-filter: blur(16px) saturate(19%);
+	background-color: rgba(37, 35, 35, 0.31);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .img-project-third {
 	border-radius: 10px;
-
 }
-div.info-container-third h2{
+div.info-container-third h2 {
 	color: var(--color-blanco);
 	text-align: center;
 }
-div.info-container-third h3{
-  color: var(--color-blanco);
+div.info-container-third h3 {
+	color: var(--color-blanco);
 	text-align: center;
 }
 div.experience-box-third .info-container-third {
@@ -224,33 +232,30 @@ div.experience-box-third .info-container-third {
 	text-align: center;
 }
 .info-container-third #icons-web-third {
-  margin-top: 0.5rem;
+	margin-top: 0.5rem;
 }
-.info-container-third .experience-description-third{
-   margin-top: 2rem;
+.info-container-third .experience-description-third {
+	margin-top: 2rem;
 }
 /* El código anterior define estilos CSS para dos selectores diferentes. */
-.info-container-third
-.experience-demo-third button{
+.info-container-third .experience-demo-third button {
 	cursor: pointer;
 	background-color: var(--color-5);
 	border-radius: 5px;
 	border: none;
-    padding: 0.5rem;
+	padding: 0.5rem;
 	font-family: var(--fuente-secundaria);
 }
-  div.info-container-third div.experience-description-third .experience-demo-third .arrow {
+div.info-container-third
+	div.experience-description-third
+	.experience-demo-third
+	.arrow {
 	animation: movimiento 1s infinite;
-} 
-
-
+}
 
 /*modo claro*/
 .light section.experience {
 	background-color: var(--color-secundario);
-}
-.light section.experience .title-experience {
-	color: var(--color-negro);
 }
 
 .light div.experience-box .info-container h2 {
@@ -273,18 +278,16 @@ div.experience-box-third .info-container-third {
 	color: var(--color-gray);
 }
 /*tercer proyecto*/
-.light .experience-box-third{
+.light .experience-box-third {
 	background-color: var(--color-blanco);
-	
 }
-.light div.info-container-third h2{
-  color: var(--color-gray);
+.light div.info-container-third h2 {
+	color: var(--color-gray);
 }
-.light div.info-container-third h3{
-  color: var(--color-gray);
+.light div.info-container-third h3 {
+	color: var(--color-gray);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	
 	/* El código anterior define una regla CSS para una sección específica con la clase "experiencia" y un
 	div con la clase "cuadro de experiencia". Utiliza propiedades de flexbox para centrar el contenido
 	vertical y horizontalmente dentro del div. */
@@ -299,7 +302,6 @@ div.experience-box-third .info-container-third {
 	con la clase "experiencia". Está configurando el ancho de la imagen en 300 píxeles. */
 	section.experience div.experience-box img.img-proyecto {
 		width: 300px;
-		
 	}
 	/* El código anterior define una regla CSS para la clase "contenedor de información" que está anidada
 	dentro de un elemento div con la clase "cuadro de experiencia". La regla establece el margen del
@@ -313,7 +315,7 @@ div.experience-box-third .info-container-third {
 	}
 
 	div.info-container div.experience-description .experience-demo {
-       margin-right: 0.5rem;
+		margin-right: 0.5rem;
 		border: none;
 	}
 	/* segundo proyecto */
@@ -328,39 +330,38 @@ div.experience-box-third .info-container-third {
 		align-items: center;
 		padding: none;
 	}
-	div.experience-box-second .info-container-second h2{
+	div.experience-box-second .info-container-second h2 {
 		margin: 1rem 0 0 0;
 	}
 	div.experience-box-second img.img-second_project {
 		width: 300px;
 		margin: auto;
 	}
-  /* El código anterior define estilos CSS para elementos en una página web. */
-  div.experience-box-second
-	div.experience-description-second
-	.experience-repo-second
-	button{
-   margin-right: 0.5rem;
-   padding: none;
-  }
-  /* tercer proyecto */
-  div.experience-box-third{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  }
-  div.experience-box-third .info-container-third {
-	margin: 1rem 0 0 0;
-  }
-  .img-project-third {
-	width: 300px;
-  }
+	/* El código anterior define estilos CSS para elementos en una página web. */
+	div.experience-box-second
+		div.experience-description-second
+		.experience-repo-second
+		button {
+		margin-right: 0.5rem;
+		padding: none;
+	}
+	/* tercer proyecto */
+	div.experience-box-third {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	div.experience-box-third .info-container-third {
+		margin: 1rem 0 0 0;
+	}
+	.img-project-third {
+		width: 300px;
+	}
 
-  .info-container-third
-.experience-demo-third button{
-	margin-right: 4rem;
-  }
+	.info-container-third .experience-demo-third button {
+		margin-right: 4rem;
+	}
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
@@ -376,16 +377,13 @@ div.experience-box-third .info-container-third {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-       
 	}
 	section.experience div.experience-box img.img-proyecto {
 		width: 350px;
-	 
-	} 
-	
-	div.experience-box-second{
+	}
+
+	div.experience-box-second {
 		padding: none;
-	
 	}
 	/* El código anterior tiene como objetivo un elemento de imagen con la clase "img-segundo_proyecto"
 	que está dentro de un elemento div con la clase "experiencia-box-segundo". Se trata de establecer
@@ -395,13 +393,10 @@ div.experience-box-third .info-container-third {
 		width: 350px;
 		margin: auto;
 	}
- 
+
 	/* El código anterior define una clase CSS llamada ".img-project-third" y establece el ancho de los
 	elementos con esta clase en 350 píxeles. */
 	.img-project-third {
 		width: 350px;
-	  }
-
+	}
 }
-
-
