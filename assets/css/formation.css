@@ -19,8 +19,17 @@ section.formation-academica h3 {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	padding: 1em;
 	text-align: center;
-
 	color: var(--color-5);
+}
+section.formation-academica span.line{
+	position: absolute;
+	width: 6rem;
+	height: 5px;
+	border-radius: 1px 2px 1px 2px;
+	background-color: var(--color-5);
+	top:66%;
+	left: 46%;
+	right: 42%;
 }
 /*First box */
 /* El código CSS `div.formation .formation-box` está dirigido a un `<div> ` elemento con la clase
@@ -201,6 +210,10 @@ descendiente de un `<div> ` elemento con las clases &quot;formación&quot; y
 		height: auto;
 		margin-bottom: 1rem;
 	}
+	section.formation-academica span.line{
+		width: 5rem;
+		left:39%;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	section#formation-academica {
@@ -214,6 +227,11 @@ descendiente de un `<div> ` elemento con las clases &quot;formación&quot; y
 	div.formation .formation-box-second {
 		margin-bottom: 1rem;
 	}
+	section.formation-academica span.line{
+		width: 5rem;
+		left: 45%;
+	}
+	
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 	section#formation-academica {

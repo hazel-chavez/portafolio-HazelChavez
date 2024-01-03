@@ -10,8 +10,16 @@ section.experience {
 section.experience .title-experience {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	text-align: center;
-
 	color: var(--color-5);
+}
+section.experience .title-experience span.line{
+	position: absolute;
+	width: 6rem;
+	height: 5px;
+	border-radius: 1px 2px 1px 2px;
+	background-color: var(--color-5);
+	left: 45%;
+	top: 3%;
 }
 
 /* El código CSS `section.experience div.experience-box` está dirigido a un `<div> `elemento con la
@@ -313,6 +321,10 @@ div.info-container-third
 	div.info-container h2 h3 {
 		text-align: center;
 	}
+	section.experience .title-experience span.line{
+		width: 4rem;
+		left: 39%;
+	}
 
 	div.info-container div.experience-description .experience-demo {
 		margin-right: 0.5rem;
@@ -377,6 +389,11 @@ div.info-container-third
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+	}
+	section.experience .title-experience span.line{
+		width: 4rem;
+		top: 4%;
+		left: 44%
 	}
 	section.experience div.experience-box img.img-proyecto {
 		width: 350px;

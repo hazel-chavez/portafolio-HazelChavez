@@ -284,7 +284,7 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
 	`<p> `elementos: */
 	section.about span.line {
-		left: 15%;
+		left: 13%;
 	}
 	/* El código CSS `section.about p` está dirigido a `<p> ` elementos que son descendientes de un
 	`<section> `elemento con la clase &quot;acerca de&quot;. Aplica los siguientes estilos a aquellos
@@ -341,7 +341,6 @@ aplicándole los siguientes estilos: */
 		height: auto;
 		border: var(--color-blanco);
 		color: var(--color-blanco);
-
 		background-color: var(--color-primario);
 		border-radius: 15px;
 		margin-top: 2rem;
@@ -350,7 +349,7 @@ aplicándole los siguientes estilos: */
 	del elemento `span` con la clase "línea" que es descendiente de un elemento `sección` con la clase
 	"acerca de". */
 	section.about span.line {
-		left: 10%;
+		left: 12%;
 	}
 	section.about p {
 		letter-spacing: -1px;
