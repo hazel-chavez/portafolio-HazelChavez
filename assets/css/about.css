@@ -214,7 +214,7 @@ section.about p {
 	font-family: var(--fuente-secundaria2);
 	font-size: clamp(1rem, 2vw, 1.2rem);
 	margin-bottom: 0.8rem;
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 	margin-top: 0.6rem;
 }
 section.about p + p {
@@ -291,7 +291,8 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	`<p> `elementos: */
 	section.about p {
 		font-family: var(--fuente-secundaria2);
-		letter-spacing: -1px;
+		letter-spacing: -1px; 
+         
 	}
 }
 

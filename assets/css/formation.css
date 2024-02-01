@@ -88,7 +88,7 @@ div.formation .formation-box .name-university {
 	font-size: clamp(1.2rem, 2vw, 1rem);
 	font-weight: bold;
 	font-family: var(--fuente-primaria);
-	color: var(--color-4);
+	color: var(--color-5);
 	margin: 1rem 0 1rem;
 }
 
