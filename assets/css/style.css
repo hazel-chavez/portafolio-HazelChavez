@@ -14,6 +14,35 @@
 body {
 	background-color: var(--color-negro);
 }
+/* El pseudoelemento CSS `::-webkit-scrollbar` se utiliza para diseñar la barra de desplazamiento en
+los navegadores webkit (como Chrome y Safari). */
+::-webkit-scrollbar {
+	width: 20px;
+  }
+  
+  /* El código CSS `::-webkit-scrollbar-track` aplica estilo a la parte de pista de la barra de
+  desplazamiento en navegadores webkit como Chrome y Safari. Agrega una sombra de cuadro para crear
+  un efecto visual, establece un radio de borde para esquinas redondeadas y aplica un color
+  específico definido por la variable `--color-gray` a la pista. Este estilo mejora la apariencia de
+  la barra de desplazamiento dentro del navegador. */
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px var(--color-gray); 
+	border-radius: 2px;
+  }
+   
+  /* El código CSS que proporcionó está diseñando el controlador de la barra de desplazamiento para
+  navegadores webkit como Chrome y Safari. */
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: var(--color-3); 
+	border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: var(--color-5); 
+  }
 
 /* Este código CSS le da estilo al elemento de encabezado. */
 header {
