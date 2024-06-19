@@ -1,4 +1,4 @@
-@import url('<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alice&family=Montserrat&family=Noto+Sans&family=Raleway:wght@300&display=swap&family=Playfair+Display:wght@400;600" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alice&family=Montserrat&family=Noto+Sans&family=Raleway:wght@300&display=swap&family=Playfair+Display:wght@400;600=..700&family=Marcellus&display=swap" rel="stylesheet">');
 :root {
   --color-primario: #161717;
   --color-negro: #000000;
@@ -20,6 +20,7 @@
   --color-facebook: #4267B2;
   --color-gmail: #DB4437;
   --color-github: #171515;
+  --fuente-logo: "Marcellus", serif;
   --fuente-primaria:'Alice', serif ;
   --fuente-primaria1:'Playfair Display', serif;
   --fuente-primaria2:'AR One Sans', sans-serif;
