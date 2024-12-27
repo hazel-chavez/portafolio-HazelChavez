@@ -156,7 +156,7 @@ div.form-content div.info {
 /* El código CSS `div.form-content div.info input#nombre, input#email` está dirigido a los elementos de
 entrada con los ID `nombre` y `email` que son descendientes del elemento `div` con la clase `info` ,
 que es descendiente del elemento `div` con la clase `form-content`. */
-div.form-content div.info input#nombre,
+div.form-content div.info input#name,
 input#email {
 	width: 15rem;
 	height: 25px;
@@ -171,7 +171,7 @@ input#email {
 /* El código CSS `div.form-content div.info input#nombre:focus, input#email:focus` está dirigido a los
 elementos `input` con los ID `nombre` y `email` que son descendientes del elemento `div` con la
 clase `info`, que es descendiente del elemento `div` con la clase `form-content`. */
-div.form-content div.info input#nombre:focus,
+div.form-content div.info input#name:focus,
 input#email:focus {
 	border-color: var(--color-5);
 	box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px var(--color-5);
@@ -260,7 +260,7 @@ borde inferior cuando los campos están enfocados. */
 	background-color: var(--color-blanco);
 	color: var(--color-gray);
 }
-.light div.form-content div.info input#nombre {
+.light div.form-content div.info input#name {
 	background-color: var(--color-blanco);
 	color: var(--color-negro);
 }
@@ -269,7 +269,7 @@ borde inferior cuando los campos están enfocados. */
 	color: var(--color-negro);
 }
 
-.light div.form-content div.info input#nombre:focus input#email:focus {
+.light div.form-content div.info input#name:focus input#email:focus {
 	background-color: var(--color-blanco);
 	color: var(--color-negro) !important;
 	border-bottom: solid 0.2em rgb(var(--color-5));
@@ -310,7 +310,7 @@ borde inferior cuando los campos están enfocados. */
 		flex-wrap: nowrap;
 		justify-content: center;
 	}
-	div.form-content div.info input#nombre,
+	div.form-content div.info input#name,
 	input#email {
 		width: 11rem;
 	}
@@ -340,7 +340,7 @@ borde inferior cuando los campos están enfocados. */
 		min-width: 100%;
 	}
 	/* El código anterior define estilos CSS para ciertos elementos en un formulario. */
-	div.form-content div.info input#nombre,
+	div.form-content div.info input#name,
 	input#email {
 		width: 11rem;
 	}
