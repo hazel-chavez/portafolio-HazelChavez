@@ -1,0 +1,75 @@
+/* El código CSS `footer.footer-content` apunta a un elemento de pie de página con la clase
+"footer-content". */
+footer.footer-content {
+	display: flex;
+	padding: 0 1rem;
+	height: 100px;
+	border: 0px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-primario);
+	font-family: 'Raleway', sans-serif;
+	/* margin-top: 8rem; */
+}
+
+/* El código CSS `div.copy` apunta a un elemento `div` con la clase "copiar". Establece la propiedad de
+visualización en flex, lo que permite que el elemento sea flexible y ajuste su ancho de acuerdo con
+el espacio disponible. La propiedad flex-grow se establece en 1, lo que significa que el elemento
+crecerá y ocupará el espacio restante dentro de su contenedor. La propiedad de color se establece en
+el valor de la variable CSS `--color-blanco`, que representa un color. */
+div.copy {
+	display: flex;
+	flex-grow: 1;
+	color: var(--color-blanco);
+}
+div.copy p:nth-child(2) {
+	color: var(--color-5);
+	margin-left: 0.2rem;
+	border-left: 2px solid var(--color-gray-2);
+}
+
+/* El código CSS `div.name-reserve` apunta a un elemento `div` con la clase "name-reserve". Establece
+la propiedad de visualización en flex, lo que permite que el elemento sea flexible y ajuste su ancho
+según el espacio disponible. La propiedad flex-direction se establece en columna, lo que significa
+que los elementos secundarios se apilarán verticalmente. La propiedad de color se establece en el
+valor de la variable CSS `--color-blanco`, que representa un color. */
+div.name-reserve {
+	display: flex;
+	flex-direction: column;
+	color: var(--color-blanco);
+}
+div.name-reserve div.arrows {
+	position: fixed;
+	text-align: end;
+	bottom: 1%;
+	right: 1%;
+}
+/* El código CSS `i.fa.fa-arrow-circle-up.fa-lg` apunta a un elemento `i` con las clases `fa`,
+`fa-arrow-circle-up` y `fa-lg` . */
+i.fa.fa-arrow-circle-up.fa-lg {
+	cursor: pointer;
+	color: var(--color-5);
+	font-size: x-large;
+	opacity: 0.5;
+}
+
+/* configuracion clara */
+.light footer.footer-content {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 1%,
+		rgba(24, 11, 24, 1) 9%,
+		rgba(0, 0, 0, 1) 99%
+	);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/* div.name-reserve div.arrows{
+		bottom: 1%;
+	    right: 1%
+	} */
+}
