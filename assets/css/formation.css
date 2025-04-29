@@ -19,14 +19,14 @@ section.formation-academica h3 {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	padding: 1em;
 	text-align: center;
-	color: var(--color-5);
+	color: var(--color-primary-fourth);
 }
 section.formation-academica span.line{
 	position: absolute;
 	width: 6rem;
 	height: 5px;
 	border-radius: 1px 2px 1px 2px;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	top:66%;
 	left: 46%;
 	right: 42%;
@@ -69,7 +69,7 @@ div.formation .formation-box .title-date {
 	width: 8rem;
 	text-align: center;
 	color: #ffff;
-	background-color: var(--color-4);
+	background-color: var(--color-primary-fourth);
 	text-align: center;
 	border-radius: 8px;
 	font-weight: bold;
@@ -148,7 +148,7 @@ div.formation .formation-box-second .title-date {
 	text-align: center;
 	border-radius: 8px;
 	font-weight: bold;
-	background-color: var(--color-4);
+	background-color: var(--color-primary-fourth);
 	width: 8rem;
 	text-align: center;
 } /* El código CSS `div.formation .formation-box-segundo .nombre-título` está dirigido a un elemento con

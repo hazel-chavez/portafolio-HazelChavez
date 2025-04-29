@@ -5,7 +5,7 @@ section#profile-container {
 	justify-content: space-evenly;
 	align-content: center;
 	background: linear-gradient(238deg, #000 0%, #290322 100%);
-	height: 37vw;
+	height: 38vw;
 	line-height: 2rem;
 	padding-top: 8rem;
 }
@@ -19,9 +19,15 @@ Finalmente, la propiedad color establece el color del texto al valor de la varia
 .profile-title {
 	width: 89%;
 	position: relative;
-	padding-left: 2.8rem;
+	padding-left: 14rem;
 	color: var(--color-blanco);
 
+}
+.profile-title p:nth-child(1){
+	color: var(--color-primary-fourth)
+}
+.profile-title span{
+	color: var(--color-blanco);
 }
 
 /* El código CSS `.profile-title p` está dirigido a `<p> `elemento dentro de un elemento con la clase
@@ -43,7 +49,7 @@ cuando el ancho de la ventana gráfica sea mayor que 3vw. El tamaño mínimo de 
 }
 
 .profile-title p:nth-child(3){
-	color: var(--color-5);
+	color: var(--color-primary-fourth);
 	font-size: clamp(1.3rem, 3vw, 1rem);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -56,7 +62,7 @@ cuando el ancho de la ventana gráfica sea mayor que 3vw. El tamaño mínimo de 
 	font-family: var(--fuente-primaria1);
 	white-space: nowrap;
 	/*cómo se maneja el espacio en blanco dentro de un elemento*/
-	border-right: 4px solid var(--color4);
+	border-right: 4px solid var(--color-orange);
 	width: 12ch;
 	/*el numero de caracteres*/
 	animation: typing 3s steps(12), blink 5s infinite step-end alternate;
@@ -148,17 +154,17 @@ i.fa.fa-download:hover::before {
 	margin-top: 1rem;
 	margin-bottom: 0.6rem;
 	background: none;
-	color: var(--color-5);
+	color: var(--color-primary-fourth);
 	font-size: clamp(1rem, 2vw, 1rem);
 	border: none;
-	box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
+	box-shadow: -1px -5px 64px 0px rgba(146, 77, 243, 0.75);
 	-webkit-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	-moz-box-shadow: -1px -5px 64px 0px rgba(103, 33, 201, 0.75);
 	transition: 1s all;
 }
 .btn-cv a {
 	text-decoration: none;
-	color: var(--color-5);
+	color: var(--color-primary-fourth);
 }
 
 .btn-cv:hover {
@@ -166,7 +172,7 @@ i.fa.fa-download:hover::before {
 }
 
 .profile {
-	
+
 	width: auto;
 }
 /*modificando about*/
@@ -193,7 +199,7 @@ section.about h3 {
 	text-transform: uppercase;
 	color: var(--color-blanco);
 	line-height: 3rem;
-	color: var(--color-4);
+	color: var(--color-primary-fourth);
 }
 /* El código CSS `section.about span.line` aplica estilo a un elemento `span` con la clase "line" que
 es descendiente de un elemento `section` con la clase "about". */
@@ -202,7 +208,7 @@ section.about span.line {
 	width: 2rem;
 	height: 5px;
 	border-radius: 1px 2px 1px 2px;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	left: 7%;
 }
 
@@ -237,7 +243,7 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 
 /*Modo claro*/
 .light section#profile-container {
-	background: var(--color-3);
+	background: var(--color-secondary);
 }
 
 .light section.about {
@@ -247,6 +253,21 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 	-webkit-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
 	-moz-box-shadow: -3px 2px 28px 0px rgba(143, 89, 89, 0.75);
+}
+.light .profile-title{
+	color: var(--color-negro)
+}
+.light .profile-title p:nth-child(1){
+	color: var(--color-primary-fourth)
+}
+.light .profile-title span{
+	color: var(--color-negro);
+}
+.light .profile-title p:nth-child(3){
+	color: var(--color-primary-fourth)
+}
+.light .btn-cv{
+	border: 2px solid var(--color-primary-fourth);
 }
 .light .btn-cv a:hover {
 	color: var(--color-blanco);
@@ -264,7 +285,7 @@ aquellos `<li> `elementos, creando espacio entre ellos. */
 	}
 
 	.profile-title {
-		
+		padding-left: 0;
 		text-align: center;
 		margin-left: none;
 		padding-right: 1rem;

@@ -14,7 +14,7 @@ section#form-contacto div.datos-content {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--color-5);
+	background-color: var(--color-6);
 	line-height: 35px;
 	font-family: var(--fuente-primaria2);
 	color: var(--color-blanco);

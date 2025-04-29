@@ -1,15 +1,23 @@
-@import url('<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alice&family=Montserrat&family=Noto+Sans&family=Raleway:wght@300&display=swap&family=Playfair+Display:wght@400;600=..700&family=Marcellus&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Alice&family=Montserrat&family=Noto+Sans&family=Raleway:wght@300&display=swap&family=Playfair+Display:wght@400;600=..700&family=Marcellus&display=swapfamily=&family=Playfair" rel="stylesheet">');
 :root {
   --color-primario: #161717;
+  --color-primario-second: #2d2d42;
+  --color-primario-third: #e9d8fd;
+  --color-primary-fourth: #7950f2;
+  --color-secondary:#e5dbff;
+  --color-btn: #9775fa;
   --color-negro: #000000;
   --color-blanco: #ffffff;
   --color-secundario: #f8f4ef;
   --color-gray: #252323;
   --color-amarillo: #eec624;
+  --color-orange : #F28C28;
+  
   --color-2: #150d26;
   --color-3: #2a1a4c;
   --color-4: #3e2673;
   --color-5: #5f439b;
+  --color-6: #6e32f1;
   
    --color1: #412b50;
   /* --color2: #613d6c; */
@@ -20,7 +28,8 @@
   --color-facebook: #4267B2;
   --color-gmail: #DB4437;
   --color-github: #171515;
-  --fuente-logo: "Marcellus", serif;
+  /* --fuente-logo: "Marcellus", serif; */
+  --fuente-logo: "Playfair Display", serif;
   --fuente-primaria:'Alice', serif ;
   --fuente-primaria1:'Playfair Display', serif;
   --fuente-primaria2:'AR One Sans', sans-serif;

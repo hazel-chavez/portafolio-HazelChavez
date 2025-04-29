@@ -10,14 +10,14 @@ section.experience {
 section.experience .title-experience {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	text-align: center;
-	color: var(--color-5);
+	color: var(--color-primary-fourth);
 }
 section.experience .title-experience span.line{
 	position: absolute;
 	width: 6rem;
 	height: 5px;
 	border-radius: 1px 2px 1px 2px;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	left: 45%;
 	top: 3%;
 }
@@ -90,7 +90,7 @@ div.info-container div.experience-description .experience-repo button:hover {
 }
 div.info-container div.experience-description .experience-demo button {
 	cursor: pointer;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	border-radius: 5px;
 	border: none;
 }
@@ -188,7 +188,7 @@ div.experience-box-second
 	.experience-demo-second
 	button {
 	cursor: pointer;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	border-radius: 5px;
 	border: none;
 }
@@ -248,7 +248,7 @@ div.experience-box-third .info-container-third {
 /* El código anterior define estilos CSS para dos selectores diferentes. */
 .info-container-third .experience-demo-third button {
 	cursor: pointer;
-	background-color: var(--color-5);
+	background-color: var(--color-primary-fourth);
 	border-radius: 5px;
 	border: none;
 	padding: 0.5rem;

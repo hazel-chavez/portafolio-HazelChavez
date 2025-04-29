@@ -70,23 +70,32 @@ header .content {
 /* El código CSS `header .content .logo-title` está dirigido al elemento con la clase "logo-title" que
 está dentro de un elemento con la clase "content" que está dentro de un elemento de encabezado. */
 header .content .logo-title {
-	display: inline;
+	/* display: inline; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	top: 1rem;
+	top: 1.3rem;
 	left: 2rem;
+	background-color: var(--color-primario-second);
+	border-radius: 25px;
+	width: 52px;
+	height: 50px;
+	text-align: center;
 	/* background: rgb(65, 43, 80); */
-	background-color: var(--color3);
+	/* background-color: var(--color3);
 	background: radial-gradient(
 		circle,
 		rgba(65, 43, 80, 1) 0%,
 		rgba(147, 88, 151, 1) 100%
+
 	);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 	font-weight: 400;
-	font-size: clamp(2rem, 2vw, 1.2rem);
+	font-size: clamp(1.5rem, 2vw, 1.2rem);
 	/* border-radius: 25px; */
-	padding: 0.3rem;
+
 	font-family: var(--fuente-logo);
 }
 
@@ -138,7 +147,7 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-	color: var(--color4);
+	color: var(--color-orange);
 }
 
 header nav ul li:nth-child(5) a:hover {
@@ -148,7 +157,7 @@ header nav ul li:nth-child(5) a:hover {
 }
 
 header nav ul li:nth-child(5) {
-	background-color: var(--color-5);
+	background-color: var(--color-btn);
 	border-radius: 5px;
 	padding: 0 0.5rem;
 }
@@ -211,24 +220,20 @@ header nav ul li:nth-child(5) {
 }
 
 .light header {
-	background: var(--color-4);
+	background: var(--color-primary-fourth);
 }
 
 .light header .content .logo-title {
-	background: #5f439b;
-	background: radial-gradient(
-		ellipse farthest-corner at center center,
-		#5f439b 0%,
-		#da7ccf 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: var(--color-primary-fourth);
+	background-color: var(--color-primario-third);
+	font-weight: bold;
+	font-family: var(--fuente-logo);
 }
 
 .light header nav ul li a:hover {
 	border: none;
 	box-shadow: none;
-	color: var(--color4);
+	color: var(--color-orange);
 }
 
 .light {
@@ -280,7 +285,7 @@ header nav ul li:nth-child(5) {
 	}
 
 	header nav ul li:nth-child(5) a:hover {
-		color: var(--color4);
+		color: var(--color-orange);
 	}
 
 	.switch {
