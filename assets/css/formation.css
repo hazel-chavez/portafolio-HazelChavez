@@ -201,20 +201,34 @@ div.formation .formation-box-second .container-description {
   formación&quot;. Aplica los siguientes estilos al `<ul> `elemento: */
 	div.formation .formation-box ul {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-wrap: nowrap;
+		width: 43vw;
 		height: auto;
 	}
 	/* El código CSS `div.formation .formation-box-segundo ul` está dirigido a un `<ul> ` elemento que es
 descendiente de un `<div> ` elemento con las clases &quot;formación&quot; y
 &quot;formación-cuadro-segundo&quot;. Aplica los siguientes estilos al `<ul> `elemento: */
 	div.formation .formation-box-second ul {
+		width: 43vw;
 		height: auto;
+		align-items: center;
 		margin-bottom: 1rem;
 	}
 	section.formation-academica span.line{
 		width: 5rem;
 		left:39%;
 	}
+	div.formation .formation-box .name-title{
+		text-align: center;
+	}
+	div.formation .formation-box-second .name-title{
+		text-align: center;
+	}
+div.formation .formation-box-second .name-university{
+	text-align: center;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	section#formation-academica {
