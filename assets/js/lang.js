@@ -47,7 +47,7 @@ function getLanguageFromURL() {
 let currentLang = getLanguageFromURL();
 
 function loadLanguage(lang) {
-  fetch("/assets/json/lang.json")
+  fetch("/json/lang.json")
     .then((response) => response.json())
     .then((data) => {
       const texts = document.querySelectorAll("[data-i18n]");
