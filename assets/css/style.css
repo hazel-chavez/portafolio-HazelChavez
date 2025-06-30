@@ -218,7 +218,15 @@ header nav ul li:nth-child(5) {
 	right: 0;
 	left: unset;
 }
-
+/* flags languajes */
+.lang-flags {
+    display: flex;
+    position: relative;
+    left: 43%;
+}
+span.fi.fi-us.fis {
+    margin-left: 0.3rem;
+}
 .light header {
 	background: var(--color-primary-fourth);
 }
@@ -308,13 +316,19 @@ header nav ul li:nth-child(5) {
 	span {
 		float: right;
 	}
+	.lang-flags {
+    display: flex;
+    position: relative;
+	align-items: center;
+    left: 37%;
+}
 
 	.icon-bars {
 		padding-right: 0.3rem;
 	}
 
 	.light header nav {
-		background: var(--color-4);
+		background: var(--color-primary-fourth);
 	}
 }
 

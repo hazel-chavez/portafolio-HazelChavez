@@ -14,6 +14,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 </head>
 <body>
     <header>
@@ -21,6 +23,16 @@
             <a href="#">
                 <span class="logo-title">HC</span>
             </a>
+            <div class="lang-flags">
+                <a href="?lang=es" class="lang-link" aria-label="Español"
+                    title="Español">
+                    <span class="fi fi-es fis"></span>
+                </a>
+                <a href="?lang=en" class="lang-link" aria-label="English"
+                    title="English">
+                    <span class="fi fi-us fis"></span>
+                </a>
+            </div>
             <div>
                 <button class="switch" id="switch">
                     <span><i class="fas fa-sun"></i></span>
@@ -34,20 +46,26 @@
         </div>
         <nav>
             <ul>
-                <li><a id="Inicio">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#formation">Education</a></li>
-                <li><a href=" #experience">Projects</a></li>
-                <li><a href="#form-contacto">Contact me</a></li>
+                <!-- data-i18n "Un elemento de html donde le damos un valor traducido" -->
+                <li><a id="Inicio" data-i18n="home">Home</a></li>
+                <li><a href="#about" data-i18n="about">About Me</a></li>
+                <li><a href="#formation" data-i18n="education">Education</a>
+                </li>
+                <li><a href=" #experience" data-i18n="projects">Projects</a>
+                </li>
+                <li><a href="#form-contacto" data-i18n="contact">Contact me</a>
+                </li>
             </ul>
         </nav>
     </header>
     <section id="profile-container" class="profile-container">
         <div class="profile-title">
-            <p>Hi👋I'm&nbsp;<span class="title-content">
-                    Hazel Chavez</span></p>
-            <P class="description">
-                Software Developer with  Technical and Tecnological knowledge in
+            <!-- <p  data-i18n="greeting">Hi👋I'm&nbsp;<span class="title-content">
+                    Hazel Chavez</span></p> -->
+            <p><span data-i18n="greeting"></span>&nbsp;<span
+                    class="title-content">Hazel Chavez</span></p>
+            <P class="description" data-i18n="role">
+                Software Developer with Technical and Tecnological knowledge in
                 Front-End including,
             <p>JAVASCRIPT - MONGOOSE - PHP -&nbsp;WORDPRESS... </p>
             <!-- Front End Web Developer
@@ -77,10 +95,11 @@
                     </li>
                     <br />
                 </ul>
-                <button class="btn-cv"><a
-                        href="/assets/CV-Hazel Chavez Alvarado.pdf" target="_blank">Download
-                        CV<i class="fa fa-download" aria-hidden="true"
-                            ></i></a></button>
+                <button class="btn-cv" data-i18n="download_cv"><a
+                        href="/assets/CV-Hazel Chavez Alvarado.pdf"
+                        target="_blank">Download
+                        CV<i class="fa fa-download"
+                            aria-hidden="true"></i></a></button>
             </div>
         </div>
         <div id="about" class="profile" data-aos="fade-down">
@@ -89,16 +108,20 @@
     </section>
     <section class="about" data-aos="zoom-in">
         <div class="about-container">
-            <h3 data-aos="zoom-in-right">About Me </h3><span
-                class="line"></span>
-            <p data-aos="zoom-in-left">
-                Software Developer with experience in Front-End technologies. 
-                I can design and build websites that work well on different screen sizes.
-                I have various skills and always try to learn more. I am also improving my English skills every day. 
-                I constantly learn and practice software development through projects. 
-                I am looking for a place where I can continue learning and grow professionally. 
+            <h3 data-aos="zoom-in-right" data-i18n="about_me">About Me </h3>
+            <span class="line"></span>
+            <p data-aos="zoom-in-left" data-i18n="about_description">
+                Software Developer with experience in Front-End technologies.
+                I can design and build websites that work well on different
+                screen sizes.
+                I have various skills and always try to learn more. I am also
+                improving my English skills every day.
+                I constantly learn and practice software development through
+                projects.
+                I am looking for a place where I can continue learning and grow
+                professionally.
                 My goal is to help create useful and innovative solutions.
-            <p>Technical Skills:</p>
+            <p data-i18n="technical_skills">Technical Skills:</p>
             </p>
             <div class="about-skills" data-aos="zoom-out-right">
                 <ul>
@@ -123,8 +146,7 @@
                                 title="HTML5" />
                             <ul>
                                 <li><img src="../assets/img/php (1).webp"
-                                    alt="php" title="PHP" /></li>
-                                        
+                                        alt="php" title="PHP" /></li>
                             </ul>
                         </li>
                     </ul>
@@ -151,56 +173,57 @@
                         <img src="../assets/img/js.webp" alt="js"
                             title="JavaScript" />
                         <ul>
-                            <li><img src="../assets/img/mongodb.webp"
-                                alt="sql" title="MongooseDB" /></li>
+                            <li><img src="../assets/img/mongodb.webp" alt="sql"
+                                    title="MongooseDB" /></li>
                         </ul>
-                        
                     </li>
-                    
-                        
-                        
-                    
                     <!-- <ul>
                     <li><img src="../assets/img/typescript.webp"
                             alt="typescript" />
                         <ul> -->
                     <li><img src="../assets/img/git-icon.webp" alt="git"
                             title="Git">
-                            <ul>
-                                <li><img src="../assets/img/github.webp"
-                                        alt="github" title="Github">
-                                </li>
-                                
-                            </ul>
+                        <ul>
+                            <li><img src="../assets/img/github.webp"
+                                    alt="github" title="Github">
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="formation-academica" id="formation">
-        <h3 class="title-formation" data-aos="fade-right">Education<span
-                class="line"></span>
+        <h3 class="title-formation" data-aos="fade-right" data-i18n="education">
+            Education<span class="line"></span>
         </h3>
         <div class="formation" data-aos="fade-up-right">
             <div class="formation-box">
                 <ul>
-                    <li class="title-date">2024 - May 2025</li>
+                    <li class="title-date" data-i18n="date_formation_1">2024 -
+                        May 2025</li>
                     <li class="name-title"><i
-                            class="fa fa-graduation-cap fa-xxl"
+                            class="fa fa-graduation-cap fa-xxl "
                             aria-hidden="true"
-                            style="color: var(--color-4);"></i>Software
-                             Development Technician 
+                            style="color: var(--color-4);"><span
+                                data-i18n="formation_title_1">
+                                Software
+                                Development Technician
+                            </span></i>
                     </li>
                     <li class="name-university">Universidad Cenfotec
                     </li>
                     <li class="container-description"></li>
                 </ul>
                 <ul>
-                    <li class="title-date">2024 - April 2025</li>
+                    <li class="title-date" data-i18n="date_formation_2">2024 -
+                        April 2025</li>
                     <li class="name-title"><i
                             class="fa fa-graduation-cap fa-xxl"
                             aria-hidden="true"
-                            style="color: var(--color-4);"></i>English levels &nbsp;A1 - C1</li>
+                            style="color: var(--color-4);"></i><span
+                            data-i18n="formation_title_2">English levels
+                            &nbsp;A1 - C1</span></li>
                     <li class="name-university">MG Capacitaciones, INA
                     </li>
                 </ul>
@@ -212,53 +235,81 @@
                     <li class="name-title"><i
                             class="fa fa-graduation-cap fa-xxl"
                             aria-hidden="true"
-                            style="color: var(--color-4);"></i>Front-End Web Development Technician</li>
+                            style="color: var(--color-4);"><span
+                                data-i18n="formation_title_3">
+                                Front-End Web Development Technician
+                            </span>
+                        </i>
+                    </li>
                     <li class="name-university">Alura ONE Next Education</li>
-                
                 </ul>
                 <ul>
                     <li class="title-date">2021 - 2022</li>
                     <li class="name-title"><i
                             class="fa fa-graduation-cap fa-xxl"
                             aria-hidden="true"
-                            style="color: var(--color-4);"></i>Front-End  Development Technician
-                        </li>
-                    <li class="name-university">Instituto Nacional de Aprendizaje
+                            style="color: var(--color-4);"><span
+                                data-i18n="formation_title_4">
+                                Front-End Development Technician
+                            </span>
+                        </i></li>
+                    <li class="name-university">Instituto Nacional de
+                        Aprendizaje
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="experience" data-aos="fade-right">
-        <h2 class="title-experience" id="experience">Projects<span
-                class="line"></span></h2>
+        <h2 class="title-experience" id="experience" data-i18n="projects">
+            Experience<span class="line"></span></h2>
         <div class="experience-box">
             <img class="img-proyecto" src="/assets/img/Encriptador.webp"
                 alt="encriptador">
             <div class="info-container">
-                <h2>Text Encrypter</h2>
-                <h3>Challenge Alura Codificador</h3>
-                <i id="icons-web" class="fa fab fa-html5"
+                <h2 data-i18n="project_1_title">Text Encrypter</h2>
+                <h3 data-i18n="project_1_subtitle"">Challenge Alura Codificador</h3>
+                <i id=" icons-web" class="fa fab fa-html5"
                     style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web" class="fa fab fa-css3"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web" class="fab fa-bootstrap"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web" class="fab fa-js"
-                    style="color: var(--color-primary-fourth)"></i>
-                <div class="experience-description">
-                    <span class="experience-repo"><a
+                    <i id="icons-web" class="fa fab fa-css3"
+                        style="color: var(--color-primary-fourth)"></i>
+                    <i id="icons-web" class="fab fa-bootstrap"
+                        style="color: var(--color-primary-fourth)"></i>
+                    <i id="icons-web" class="fab fa-js"
+                        style="color: var(--color-primary-fourth)"></i>
+                    <div class="experience-description">
+                        <!-- <span class="experience-repo"><a
                             href="https://github.com/hazel-chavez/challengeonecodificador4"
-                            target="_blank"><button>Repository<i
+                            target="_blank"><button data-i18n="btn_repository">Repository<i
                                     class="fa fa-github fa-xl"
                                     aria-hidden="true"></i></button></a></span>
                     <span class="experience-demo"><a
                             href="https://hazel-chavez.github.io/challengeonecodificador4/"
-                            target="_blank"><button>View 
+                            target="_blank"><button data-i18n="btn_demo">View
                                 demo<img class="arrow"
                                     src="/assets/img/icons-arrow.webp"
-                                    alt="arrow"></button></a></span>
-                </div>
+                                    alt="arrow"></button></a></span> -->
+                        <a href="https://github.com/hazel-chavez/challengeonecodificador4"
+                            target="_blank">
+                            <button>
+                                <span
+                                    data-i18n="btn_repository">Repository</span>
+                                <i class="fa fa-github fa-xl"
+                                    aria-hidden="true"></i>
+                            </button>
+                        </a>
+                        </span>
+                        <span class="experience-demo">
+                            <a href="https://hazel-chavez.github.io/challengeonecodificador4/"
+                                target="_blank">
+                                <button>
+                                    <span data-i18n="btn_demo">View demo</span>
+                                    <img class="arrow"
+                                        src="/assets/img/icons-arrow.webp"
+                                        alt="arrow">
+                                </button>
+                            </a>
+                    </div>
             </div>
         </div>
         <!--Segundo Proyecto-->
@@ -266,8 +317,8 @@
             <img class="img-second_project" src="assets/img/proyecto-php.webp"
                 alt="proyecto-php">
             <div class="info-container-second">
-                <h2>Calculator</h2>
-                <h3>Back-End Course Project</h3>
+                <h2 data-i18n="project_2_title">Calculator</h2>
+                <h3 data-i18n="project_2_subtitle">Back-End Course Project</h3>
                 <i id="icons-web-second" class="fa fab fa-html5"
                     style="color: var(--color-primary-fourth)"></i>
                 <i id="icons-web-second" class="fa fab fa-css3"
@@ -275,7 +326,8 @@
                 <i id="icons-web-second" class="fab fa-php"
                     style="color: var(--color-primary-fourth)"></i>
                 <i id="icons-web-second" class="fa fa-database"
-                    aria-hidden="true" style="color: var(--color-primary-fourth)"></i>
+                    aria-hidden="true"
+                    style="color: var(--color-primary-fourth)"></i>
                 <div class="experience-description-second">
                     <span class="experience-demo-second"><a
                             href="http://calculadoraimc.free.nf/index.php"
@@ -298,9 +350,11 @@
                 <h2>Tecnology webSite</h2>
                 <h3>WordPress Development Course Project</h3>
                 <i id="icons-web-third" class="fa fa-database"
-                    aria-hidden="true" style="color: var(--color-primary-fourth)"></i>
+                    aria-hidden="true"
+                    style="color: var(--color-primary-fourth)"></i>
                 <i id="icons-web-third" class="fa fa-wordpress"
-                    aria-hidden="true" style="color: var(--color-primary-fourth);"></i>
+                    aria-hidden="true"
+                    style="color: var(--color-primary-fourth);"></i>
                 <i id="icons-web-third" class="fab fa-php"
                     style="color: var(--color-primary-fourth)"></i>
                 <div class="experience-description-third">
@@ -318,7 +372,7 @@
         <div class="datos-content">
             <ul>
                 <li>
-                    <h4>Address</h4>
+                    <h4 data-i18n="address">Address</h4>
                 </li>
                 <li><img src="assets/img/icons8-marcador-18.png"
                         alt="icons-address">&nbsp;Cañas,
@@ -330,7 +384,7 @@
                         style="color: var(--color-4);"></i>&nbsp;hazelchavez56@gmail.com
                 </li>
                 <li>
-                    <h4>Social Media</h4>
+                    <h4 data-i18n="social_media">Social Media</h4>
                     <ul class="social">
                         <li><a href="#"><i id="facebook" class="fa fa-facebook"
                                     aria-hidden="true"
@@ -352,24 +406,24 @@
             <form id="form"
                 action="https://formsubmit.co/fdf096c7d5f27cb2688887a5438f477f"
                 method="POST">
-                <h1>Get in Touch</h1>
-                <p>&nbsp;Send a Message</p>
+                <h1 data-i18n="get_in_touch">Get in Touch</h1>
+                <p data-i18n="send_message">&nbsp;Send a Message</p>
                 <div class="info">
                     <label for="name">
                         <input type="text" name="name" id="name" required
-                            placeholder="Name">
+                            placeholder="Name" data-i18n-placeholder="placeholder_name">
                     </label>
                     <label for="email">
                         <input type="email" name="email" id="email" required
-                            placeholder="@">
+                            placeholder="@" >
                     </label>
                 </div>
                 <div class="messaje-content">
                     <textarea name="messaje" id="messaje" cols="62" rows="8"
-                        placeholder="Write your messaje"></textarea>
+                        placeholder="Write your messaje" data-i18n-placeholder="placeholder_message" ></textarea>
                 </div>
                 <div class="submit">
-                    <button type="submit">Send&nbsp;<i
+                    <button type="submit"data-i18n="send">Send&nbsp;<i
                             class="fas fa-location-arrow"></i></button>
                 </div>
                 <input type="hidden" name="_next"
@@ -397,6 +451,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/Switch.js"></script>
+    <script src="/assets/js/lang.js"></script>
     <script src="/assets/js/aios.js"></script>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/formSubmit.js"></script>
