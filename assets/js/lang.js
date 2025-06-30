@@ -3,7 +3,6 @@ function getLanguageFromURL() {
   const lang = params.get("lang");
   return lang === "es" || lang === "en" ? lang : "es";
 }
-
 let currentLang = getLanguageFromURL();
 
 function loadLanguage(lang) {
