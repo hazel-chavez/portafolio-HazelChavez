@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+	--color-primario: #161717;
+	--color-primario-second: #2d2d42;
+
+	--color-primario-third: #e9d8fd;
+	--color-primary-fourth: #7950f2;
+	--color-secondary: #e5dbff;
+	--color-btn: #9775fa;
+	--color-negro: #000000;
+	--color-blanco: #ffffff;
+	--color-secundario: #f8f4ef;
+	--color-gray: #252323;
+	--color-amarillo: #eec624;
+	--color-orange: #f28c28;
+
+	--color-2: #150d26;
+	--color-3: #2a1a4c;
+	--color-4: #3e2673;
+	--color-5: #5f439b;
+	--color-6: #6e32f1;
+
+	--color1: #412b50;
+	--color3: #935897;
+	--color4: #da7ccf;
+	--color5: #ffacff;
+	--color-gray-2: #494848;
+	--color-facebook: #4267b2;
+	--color-gmail: #db4437;
+	--color-github: #171515;
+	--fuente-logo: 'Playfair Display', serif;
+	--primary-fonts: "Poppins", sans-serif;
+	--primary-fonts-second: "Inter", sans-serif;
+	--font-subtitle: "Roboto", sans-serif;
+	--fuente-primaria3: 'Noto Sans', sans-serif;
+	--fuente-secundaria: 'Raleway', sans-serif;
+	--fuente-secundaria2: 'Montserrat', sans-serif;
+
+	/* Primary palette (light mode) */
+	--primary-color: #667eea;
+	--secondary-color: #4ecdc4;
+	--bg-primary-gradient: linear-gradient(
+		135deg,
+		#0f172a 0%,
+		#1e293b 50%,
+		#334155 100%
+	);
+	--bg-primary-gradient-dark: linear-gradient(
+		135deg,
+		#1e2a3b 0%,
+		/* card dark blue */ #161717 50%,
+		/* dark body */ #2c3e50 100% /* professional blue-gray */
+	);
+	--primary-color-dark: #161717;
+	--secondary-color-dark: #1e2a3b;
+	--bg-footer: #1e293b;
+	--bg-dark: #1a202c;
+	--bg-blue: #1f3f8b;
+	--bg-purple: #6c39bb;
+	--accent-color: #ff6b6b;
+	--success-color: #10b981;
+	--warning-color: #f59e0b;
+	--accent-color-2: #667eea;
+	--menu-bar: #080707;
+	/* Gradients */
+	--primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--secondary-gradient: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+	--accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+	--hero-gradient: linear-gradient(
+		135deg,
+		#667eea 0%,
+		#764ba2 50%,
+		#4ecdc4 100%
+	);
+
+	/* Backgrounds */
+	--bg-primary: #ffffff;
+	--bg-secondary: #f8fafc;
+	--bg-tertiary: #f1f5f9;
+	--bg-glass: rgba(255, 255, 255, 0.9);
+	--bg-glass-hover: rgba(255, 255, 255, 0.95);
+    --bg-light: #f7fafc;
+	
+	/* Typography */
+	--text-primary: #1e293b;
+	--text-secondary: #475569;
+	--text-muted: #64748b;
+	--text-white: #ffffff;
+	--text-logo: 'Open Sans', sans-serif;
+	--text-title: #1e293b;
+	/* Borders and shadows */
+	--border-light: rgba(226, 232, 240, 0.8);
+	--border-accent: rgba(102, 126, 234, 0.3);
+	--shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 8px 32px rgba(0, 0, 0, 0.15);
+	--shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.25);
+	--shadow-colored: 0 8px 32px rgba(102, 126, 234, 0.2);	
+	--card-light: #ffffff;
+
+	/* Project icon colors */
+   --rol-color: #4F6BED;
+   --status-completed-color: #2FBF71;
+   --status-inprogress-color: #7C6EE6;
+   --status-onhold-color: #9CA3AF;
+}

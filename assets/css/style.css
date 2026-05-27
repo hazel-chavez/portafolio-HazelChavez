@@ -1,10 +1,16 @@
-@import url(/assets/css/colorscheme.css);
-@import url(/assets/css/about.css);
-@import url(/assets/css/formation.css);
-@import url(/assets/css/experience.css);
-@import url(/assets/css/contact.css);
-@import url(/assets/css/footer.css);
+@import url(../css/global/main.css);
+/* Modular section imports */
+@import url(../css/modules/header.css);
+@import url(../css/modules/home.css);
+@import url(../css/modules/about.css);
+@import url(../css/modules/skills.css);
+@import url(../css/modules/formation.css);
+@import url(../css/modules/experience.css);
+@import url(../css/modules/contact.css);
+@import url(../css/modules/footer.css);
+/* End of modular imports */
 
+/* Base reset */
 * {
 	margin: 0;
 	padding: 0;
@@ -12,410 +18,27 @@
 }
 
 body {
-	background-color: var(--color-negro);
+	background-color: var(--bg-primary);
 }
-/* El pseudoelemento CSS `::-webkit-scrollbar` se utiliza para diseñar la barra de desplazamiento en
-los navegadores webkit (como Chrome y Safari). */
+
+/* WebKit scrollbar */
 ::-webkit-scrollbar {
 	width: 20px;
 }
 
-/* El código CSS `::-webkit-scrollbar-track` aplica estilo a la parte de pista de la barra de
-  desplazamiento en navegadores webkit como Chrome y Safari. Agrega una sombra de cuadro para crear
-  un efecto visual, establece un radio de borde para esquinas redondeadas y aplica un color
-  específico definido por la variable `--color-gray` a la pista. Este estilo mejora la apariencia de
-  la barra de desplazamiento dentro del navegador. */
-/* Track */
+/* Scrollbar track */
 ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px var(--color-gray);
 	border-radius: 2px;
 }
 
-/* El código CSS que proporcionó está diseñando el controlador de la barra de desplazamiento para
-  navegadores webkit como Chrome y Safari. */
-/* Handle */
+/* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-	background: var(--color-3);
+	background: var(--primary-gradient);
 	border-radius: 15px;
 }
 
-/* Handle on hover */
+/* Scrollbar thumb hover state */
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--color-5);
-}
-
-/* Este código CSS le da estilo al elemento de encabezado. */
-header {
-	width: 100%;
-	height: 100px;
-	position: sticky;
-	z-index: 1;
-	top: 0;
-	background: rgb(0, 0, 0);
-	background: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 1) 1%,
-		rgba(24, 11, 24, 1) 9%,
-		rgba(0, 0, 0, 1) 99%
-	);
-}
-
-header .content {
-	display: flex;
-	justify-content: space-between;
-	padding: 0.3rem;
-	/*agregue padding continuar codigo*/
-}
-
-/* El código CSS `header .content .logo-title` está dirigido al elemento con la clase "logo-title" que
-está dentro de un elemento con la clase "content" que está dentro de un elemento de encabezado. */
-header .content .logo-title {
-	/* display: inline; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 1.3rem;
-	left: 2rem;
-	background-color: var(--color-primario-second);
-	border-radius: 25px;
-	width: 52px;
-	height: 50px;
-	text-align: center;
-	/* background: rgb(65, 43, 80); */
-	/* background-color: var(--color3);
-	background: radial-gradient(
-		circle,
-		rgba(65, 43, 80, 1) 0%,
-		rgba(147, 88, 151, 1) 100%
-
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
-	font-weight: 400;
-	font-size: clamp(1.5rem, 2vw, 1.2rem);
-	/* border-radius: 25px; */
-
-	font-family: var(--fuente-logo);
-}
-
-/* <html>El código CSS ``header .content a` está dirigido a los ` <a>` elementos que son descendientes
-de un elemento con la clase &quot;content&quot; que está dentro de un ` <header>`
-elemento.</header></a> */
-header .content a {
-	color: var(--color-blanco);
-	text-decoration: none;
-}
-
-/* El código CSS `header nav` está dirigido al elemento `nav` que es hijo del elemento `header`. */
-header nav {
-	width: 90%;
-	max-width: 1000px;
-	/*no sobrepase la pantalla*/
-	margin: auto;
-	text-align: end;
-	font-family: var(--fuente-primaria3);
-	padding-bottom: 10px;
-}
-
-.menu_bar {
-	display: none;
-	/*desaparece el menu*/
-}
-
-header nav ul li {
-	display: inline-block;
-}
-
-/* <html>El código CSS ``header nav ul li a` está dirigido a los <a>` ` elementos que son descendientes
-de ` <li>` elementos, que a su vez son descendientes de ` <ul>` elementos que son hijos del ` <nav>`
-elemento dentro del ` <header>` elemento.</header></nav></ul></li></a> */
-header nav ul li a {
-	color: var(--color-blanco);
-	font-size: clamp(0.9rem, 1.3vw, 3rem);
-	text-decoration: none;
-	padding: 11px;
-	display: inline-block;
-}
-
-/* El código CSS `header nav ul li { margin-right: 10px; }` está agregando un margen derecho de 10
-píxeles a cada elemento de la lista (`li`) dentro del elemento de navegación (`nav`) que está dentro
-del encabezado. Esto creará un espacio de 10 píxeles entre cada elemento de la lista en el menú de
-navegación. */
-header nav ul li {
-	margin-right: 10px;
-}
-
-header nav ul li a:hover {
-	color: var(--color-orange);
-}
-
-header nav ul li:nth-child(5) a:hover {
-	color: var(--color-negro);
-	border-bottom: none;
-	box-shadow: none;
-}
-
-header nav ul li:nth-child(5) {
-	background-color: var(--color-btn);
-	border-radius: 5px;
-	padding: 0 0.5rem;
-}
-
-/*switch para modo oscuro y claro*/
-.switch {
-	background: #343d5b;
-	border-radius: 1000px;
-	border: none;
-	display: flex;
-	position: relative;
-	/*para el momento de cambiar el modo*/
-	cursor: pointer;
-	outline: none;
-	/*border que agrega chrome por defecto*/
-	margin-top: 3px;
-}
-
-.switch::after {
-	content: '';
-	display: block;
-	/*se forme un cuadrado*/
-	width: 28px;
-	height: 28px;
-	position: absolute;
-	/*para posicionarlo a la derecha o izquierda*/
-	background: var(--color-blanco);
-	top: 0;
-	left: 0;
-	/* La propiedad `right: unset;` se utiliza para restablecer el valor de posicionamiento `right` de un
-	elemento. Al configurarlo como "desarmado", el elemento ya no tendrá una posición "derecha"
-	específica y, en cambio, seguirá el flujo normal del documento. Esto es útil cuando desea eliminar
-	cualquier posicionamiento "correcto" previamente establecido y permitir que el elemento se
-	posicione según su comportamiento predeterminado. */
-	right: unset;
-	/*reseteada*/
-	border-radius: 100px;
-	transition: 0.3s ease all;
-	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
-}
-
-.switch span {
-	width: 30px;
-	height: 30px;
-	display: block;
-	line-height: 30px;
-	background: none;
-	color: var(--color-blanco);
-}
-
-.active {
-	background: var(--color-amarillo);
-	color: var(--color-negro);
-}
-
-/*sobreescribimos*/
-.active::after {
-	right: 0;
-	left: unset;
-}
-/* flags languajes */
-.lang-flags {
-    display: flex;
-    position: relative;
-    left: 43%;
-}
-span.fi.fi-us.fis {
-    margin-left: 0.3rem;
-}
-.light header {
-	background: var(--color-primary-fourth);
-}
-
-.light header .content .logo-title {
-	color: var(--color-primary-fourth);
-	background-color: var(--color-primario-third);
-	font-weight: bold;
-	font-family: var(--fuente-logo);
-}
-
-.light header nav ul li a:hover {
-	border: none;
-	box-shadow: none;
-	color: var(--color-orange);
-}
-
-.light {
-	background-color: var(--color-blanco);
-}
-
-.light header nav ul li a {
-	color: var(--color-blanco);
-}
-
-.light .content a {
-	color: var(--color-blanco);
-}
-
-.light .menu_bar a {
-	color: var(--color-blanco);
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-	/* body {
-		background: green;
-	} */
-	header {
-		height: auto;
-	}
-
-	header nav {
-		width: 60%;
-		background: rgb(0, 0, 0);
-		background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 1) 1%,
-			rgba(24, 11, 24, 1) 9%,
-			rgba(0, 0, 0, 1) 99%
-		);
-		position: absolute;
-		padding-bottom: 40rem;
-		left: -100%;
-	}
-
-	header nav ul li {
-		display: block;
-		text-align: left;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	}
-
-	header nav ul li:nth-child(5) {
-		background: none;
-	}
-
-	header nav ul li:nth-child(5) a:hover {
-		color: var(--color-orange);
-	}
-
-	.switch {
-		margin-bottom: 1em;
-	}
-
-	.menu_bar {
-		display: block;
-		/*que aparezcan*/
-		width: 100%;
-	}
-
-	.menu_bar .btn-menu {
-		display: block;
-		color: var(--color-blanco);
-		text-decoration: none;
-		/* margin-top: 0.5rem; */
-	}
-
-	span {
-		float: right;
-	}
-	.lang-flags {
-    display: flex;
-    position: relative;
-	align-items: center;
-    left: 37%;
-}
-
-	.icon-bars {
-		padding-right: 0.3rem;
-	}
-
-	.light header nav {
-		background: var(--color-primary-fourth);
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	/* body {
-		background-color: red;
-	}*/
-	header nav {
-		width: 40%;
-		height: 450px;
-		text-align: start;
-		background: rgb(0, 0, 0);
-		background: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 1) 1%,
-			rgba(24, 11, 24, 1) 9%,
-			rgba(0, 0, 0, 1) 99%
-		);
-		/*el menu desaparece fuera de pantalla*/
-		margin: 0;
-		position: absolute;
-		left: -100%;
-	}
-
-	/* El código CSS `header nav ul li` está dirigido a los elementos `li` que son descendientes del
-	elemento `ul`, que a su vez es hijo del elemento `nav` dentro del `header`. */
-	header nav ul li {
-		display: block;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	}
-
-	/* El código CSS `header nav ul li a:hover` está dirigido a los elementos `a` que se desplazan sobre
-	los elementos `li` que son hijos del elemento `ul`, que a su vez es hijo de `nav `elemento dentro
-	del`encabezado`. */
-	header nav ul li a:hover {
-		width: 100%;
-		color: #000;
-		background-color: var(--color-5);
-	}
-
-	/* El código CSS `header nav ul li:nth-child(5) { background: none; radio de borde: ninguno; }` está
-	dirigido al quinto elemento `li` que es hijo del elemento `ul`, que es hijo del elemento `nav`
-	dentro del `header`. */
-	header nav ul li:nth-child(5) {
-		background: none;
-		border-radius: none;
-	}
-
-	/* El código CSS `header nav ul li:nth-child(5) a:hover` apunta al elemento ancla (`a`) sobre el que
-	se pasa el cursor cuando es el quinto hijo (`nth-child(5)`) de su elemento de lista principal
-	(`li`) dentro del elemento de navegación (`nav`) dentro del encabezado. */
-	header nav ul li:nth-child(5) a:hover {
-		color: var(--color4);
-	}
-
-	.menu_bar {
-		display: block;
-		/*que aparezcan*/
-		width: 100%;
-	}
-
-	.menu_bar .btn-menu {
-		display: block;
-		/*modificar los margenes internos*/
-		padding: 5px;
-		color: var(--color-blanco);
-		text-decoration: none;
-		background: none;
-		font-weight: bold;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-		margin-top: 1.5rem;
-	}
-
-	/* La clase `.icon-bars` apunta a un elemento con la clase "icon-bars" y aplica la propiedad CSS
-	`float: right;`. Esta propiedad se utiliza para hacer flotar el elemento hacia el lado derecho de
-	su contenedor. */
-	.icon-bars {
-		float: right;
-		padding-right: 0.2rem;
-	}
-}
-
-@media (min-width: 1200px) and (max-width: 1440px) {
-	/* body {
-		background-color: var(--color-negro);
-	} */
-	/* Estilos específicos para pantallas de escritorio */
+	background: var(--primary-gradient);
 }

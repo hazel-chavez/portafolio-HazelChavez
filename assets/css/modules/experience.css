@@ -1,0 +1,233 @@
+/* Experience section */
+section.experience {
+	color: var(--color-blanco);
+	background: var(--bg-secondary);
+	box-shadow: var(--shadow-colored);
+	margin-top: 5rem;
+	padding: 0rem 3rem 5rem 1rem;
+}
+div.container-experience {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+div.container-experience .title-experience {
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-family: var(--primary-fonts);
+	font-size: 2.8rem;
+	margin: 4rem 0 0 4rem;
+	position: relative;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--text-title);
+}
+
+.title-experience::after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 4px;
+	background: var(--secondary-color);
+	border-radius: 2px;
+}
+
+/* Projects grid */
+.experience-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.experience-box {
+	background: var(--bg-primary);
+	border: 1px solid var(--border-light);
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	box-shadow: var(--shadow-sm);
+}
+
+.experience-box:hover {
+	transform: translateY(-10px);
+	box-shadow: var(--shadow-colored);
+	border-color: var(--border-accent);
+}
+
+.project-image {
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.project-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.experience-box:hover .project-image img {
+	transform: scale(1.05);
+}
+
+.project-image img.school-management-img {
+	object-fit: contain;
+	object-position: center;
+	background-color: var(--bg-blue);
+	padding: 0.35rem;
+	box-sizing: border-box;
+}
+
+
+.project-image img.ecommerce-technology-img {
+	object-fit: contain;
+	object-position: center;
+	background-color: var(--bg-tertiary);
+	padding: 0.25rem;
+	box-sizing: border-box;
+}
+.project-image img.task-management-img {
+	object-fit: contain;
+	object-position: center;
+	background-color: var(--bg-purple);
+	padding: 0.25rem;
+	box-sizing: border-box;
+}
+.project-image img.mobile-inventory-system-img {
+	object-fit: contain;
+	object-position: center;
+	background-color: var(--bg-tertiary);
+	padding: 0.25rem;
+	box-sizing: border-box;
+}
+.project-content {
+	padding: 2rem;
+}
+
+.project-title {
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+	color: var(--text-primary);
+	font-weight: 600;
+	font-family: var(--primary-fonts-second);
+}
+.project-meta i {
+	color: var(--primary-color);
+}
+.project-meta {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	font-family: var(--font-subtitle);
+}
+
+.project-description {
+	color: var(--text-secondary);
+	font-size: 1rem;
+	text-align: justify;
+	text-justify: inter-word;
+	word-break: break-word;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.project-tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.tech-item {
+	background: var(--bg-tertiary);
+	font-family: var(--font-subtitle);
+	color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	letter-spacing: 0.3px;
+	border-radius: 12px;
+	font-size: 0.85rem;
+	border: 1px solid var(--border-light);
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+	background: var(--primary-color);
+	color: white;
+	transform: translateY(-2px);
+}
+
+.btn-links {
+	display: flex;
+	gap: 1rem;
+}
+
+.btn-link {
+	padding: 0.7rem 1.2rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.link-primary {
+	background: var(--accent-gradient);
+	color: white;
+	box-shadow: var(--shadow-sm);
+}
+
+.link-secondary {
+	background: var(--bg-secondary);
+	color: var(--text-primary);
+	border: 1px solid var(--border-light);
+}
+
+.btn-link:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+}
+.project-description,
+.btn-links {
+	font-family: var(--primary-fonts-second);
+}
+/* Dark theme */
+.dark section.experience {
+	background-color: var(--secondary-color-dark);
+	color: var(--text-white);
+}
+.dark .container-experience .title-experience {
+	color: var(--text-white);
+}
+
+.dark .experience-box,
+.dark .tech-item {
+	background-color: var(--secondary-color-dark);
+	border-color: var(--border-accent);
+}
+.dark .project-image img.ecommerce-technology-img {
+	background-color: var(--bg-dark);
+}
+.dark .project-description,
+.dark .link-secondary {
+	background-color: var(--secondary-color-dark);
+	color: var(--text-white);
+	border-color: var(--border-accent);
+}
+.dark .project-title {
+	color: var(--text-white);
+}

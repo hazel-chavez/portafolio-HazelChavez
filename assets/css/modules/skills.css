@@ -1,0 +1,170 @@
+
+.skills-title {
+	text-align: center;
+   font-family: var(--primary-fonts);
+	font-size: 2.8rem;
+	margin-top: 1rem;
+	position: relative;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--text-title);
+}
+.skills-title::after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 4px;
+	background: var(--secondary-color);
+	border-radius: 2px;
+}
+.skills-grid{
+	background: var(--bg-secondary);
+	box-shadow: var(--shadow-md);
+	padding: 1rem  0px 1rem 0px ;
+}
+/* Skills cards */
+.skills-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+	margin: 3rem 4rem;
+	align-items: stretch;
+}
+
+.card-category {
+	background: var(--bg-primary);
+	border: 1px solid var(--border-light);
+	border-radius: 20px;
+	padding: 2rem;
+	transition: all 0.3s ease;
+	box-shadow: var(--shadow-sm);
+}
+/* Frontend technology icons */
+i.ti.ti-brand-html5{
+	color: #E34F26;
+}
+i.ti.ti-brand-css3{
+	color: #1572B6;
+}
+i.ti.ti-brand-javascript{
+	color: #F7DF1E;
+}
+i.ti.ti-brand-vue{
+	color: #4FC08D;
+}
+i.ti.ti-brand-bootstrap{
+	color: #7952B3;
+}
+/* Backend technology icons */
+i.ti.ti-brand-nodejs{
+	color: #339933;
+}
+i.ti.ti-brand-mongodb{
+	color: #47A248;
+}
+i.ti.ti-brand-php{
+	color: #777BB4;
+}
+i.ti.ti-brand-mysql{
+	color: #4479A1;
+}
+i.ti.ti-file-type-sql{
+	color: #3B82F6;
+}
+i.ti.ti-api{
+	color: #818CF8;
+}
+/* General tools icons */
+i.ti.ti-brand-git{
+	color: #F05032;
+}
+i.ti.ti-brand-github{
+	color: #181717;
+}
+
+i.ti.ti-brand-wordpress{
+	color: #21759B;
+}
+/* Soft skills icons */
+i.ti.ti-circle-check{
+	color: #10B981;
+}
+.category-title i{
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  padding: 5px;
+  border-radius: 50%;
+}
+h3.category-title{
+font-size: clamp(1rem, 2vw, 0.7rem);
+font-family: var(--font-subtitle);
+}
+.card-category .category-title {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	color: var(--primary-color);
+	
+	margin-bottom: 1rem;
+}
+
+.card-category:hover {
+	transform: translateY(-10px);
+	box-shadow: var(--shadow-colored);
+	border-color: var(--border-accent);
+}
+
+
+
+.container-list {
+	display: flex;
+   flex-wrap: wrap;
+
+	gap: 0.5rem; 
+}
+
+.skill-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+            background: var(--bg-secondary);
+            padding: 0.5rem 0.8rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 300;
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+            font-family: var(--primary-fonts-second);
+        }
+        
+        .skill-item:hover {
+            background: var(--primary-color);
+            color: var(--text-white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        } 
+/* Dark theme */
+.dark .skills-grid{
+	background: var(--secondary-color-dark);
+}
+.dark .card-category{
+  background-color: var(--secondary-color-dark);
+  border-color: var(--border-accent);
+}
+.dark .skill-item{
+  background-color: var(--secondary-color-dark);
+  color: var(--text-white);
+    border-color: var(--border-accent);
+}
+.dark .skill-item:hover{
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+.dark i.ti.ti-code, .dark i.ti.ti-database, .dark i.ti.ti-settings-automation, .dark i.ti.ti-user-heart{
+	 background-color: var(--secondary-color-dark);
+  border-color: var(--border-accent);
+}

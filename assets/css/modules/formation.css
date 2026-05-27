@@ -1,0 +1,390 @@
+/* Education section */
+div.container-education {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+	
+		
+	background: var(--bg-secondary);
+	box-shadow: var(--shadow-colored);
+
+}
+.education-title {
+	text-align: center;
+	font-family: var(--primary-fonts);
+	font-size: 2.8rem;
+	margin: 1rem 0 0 4rem;
+
+	position: relative;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	color: var(--text-title);
+}
+.education-title::after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 4px;
+	background: var(--secondary-color);
+	border-radius: 2px;
+}
+.education-grid {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(280px, 1fr)
+	);
+	gap: 25px;
+	margin-top: 3rem;
+	margin-bottom: 50px;
+	padding: 0% 20px;
+}
+.education-box {
+	background: var(--bg-primary);
+
+	border-radius: 20px;
+	padding: 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	border: 2px solid transparent;
+}
+.education-box:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-colored);
+	border-color: var(--border-accent);
+}
+.badge-year {
+	display: inline-block;
+	background: var(--primary-color);
+	color: white;
+	padding: 8px 20px;
+	border-radius: 20px;
+	font-weight: 600;
+	font-size: 0.95rem;
+	margin-bottom: 20px;
+	font-family: var(--font-subtitle);
+}
+i.fas.fa-graduation-cap{
+	color: var(--primary-color);
+}
+.education-box h3 {
+	font-family: var(--primary-fonts);
+	color: var(--text-primary);
+	font-weight: bold;
+	font-size: var(0.5rem, 1.4vw, 0.5rem);
+	line-height: 1.4;
+
+}
+.education-box p {
+	font-family: var(--primary-fonts-second);
+	color: var(--text-secondary);
+	margin-top: 0.6rem;
+}
+
+
+/* Academic timeline: primary block */
+div.formation .formation-box {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+div.formation .formation-box ul {
+	display: flex;
+	padding: 0.8rem;
+	align-items: flex-start;
+	width: 40vw;
+	height: auto;
+	border-radius: 3px;
+	background-color: var(--color-gray);
+	flex-direction: column;
+	justify-content: center;
+	list-style: none;
+}
+
+div.formation .formation-box ul li:nth-child(odd) {
+	line-height: 2rem;
+}
+div.formation .formation-box .title-date {
+	color: var(--color-blanco);
+	background-color: var(--color-4);
+	width: 8rem;
+	text-align: center;
+	color: #ffff;
+	background-color: var(--color-primary-fourth);
+	text-align: center;
+	border-radius: 8px;
+	font-weight: bold;
+}
+div.formation .formation-box .name-title {
+	text-transform: uppercase;
+	font-size: clamp(0.9rem, 1vw, 1rem);
+	color: var(--color-secundario);
+	margin-top: 0.7rem;
+	font-family: var(--fuente-primaria2);
+	text-align: center;
+}
+div.formation .formation-box .name-title span {
+	color: var(--color-blanco);
+}
+div.formation .formation-box .name-university {
+	text-transform: capitalize;
+	font-size: clamp(1.2rem, 2vw, 1rem);
+	font-weight: bold;
+	font-family: var(--fuente-primaria);
+	color: var(--color-5);
+	margin: 1rem 0 1rem;
+	text-align: center;
+}
+/* Complementary training section */
+
+.complementary-section {
+	display: flex;
+	flex-direction: column;
+	background: var(--bg-secondary);
+	box-shadow: var(--shadow-colored);
+	transition: all 0.3s ease;
+	border-top: 1px solid transparent;
+	padding: 2rem 0px 2rem 0px;
+}
+.complementary-container {
+  padding: 0.5rem;
+
+  
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+
+.complementary-title {
+	font-family: var(--primary-fonts);
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: bold;
+	color: #2d3748;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.complementary-title::before,
+.complementary-title::after {
+	content: '';
+	flex: 1;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #667eea, transparent);
+	max-width: 100px;
+}
+.title-certificacion {
+	font-family: var(--primary-fonts-second);
+}
+
+
+
+.badge {
+	background: linear-gradient(
+		135deg,
+		rgba(102, 126, 234, 0.1),
+		rgba(118, 75, 162, 0.1)
+	);
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.badge:hover {
+	background: var(--primary-color);
+	color: white;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.badge-icon {
+	font-size: 1.1rem;
+}
+div.formation .formation-box .container-description {
+	color: var(--color-gray-2);
+	font-family: var(--fuente-secundaria2);
+}
+
+/* Light theme adjustments */
+.light section.formation-academica {
+	background-color: var(--color-secundario);
+}
+.light div.formation .formation-box ul {
+	background-color: var(--color-blanco);
+}
+.light div.formation .formation-box .name-title {
+	color: var(--color-gray);
+}
+.light div.formation .formation-box .name-title span {
+	color: var(--color-primario);
+}
+/* Academic timeline: secondary block */
+div.formation .formation-box-second {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+div.formation .formation-box-second ul {
+	display: flex;
+	width: 40vw;
+	height: auto;
+	padding: 0.7rem;
+	background-color: var(--color-gray);
+	flex-direction: column;
+	margin-top: 2rem;
+	border-radius: 3px;
+	list-style: none;
+}
+
+div.formation .formation-box-second .title-date {
+	margin-top: 0.5rem;
+	width: 6rem;
+	color: var(--color-blanco);
+	padding: 0.4rem;
+	text-align: center;
+	border-radius: 8px;
+	font-weight: bold;
+	background-color: var(--color-primary-fourth);
+	width: 8rem;
+}
+
+div.formation .formation-box-second .name-title {
+	text-transform: uppercase;
+	font-family: var(--fuente-secundaria);
+	font-size: clamp(0.9rem, 1vw, 1rem);
+	color: var(--color-secundario);
+	margin-top: 0.7rem;
+}
+div.formation .formation-box-second .name-title span {
+	color: var(--color-blanco);
+}
+div.formation .formation-box-second .name-university {
+	text-transform: capitalize;
+	font-size: clamp(1.2rem, 2vw, 1rem);
+	font-family: var(--fuente-primaria);
+	margin: 1rem 0 1rem;
+	font-weight: bold;
+	color: var(--color-5);
+}
+
+div.formation .formation-box-second .container-description {
+	color: var(--color-gray-2);
+	font-family: var(--fuente-secundaria2);
+}
+/* Light mode adjustments for secondary block */
+.light div.formation .formation-box-second ul {
+	background-color: var(--color-blanco);
+}
+.light div.formation .formation-box-second .name-title {
+	color: var(--color-gray);
+}
+.light div.formation .formation-box-second .name-title span {
+	color: var(--color-primario);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.education-box h3 {
+		text-align: start;
+	}
+	section#formation-academica {
+		height: auto;
+	}
+	div.formation .formation-box ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 43vw;
+		height: auto;
+	}
+	div.formation .formation-box-second ul {
+		width: 43vw;
+		height: auto;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+	section.formation-academica span.line {
+		width: 5rem;
+		left: 39%;
+	}
+
+	div.formation .formation-box-second .name-university {
+		text-align: center;
+	}
+	div.formation .formation-box-second .name-title {
+		text-align: center;
+	}
+	.container-education {
+            padding: 0 10px;
+        }
+	
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	section#formation-academica {
+		height: auto;
+	}
+	div.formation .formation-box ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.formation .formation-box-second {
+		margin-bottom: 1rem;
+	}
+	section.formation-academica span.line {
+		width: 5rem;
+		left: 45%;
+	}
+	.complementary-section{
+		display: flex;
+		justify-content: center;
+	}
+	.complementary-container{
+		padding: none;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+	section#formation-academica {
+		height: auto;
+	}
+	div.formation .formation-box-second {
+		margin-bottom: 1rem;
+	}
+}
+.dark div.container-education {
+	background: var(--secondary-color-dark);
+}
+.dark .education-box {
+	background-color: var(--secondary-color-dark);
+	border-color: var(--border-accent);
+	color: var(--text-white);
+}
+.dark .education-box h3 {
+	color: var(--text-white);
+}
+.dark .education-box p {
+	color: var(--text-white);
+}
+.dark .complementary-title{
+	color: var(--text-white);
+}
+.dark .complementary-section{
+	background-color: var(--secondary-color-dark);
+	border-color: var(--border-accent);
+	color: var(--text-white);
+}

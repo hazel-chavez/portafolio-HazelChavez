@@ -7,8 +7,6 @@
     <title> Portfolio Hazel</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/icon.css" />
-    <link rel="stylesheet"
-        href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -16,6 +14,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
 </head>
 <body>
     <header>
@@ -23,22 +23,26 @@
             <a href="#">
                 <span class="logo-title">HC</span>
             </a>
-            <div class="lang-flags">
-                <a href="?lang=es" class="lang-link" aria-label="Español"
-                    title="Español">
-                    <span class="fi fi-es fis"></span>
-                </a>
-                <a href="?lang=en" class="lang-link" aria-label="English"
-                    title="English">
-                    <span class="fi fi-us fis"></span>
-                </a>
-            </div>
-            <div>
-                <button class="switch" id="switch">
-                    <span><i class="fas fa-sun"></i></span>
-                    <span><i class="fas fa-moon"></i></span>
+            <!-- Language selector -->
+            <div class="lang-dropdown" id="langDropdown">
+                <button class="lang-toggle" id="langToggle" aria-haspopup="menu"
+                    aria-expanded="false">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">ES</span>
+                    <span class="caret">▾</span>
                 </button>
+                <nav class="lang-menu" id="langMenu" role="menu"
+                    aria-label="Menú de idiomas">
+                    <a role="menuitem" href="#" data-lang="es"
+                        class="lang-option active"><span>🇪🇸</span> Español</a>
+                    <a role="menuitem" href="#" data-lang="en"
+                        class="lang-option"><span>🇺🇸</span> English</a>
+                </nav>
             </div>
+            <button class="switch  active" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>
         </div>
         <div class="menu_bar">
             <a href="#" class="btn-menu"><span
@@ -46,10 +50,11 @@
         </div>
         <nav>
             <ul>
-                <!-- data-i18n "Un elemento de html donde le damos un valor traducido" -->
                 <li><a id="Inicio" data-i18n="home">Home</a></li>
                 <li><a href="#about" data-i18n="about">About Me</a></li>
                 <li><a href="#formation" data-i18n="education">Education</a>
+                </li>
+                <li><a href="#" data-i18n="skills">Skills</a>
                 </li>
                 <li><a href=" #experience" data-i18n="projects">Projects</a>
                 </li>
@@ -58,342 +63,416 @@
             </ul>
         </nav>
     </header>
-    <section id="profile-container" class="profile-container">
-        <div class="profile-title">
-            <!-- <p  data-i18n="greeting">Hi👋I'm&nbsp;<span class="title-content">
-                    Hazel Chavez</span></p> -->
-            <p><span data-i18n="greeting"></span>&nbsp;<span
-                    class="title-content">Hazel Chavez</span></p>
-            <P class="description" data-i18n="role">
-                Software Developer with Technical and Tecnological knowledge in
-                Front-End including,
-            <p>JAVASCRIPT - MONGOOSE - PHP -&nbsp;WORDPRESS... </p>
-            <!-- Front End Web Developer
-                , with experience in different
-                programming languages, Front and Back end technologies.  -->
-            </p>
-            <div class="redes">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/hazel-chavez-alvarado"
-                            target="_blank"><i class="fa fa-linkedin fa-lg"
-                                aria-hidden="true"
-                                style="color: var(--color-primary-fourth);"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:hazelchavez@gmail.com"
-                            target="_blank"><i class="fa fa-envelope fa-lg"
-                                style="color:var(--color-primary-fourth)" ;></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/hazel-chavez"
-                            target="_blank"><i class="fa fa-github fa-lg"
-                                aria-hidden="true"
-                                style="color: var(--color-primary-fourth);"></i></a>
-                    </li>
-                    <br />
-                </ul>
-                <button class="btn-cv" data-i18n="download_cv"><a
-                        href="/assets/CV-Hazel Chavez Alvarado.pdf"
-                        target="_blank">Download
-                        CV<i class="fa fa-download"
-                            aria-hidden="true"></i></a></button>
-            </div>
-        </div>
-        <div id="about" class="profile" data-aos="fade-down">
-            <img src="/assets/img/profile-2.png" alt="profile" />
-        </div>
-    </section>
-    <section class="about" data-aos="zoom-in">
-        <div class="about-container">
-            <h3 data-aos="zoom-in-right" data-i18n="about_me">About Me </h3>
-            <span class="line"></span>
-            <p data-aos="zoom-in-left" data-i18n="about_description">
-                Software Developer with experience in Front-End technologies.
-                I can design and build websites that work well on different
-                screen sizes.
-                I have various skills and always try to learn more. I am also
-                improving my English skills every day.
-                I constantly learn and practice software development through
-                projects.
-                I am looking for a place where I can continue learning and grow
-                professionally.
-                My goal is to help create useful and innovative solutions.
-            <p data-i18n="technical_skills">Technical Skills:</p>
-            </p>
-            <div class="about-skills" data-aos="zoom-out-right">
-                <ul>
-                    <li>
-                        <!-- <img src="../assets/img/photoshop.webp" alt="photoshop"
-                            title="PhotoShop" /> -->
-                        <!-- <ul>
-                            <li><img src="../assets/img/react.webp" alt="react"
-                                    title="React">
-                            </li>
-                        </ul> -->
-                    <li><img src="../assets/img/figma.webp" alt="xd"
-                            title="figma" />
-                        <ul>
-                            <li><img src="../assets/img/mysql.webp" alt="mysql"
-                                    title="MSQL" />
-                            </li>
-                        </ul>
-                    </li>
-                    <ul>
-                        <li><img src="../assets/img/html (1).webp" alt="html5"
-                                title="HTML5" />
-                            <ul>
-                                <li><img src="../assets/img/php (1).webp"
-                                        alt="php" title="PHP" /></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><img src="../assets/img/css-3.webp" alt="css3"
-                                title="CSS3" />
-                            <ul>
-                                <li><img src="../assets/img/wordpress.webp"
-                                        alt="php" title="WordPress" /></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><img src="../assets/img/bootstrap.webp"
-                                alt="boostrap" title="Bootstrap">
-                            <ul>
-                                <li><img src=" ../assets/img/vue-js.webp"
-                                        alt="wordpress" title="vue"></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    </li>
-                    <li>
-                        <img src="../assets/img/js.webp" alt="js"
-                            title="JavaScript" />
-                        <ul>
-                            <li><img src="../assets/img/mongodb.webp" alt="sql"
-                                    title="MongooseDB" /></li>
-                        </ul>
-                    </li>
-                    <!-- <ul>
-                    <li><img src="../assets/img/typescript.webp"
-                            alt="typescript" />
-                        <ul> -->
-                    <li><img src="../assets/img/git-icon.webp" alt="git"
-                            title="Git">
-                        <ul>
-                            <li><img src="../assets/img/github.webp"
-                                    alt="github" title="Github">
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="formation-academica" id="formation">
-        <h3 class="title-formation" data-aos="fade-right" data-i18n="education">
-            Education<span class="line"></span>
-        </h3>
-        <div class="formation" data-aos="fade-up-right">
-            <div class="formation-box">
-                <ul>
-                    <li class="title-date" data-i18n="date_formation_1">2024 -
-                        May 2025</li>
-                    <li class="name-title"><i
-                            class="fa fa-graduation-cap fa-xxl "
-                            aria-hidden="true"
-                            style="color: var(--color-4);"><span
-                                data-i18n="formation_title_1">
-                                Software
-                                Development Technician
-                            </span></i>
-                    </li>
-                    <li class="name-university">Universidad Cenfotec
-                    </li>
-                    <li class="container-description"></li>
-                </ul>
-                <ul>
-                    <li class="title-date" data-i18n="date_formation_2">2024 -
-                        April 2025</li>
-                    <li class="name-title"><i
-                            class="fa fa-graduation-cap fa-xxl"
-                            aria-hidden="true"
-                            style="color: var(--color-4);"></i><span
-                            data-i18n="formation_title_2">English levels
-                            &nbsp;A1 - C1</span></li>
-                    <li class="name-university">MG Capacitaciones, INA
-                    </li>
-                </ul>
-            </div>
-            <!-- continuar codigo -->
-            <div class="formation-box-second">
-                <ul>
-                    <li class="title-date">2022 - 2023</li>
-                    <li class="name-title"><i
-                            class="fa fa-graduation-cap fa-xxl"
-                            aria-hidden="true"
-                            style="color: var(--color-4);"><span
-                                data-i18n="formation_title_3">
-                                Front-End Web Development Technician
-                            </span>
-                        </i>
-                    </li>
-                    <li class="name-university">Alura ONE Next Education</li>
-                </ul>
-                <ul>
-                    <li class="title-date">2021 - 2022</li>
-                    <li class="name-title"><i
-                            class="fa fa-graduation-cap fa-xxl"
-                            aria-hidden="true"
-                            style="color: var(--color-4);"><span
-                                data-i18n="formation_title_4">
-                                Front-End Development Technician
-                            </span>
-                        </i></li>
-                    <li class="name-university">Instituto Nacional de
-                        Aprendizaje
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="experience" data-aos="fade-right">
-        <h2 class="title-experience" id="experience" data-i18n="projects">
-            Experience<span class="line"></span></h2>
-        <div class="experience-box">
-            <img class="img-proyecto" src="/assets/img/Encriptador.webp"
-                alt="encriptador">
-            <div class="info-container">
-                <h2 data-i18n="project_1_title">Text Encrypter</h2>
-                <h3 data-i18n="project_1_subtitle"">Challenge Alura Codificador</h3>
-                <i id=" icons-web" class="fa fab fa-html5"
-                    style="color: var(--color-primary-fourth)"></i>
-                    <i id="icons-web" class="fa fab fa-css3"
-                        style="color: var(--color-primary-fourth)"></i>
-                    <i id="icons-web" class="fab fa-bootstrap"
-                        style="color: var(--color-primary-fourth)"></i>
-                    <i id="icons-web" class="fab fa-js"
-                        style="color: var(--color-primary-fourth)"></i>
-                    <div class="experience-description">
-                        <!-- <span class="experience-repo"><a
-                            href="https://github.com/hazel-chavez/challengeonecodificador4"
-                            target="_blank"><button data-i18n="btn_repository">Repository<i
-                                    class="fa fa-github fa-xl"
-                                    aria-hidden="true"></i></button></a></span>
-                    <span class="experience-demo"><a
-                            href="https://hazel-chavez.github.io/challengeonecodificador4/"
-                            target="_blank"><button data-i18n="btn_demo">View
-                                demo<img class="arrow"
-                                    src="/assets/img/icons-arrow.webp"
-                                    alt="arrow"></button></a></span> -->
-                        <a href="https://github.com/hazel-chavez/challengeonecodificador4"
-                            target="_blank">
-                            <button>
-                                <span
-                                    data-i18n="btn_repository">Repository</span>
-                                <i class="fa fa-github fa-xl"
-                                    aria-hidden="true"></i>
-                            </button>
-                        </a>
-                        </span>
-                        <span class="experience-demo">
-                            <a href="https://hazel-chavez.github.io/challengeonecodificador4/"
-                                target="_blank">
-                                <button>
-                                    <span data-i18n="btn_demo">View demo</span>
-                                    <img class="arrow"
-                                        src="/assets/img/icons-arrow.webp"
-                                        alt="arrow">
-                                </button>
-                            </a>
+    <!-- Hero section -->
+    <section class="hero" id="hero-home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="higthlight" data-i18n="higthlight">Junior Full-Stack Developer</p>
+                    <h1 data-i18n="greeting">I'm👋Hazel Chavez</h1>
+                    <div class="hero-subtitle" data-i18n="hero_subtitle">
+                        JavaScript  | Vue.js • Node.js • MongoDB • WordPress
                     </div>
-            </div>
-        </div>
-        <!--Segundo Proyecto-->
-        <div class="experience-box-second">
-            <img class="img-second_project" src="assets/img/proyecto-php.webp"
-                alt="proyecto-php">
-            <div class="info-container-second">
-                <h2 data-i18n="project_2_title">Calculator</h2>
-                <h3 data-i18n="project_2_subtitle">Back-End Course Project</h3>
-                <i id="icons-web-second" class="fa fab fa-html5"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web-second" class="fa fab fa-css3"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web-second" class="fab fa-php"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web-second" class="fa fa-database"
-                    aria-hidden="true"
-                    style="color: var(--color-primary-fourth)"></i>
-                <div class="experience-description-second">
-                    <span class="experience-demo-second"><a
-                            href="http://calculadoraimc.free.nf/index.php"
-                            target="_blank"><button>View
-                                demo<img class="arrow"
-                                    src="/assets/img/icons-arrow.webp"
-                                    alt="arrow"></button></a></span>
-                    <span class="experience-repo-second"><a
-                            href="https://github.com/hazel-chavez/CalculadoraIMC"
-                            target="_blank"><button>Repository<i
-                                    class="fa fa-github fa-xl"
-                                    aria-hidden="true"></i></button></a></span>
+                    <p class="hero-description"
+                        data-i18n="hero_description">
+                        Desarrollo aplicaciones web interactivas y funcionales utilizando tecnologías MEVN y WordPress, combinando frontend intuitivo con lógica backend escalable
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label"
+                                data-i18n="stat_projects">Proyectos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label"
+                                data-i18n="stat_experience">Años
+                                Exp.</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label"
+                                data-i18n="stat_technologies">Tecnologías</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            <span data-i18n="btn_view_projects">Ver
+                                Proyectos</span>
+                        </a>
+                        <a href="assets/cv-hazel-chavez.pdf"
+                            class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="btn_download_cv">Descargar
+                                CV</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="experience-box-third">
-            <img class="img-project-third" src="/assets/img/innovatech.webp"
-                alt="page-innovatech">
-            <div class="info-container-third">
-                <h2>Tecnology webSite</h2>
-                <h3>WordPress Development Course Project</h3>
-                <i id="icons-web-third" class="fa fa-database"
-                    aria-hidden="true"
-                    style="color: var(--color-primary-fourth)"></i>
-                <i id="icons-web-third" class="fa fa-wordpress"
-                    aria-hidden="true"
-                    style="color: var(--color-primary-fourth);"></i>
-                <i id="icons-web-third" class="fab fa-php"
-                    style="color: var(--color-primary-fourth)"></i>
-                <div class="experience-description-third">
-                    <span class="experience-demo-third"><a
-                            href="http://innovatech.x10.mx/wp/"
-                            target="_blank"><button>View
-                                demo<img class="arrow"
-                                    src="/assets/img/icons-arrow.webp"
-                                    alt="arrow"></button></a></span>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="./assets/img/img-profile.jpg"
+                            alt="img-hero">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="form-contacto" id="form-contacto">
-        <div class="datos-content">
+    <section class="about" id="sobre-mi" data-aos="zoom-in">
+        <div class="container">
+            
+            <div class="about-content">
+            
+                <div class="about-image" data-aos="zoom-in-right">
+                    <img src="./assets/img/fondo-de-programacion.jpg"
+                        alt="Foto de Hazel" />
+                </div>
+                
+                <div class="about-text" data-aos="zoom-in-left">
+                    <h2 class="section-title" data-i18n="about_me">Sobre Mí</h2>
+                    <p data-i18n="about_description1">
+                    Desarrolladora Full-Stack enfocada en tecnologías MEVN y WordPress. Me interesa crear aplicaciones funcionales y experiencias intuitivas combinando lógica backend y desarrollo frontend. Disfruto resolver problemas, aprender constantemente y transformar ideas en soluciones prácticas mediante código limpio y estructuras escalables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section -->
+    <section class="skills-grid">
+        <div class="skills-container">
+            <h2 class="skills-title" data-i18n="skills">Habilidades</h2>
+            <div class="skills-cards">
+                <div class="card-category">
+                    <h3 class="category-title"><i class="ti ti-code"></i>Frontend</h3>
+                    <div class="container-list">
+                        <div class="skill-item"><i class="ti ti-brand-html5"></i>HTML</div>
+                        <div class="skill-item"><i class="ti ti-brand-css3"></i>CSS</div>
+                        
+                        <div class="skill-item"><i class="ti ti-brand-javascript"></i>JavaScript (ES6+)</div>
+                        <div class="skill-item"><i class="ti ti-brand-vue"></i>Vue</div>
+                            <div class="skill-item"><i class="ti ti-brand-bootstrap"></i>Bootstrap</div>
+                    </div>
+                </div>
+                <div class="card-category">
+                    <h3 class="category-title"><i class="ti ti-database"></i>Backend & Databases</h3>
+                    <div class="container-list">
+                        <div class="skill-item"><i class="ti ti-brand-nodejs"></i>Node.js</div>
+                        <div class="skill-item"><i class="ti ti-brand-php"></i>PHP</div>
+                        <div class="skill-item"><i class="ti ti-brand-mysql"></i>MySQL</div>
+                        <div class="skill-item"><i class="ti ti-file-type-sql"></i>SQL</div>
+                        <div class="skill-item"><i class="ti ti-brand-mongodb"></i>MongoDB</div>
+                        
+                    </div>
+                </div>
+                <div class="card-category">
+
+                        <h3 class="category-title"><i class="ti ti-settings-automation"></i><span data-i18n="tools">Herramientas</span></h3>
+                    <div class="container-list">
+                        <div class="skill-item"><i class="ti ti-brand-git"></i>Git</div>
+                        <div class="skill-item icon-github"><i class="ti ti-brand-github"></i>GitHub</div>
+                        
+                        <div class="skill-item"><i class="ti ti-api"></i>Api REST</div>
+                    </div>
+                </div>
+                <div class="card-category">
+                    <h3 class="category-title"><i class="ti ti-user-heart"></i>CMS & Deployment</h3>
+                    <div class="container-list">
+                       <div class="skill-item"><i class="ti ti-brand-wordpress"></i>WordPress (Elementor)</div>
+                        <div class="skill-item"> <i class="ti ti-server"></i>Hosting</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Experience section -->
+    <section class="experience" id="experience">
+        <div class="container-experience">
+            <h2 class="title-experience" data-i18n="experience">Experiencia</h2>
+            <div class="experience-grid">
+                <div class="experience-box">
+                    <div class="project-image">
+                        <img class="school-management-img" src="./assets/img/management-system.webp"
+                            loading="lazy" decoding="async"
+                            alt="School Management System">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title"
+                            data-i18n="school_management_system_title">
+                            School Management System
+                        </h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-user"></i> Backend
+                                Developer</span>
+                            <span><i
+                                    class="fas fa-sync-alt"></i>
+                                <span data-i18n="in_production">En producción</span></span>
+                        </div>
+                        <p class="project-description"
+                            data-i18n="school_management_system_description">
+                            Plataforma académica diseñada para centralizar la gestión escolar y facilitar el acceso a información educativa para instituciones, padres y estudiantes. Desarrollé una arquitectura backend modular con Node.js, Express y MongoDB, implementando autenticación JWT, relaciones con Mongoose y una API REST para administrar usuarios, escuelas, grados y materiales educativos
+                        <div class="project-tech">
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Express</span>
+                            <span class="tech-item">Mongoose</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">REST API</span>
+                        </div>
+                        <div class="btn-links">
+                            <a href="https://school-management-system-rsh3.onrender.com/index.html" class="btn-link link-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="view_demo">Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/hazel-chavez/school-management-system" class="btn-link link-secondary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-box">
+                    <div class="project-image">
+                        <img class="ecommerce-technology-img" src="./assets/img/ecommerce-technology.webp" loading="lazy" decoding="async"
+                            alt="Ecommerce Technology Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title"
+                            data-i18n="ecommerce_technology_website_title">
+                            Ecommerce Technology Website
+                        </h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-user"></i> <span data-i18n="wordpress_web_developer">Desarrollador Web Wordpress</span></span>
+                            <span><i
+                                    class="fas fa-check-circle"></i>
+                                <span data-i18n="completed">Completado</span></span>
+                        </div>
+                        <p class="project-description"
+                            data-i18n="ecommerce_technology_website_description">
+                            Desarrollo de un sitio web tecnológico responsivo utilizando WordPress, Astra, Elementor y WooCommerce. El proyecto incluye tienda en línea, calendario de eventos, integración de WhatsApp y optimización básica SEO, con enfoque en experiencia de usuario y navegación intuitiva.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">WordPress</span>
+                            <span class="tech-item">WooCommerce</span>
+                            <span class="tech-item">Custom Theme</span>
+                            <span class="tech-item">Elementor</span>
+                            <span class="tech-item">MySQL</span>
+                            <span class="tech-item">PHP</span>
+                        </div>
+                        <div class="btn-links">
+                            <a href="https://www.upwork.com/freelancers/~01f0e42cd94ecb1bb0?p=2028223754429902848" class="btn-link link-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="view_demo">Ver Demo</span>
+                            </a>
+                            <!-- <a href="#" class="btn-link link-secondary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-box">
+                    <div class="project-image">
+                        <img class="mobile-inventory-system-img" src="./assets/img/mobile-inventory-system.webp" loading="lazy" decoding="async"
+                            alt="Mobile Phone Inventory System">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title"
+                            data-i18n="mobile_inventory_system_title">
+                            Mobile Phone Inventory System
+                        </h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-user"></i> <span data-i18n="frontend_developer">Desarrolladora Frontend</span>
+                                </span>
+                            <span><i
+                                    class="fas fa-check-circle"></i>
+                                <span data-i18n="completed">Completado</span></span>
+                        </div>
+                        <p class="project-description"
+                            data-i18n="mobile_inventory_system_description">
+                            Sistema de inventario para una tienda de dispositivos móviles y accesorios desarrollado con Vue 3 y Vite. La aplicación permite autenticación frontend, administración de productos, búsqueda en tiempo real y gestión de inventario mediante funcionalidades CRUD y navegación protegida a nivel de interfaz.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">Node.JS</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Vue 3</span>
+                            <span class="tech-item">Vite</span>
+                        </div>
+                        <div class="btn-links">
+                            <a href="https://sistema-inventario-one.vercel.app/" class="btn-link link-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="view_demo">Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/hazel-chavez/sistema-inventario" class="btn-link link-secondary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-box">
+                    <div class="project-image">
+                        <img class="task-management-img" src="./assets/img/tasks-app.webp"
+                            loading="lazy" decoding="async"
+                            alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title"
+                            data-i18n="task_management_app_title">
+                            Task Management App
+                        </h3>
+                        <div class="project-meta">
+                            <span><i class="fas fa-user"></i> <span data-i18n="frontend_developer">Desarrolladora Frontend</span> </span>
+                            <span><i
+                                    class="fas fa-check-circle"></i>
+                                <span data-i18n="completed">Completado</span></span>
+                        </div>
+                        <p class="project-description"
+                            data-i18n="task_management_app_description">
+                            Aplicación de gestión de tareas desarrollada con Vue.js, enfocada en la reactividad, manejo de componentes y experiencia de usuario. El proyecto permite organizar tareas dinámicamente mediante interacción en tiempo real y administración básica del estado en el frontend
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">BooStrap</span>
+                            <span class="tech-item">Node.JS</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Vue</span>
+                        </div>
+                        <div class="btn-links">
+                            <a href="https://mi-app-tasks.vercel.app/" class="btn-link link-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-i18n="view_demo">Ver Demo</span>
+                            </a>
+                            <a href="https://github.com/hazel-chavez/app-tasks" class="btn-link link-secondary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="code">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+    </section>
+    <section class="section-education" id="section-education">
+        <div class="container-education">
+            <h2 class="education-title" data-i18n="education">Educacion</h2>
+            <div class="education-grid">
+                <div class="education-box">
+                    <span class="badge-year">2025</span>
+                    <h3><i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="software_development_technician">Tecnico en Desarrollo de Software</span></h3>
+                    <p>Universidad Cenfotec</p>
+                </div>
+                <div class="education-box">
+                    <span class="badge-year">2023</span>
+                    <h3><i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="web_development_bootcamp">Bootcamp en Desarrollo de Web</span></h3>
+                    <p>Alura One Next Education</p>
+                </div>
+                <div class="education-box">
+                    <span class="badge-year">2022</span>
+                    <h3>
+                        <i class="fas fa-graduation-cap"></i><span data-i18n="frontend_development_technician">Tecnico en
+                        Desarrollo de Frontend</span>
+                    </h3>
+                    <p>Instituto Nacional de Aprendizaje</p>
+                </div>
+                <div class="education-box">
+                    <span class="badge-year">2014</span>
+                    <h3><i class="fas fa-graduation-cap"></i><span data-i18n="informatics_technician">Tecnico en
+                        Informatica</span></h3>
+                    <p>Universidad Tecnica Nacional</p>
+                </div>
+            </div>
+            <!-- Complementary certifications -->
+            <div class="complementary-section">
+                <h3 class="complementary-title" data-i18n="complementary_training">Formacion Complementaria</h3>
+                <div class="complementary-container">
+                    <div class="badge">
+                        <span class="badge-icon"><i class="fas fa-globe"></i>
+                            </i></span>
+                        <span class="title-certificacion" data-i18n="intensive_english">Ingles intensivo - MG
+                            Capacitaciones/INA</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon"><i
+                                class="fab fa-python"></i></span>
+                        <span class="title-certificacion" data-i18n="python_certification">Python - INA &
+                            Cisco</span>
+                    </div>
+                    </div>
+                    <div class="complementary-container">
+                    <div class="badge">
+                        <span class="badge-icon"><i
+                                class="fas fa-database"></i></span>
+                        <span class="title-certificacion" data-i18n="sql_data_management">SQL y manejo de datos
+                            - INA</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon"><i
+                                class="fas fa-laptop-code"></i>
+                        </span>
+                        <span class="title-certificacion" data-i18n="english_for_it">English for IT 1 & 2 -
+                            Cisco/MICITT</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact">
+        <div class="section-contact">
+            <div class="contact-container">
+                <h2 class="contact-title" data-i18n="contact_title">
+                    ¿Listo para trabajar juntos?
+                </h2>
+                <p data-i18n="contact_description">
+                    Estoy disponible para oportunidades junior, prácticas profesionales o proyectos freelance. Si mi perfil encaja con tu equipo o proyecto, me encantaría conversar contigo.
+                </p>
+                <div class="container-button" >
+                    <a href="#form-contacto" class="btn-contact">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact_button">Hablemos y agendemos una entrevista.</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="form-contact" id="form-contact">
+        <div class="data-container">
             <ul>
                 <li>
-                    <h4 data-i18n="address">Address</h4>
-                </li>
-                <li><img src="assets/img/icons8-marcador-18.png"
-                        alt="icons-address">&nbsp;Cañas,
-                    Guanacaste></li>
-                <li><i class="fa fa-phone"
-                        style="color: var(--color-4);"></i>&nbsp;+50685520126
-                </li>
-                <li><i class="fa fa-envelope" aria-hidden="true"
-                        style="color: var(--color-4);"></i>&nbsp;hazelchavez56@gmail.com
+                    <h4 data-i18n="address">Dirección</h4>
                 </li>
                 <li>
-                    <h4 data-i18n="social_media">Social Media</h4>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Cañas, Guanacaste
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +506 8552 0126
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    hazelchavez56@gmail.com
+                </li>
+                <li>
+                    <h4 data-i18n="social_networks">Redes Sociales</h4>
                     <ul class="social">
-                        <li><a href="#"><i id="facebook" class="fa fa-facebook"
+                        <li>
+                            <a href="#"><i id="facebook" class="fa fa-linkedin"
                                     aria-hidden="true"
-                                    style="font-size: large;"><span>facebook</span></i></a>
+                                    style="font-size: large;"><span data-i18n="linkedin">linkedIn</span></i></a>
+                        <li>
+                            <a href=""><i id="gmail" class="fa fa-google"
+                                    aria-hidden="true"><span data-i18n="gmail">Gmail</span></i></a>
                         </li>
-                        <li><a href=""><i id="gmail" class="fa fa-google"
-                                    aria-hidden="true"><span>Gmail</span></i></a>
-                        </li>
-                        <li><a href="https://github.com/hazel-chavez"
+                        <li>
+                            <a href="https://github.com/hazel-chavez"
                                 target="_blank"><i id="github"
                                     class="fa fa-github-alt" aria-hidden="true"
                                     style="font-size: large;"><span>Github</span></i></a>
@@ -406,25 +485,27 @@
             <form id="form"
                 action="https://formsubmit.co/fdf096c7d5f27cb2688887a5438f477f"
                 method="POST">
-                <h1 data-i18n="get_in_touch">Get in Touch</h1>
-                <p data-i18n="send_message">&nbsp;Send a Message</p>
+                <h2 data-i18n="contact_me">Contáctame</h2>
+                <p data-i18n="send_message">Envíame un mensaje y trabajemos juntos</p>
                 <div class="info">
                     <label for="name">
                         <input type="text" name="name" id="name" required
-                            placeholder="Name" data-i18n-placeholder="placeholder_name">
+                            placeholder="Tu nombre" data-i18n="your_name_placeholder">
                     </label>
                     <label for="email">
                         <input type="email" name="email" id="email" required
-                            placeholder="@" >
+                            placeholder="tu@email.com" data-i18n="your_email_placeholder">
                     </label>
                 </div>
-                <div class="messaje-content">
-                    <textarea name="messaje" id="messaje" cols="62" rows="8"
-                        placeholder="Write your messaje" data-i18n-placeholder="placeholder_message" ></textarea>
+                <div class="message-container">
+                    <textarea name="message" id="message" required
+                        placeholder="Escribe tu mensaje aquí..." data-i18n="write_your_message"></textarea>
                 </div>
                 <div class="submit">
-                    <button type="submit"data-i18n="send">Send&nbsp;<i
-                            class="fas fa-location-arrow"></i></button>
+                    <button type="submit">
+                        <span data-i18n="send_message_button">Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </div>
                 <input type="hidden" name="_next"
                     value="https://portafolio-hazel-chavez.vercel.app/">
@@ -432,33 +513,31 @@
             </form>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer-content">
         <div class="linea"></div>
         <div class="copy">
-            <p>Copyright &copy; 2025</p>
+            <p>Copyright &copy; 2026</p>
             <p>&nbsp;Hazel Chavez Alvarado</p>
         </div>
         <div class="name-reserve">
-            <!-- <p></p>&nbsp; -->
+            <p></p>&nbsp;
             <div class="arrows">
                 <span><i class="fa fa-arrow-circle-up fa-lg"
                         aria-hidden="true"></i></span>
             </div>
         </div>
-        <!-- componer codigo colocando medidas width -->
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/Switch.js"></script>
-    <script src="/assets/js/lang.js"></script>
-    <script src="/assets/js/aios.js"></script>
-    <script src="/assets/js/scroll.js"></script>
-    <script src="/assets/js/formSubmit.js"></script>
-    <script src="bower_components/anijs/dist/anijs-min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script
-        src="bower_components/anijs/ dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js">
-    </script>
+
+        <!-- JS dependencies -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/assets/js/menu.js"></script>
+        <script src="/assets/js/Switch.js"></script>
+        <script src="/assets/js/lang.js"></script>
+        <script src="/assets/js/aios.js"></script>
+        <script src="/assets/js/scroll.js"></script>
+        <script src="/assets/js/formSubmit.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
