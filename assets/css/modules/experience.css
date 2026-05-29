@@ -4,7 +4,7 @@ section.experience {
 	background: var(--bg-secondary);
 	box-shadow: var(--shadow-colored);
 	margin-top: 5rem;
-	padding: 0rem 3rem 5rem 1rem;
+	padding: 0 2rem 5rem;
 }
 div.container-experience {
 	max-width: 1200px;
@@ -15,7 +15,7 @@ div.container-experience .title-experience {
 	font-size: clamp(1.5rem, 3vw, 2rem);
 	font-family: var(--primary-fonts);
 	font-size: 2.8rem;
-	margin: 4rem 0 0 4rem;
+	margin: 4rem 0 0;
 	position: relative;
 	text-align: center;
 	font-weight: 800;
@@ -135,9 +135,8 @@ div.container-experience .title-experience {
 .project-description {
 	color: var(--text-secondary);
 	font-size: 1rem;
-	text-align: justify;
-	text-justify: inter-word;
-	word-break: break-word;
+	text-align: left;
+	overflow-wrap: anywhere;
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
 }
@@ -205,6 +204,7 @@ div.container-experience .title-experience {
 .btn-links {
 	font-family: var(--primary-fonts-second);
 }
+
 /* Dark theme */
 .dark section.experience {
 	background-color: var(--secondary-color-dark);
@@ -230,4 +230,36 @@ div.container-experience .title-experience {
 }
 .dark .project-title {
 	color: var(--text-white);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	section.experience {
+		margin-top: 3rem;
+		padding: 0 1rem 3rem;
+	}
+
+	div.container-experience {
+		padding: 0;
+	}
+
+	div.container-experience .title-experience {
+		margin: 3rem 0 0;
+		font-size: 2rem;
+	}
+
+	.experience-grid {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 1.5rem;
+	}
+
+	.project-image {
+		height: 190px;
+	}
+
+	.project-content {
+		padding: 1.25rem;
+	}
+	.btn-links.view-site-ecommerce {
+		justify-content: center;
+	}
 }

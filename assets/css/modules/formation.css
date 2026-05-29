@@ -301,6 +301,10 @@ div.formation .formation-box-second .container-description {
 	.education-box h3 {
 		text-align: start;
 	}
+	h2.education-title {
+		text-align: center;
+		margin: 1rem 0;
+	}
 	section#formation-academica {
 		height: auto;
 	}

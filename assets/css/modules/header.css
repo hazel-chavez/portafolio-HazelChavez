@@ -2,21 +2,24 @@
 header {
 	width: 100%;
 	height: auto;
-	position: sticky; 
-	z-index: 2;
-	top: 0; 
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	left: 0;
 	background: var(--bg-primary);
 	backdrop-filter: blur(24px);
 	border-bottom: 1px solid var(--border-glass);
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	box-shadow: var(--shadow-md);
-    margin: 0;
+	margin: 0;
 }
 
 header .content {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	padding: 0.3rem;
+	gap: 0.75rem;
+	padding: 0.5rem 0.75rem;
 }
 
 /* Text-based logo */
@@ -31,7 +34,7 @@ header .content .logo-title {
 	width: 52px;
 	height: 50px;
 	text-align: center;
-	
+
 	font-size: clamp(1.8rem, 2vw, 1.2rem);
 
 	font-family: var(--text-logo);
@@ -50,7 +53,7 @@ header .content a {
 }
 
 /* Primary navigation */
-header nav {
+header > nav {
 	width: auto;
 	max-width: 1000px;
 	margin: auto;
@@ -59,33 +62,40 @@ header nav {
 	padding-bottom: 10px;
 }
 
+header > nav ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
 .menu_bar {
 	display: none;
 }
 
-header nav ul li {
+header > nav ul li {
 	display: inline-block;
 }
 
-header nav ul li a {
+header > nav ul li a {
 	font-size: clamp(0.9rem, 1.3vw, 3rem);
 	text-decoration: none;
 	padding: 11px;
 	color: var(--text-secondary);
 	text-decoration: none;
 	transition: all 0.3s ease;
+	line-height: 1.3;
 
 	font-weight: 500;
 
 	display: inline-block;
 }
 /* Spacing between navigation links */
-header nav ul li {
+header > nav ul li {
 	margin-right: 10px;
 }
 
 /* Required for underline pseudo-element */
-header nav ul li a {
+header > nav ul li a {
 	position: relative;
 	text-decoration: none;
 
@@ -93,12 +103,12 @@ header nav ul li a {
 }
 
 /* Link color hover state */
-header nav ul li a:hover {
+header > nav ul li a:hover {
 	color: var(--primary-color);
 }
 
 /* Animated underline */
-header nav ul li a::after {
+header > nav ul li a::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -110,7 +120,7 @@ header nav ul li a::after {
 }
 
 /* Expand underline on hover */
-header nav ul li a:hover::after {
+header > nav ul li a:hover::after {
 	width: 100%;
 }
 
@@ -124,7 +134,7 @@ header nav ul li a:hover::after {
 	position: relative;
 	cursor: pointer;
 	outline: none;
-	margin-top: 3px;
+	margin-top: 0;
 }
 
 .switch::after {
@@ -151,13 +161,13 @@ header nav ul li a:hover::after {
 	color: var(--color-blanco);
 }
 
-.active {
+.switch.active {
 	background: var(--color-amarillo);
 	color: var(--color-negro);
 }
 
 /* Active switch state */
-.active::after {
+.switch.active::after {
 	right: 0;
 	left: unset;
 	border: 1px solid var(--border-light);
@@ -165,8 +175,10 @@ header nav ul li a:hover::after {
 /* Language selector */
 #langDropdown {
 	display: flex;
+	align-items: center;
 	position: relative;
-	left: 43%;
+	left: auto;
+	margin-left: auto;
 }
 
 .lang-toggle {
@@ -223,14 +235,14 @@ header nav ul li a:hover::after {
 	font-weight: 300;
 }
 /* ---- Dark mode ---- */
-body.dark{
+body.dark {
 	background: var(--bg-primary-gradient);
 }
-.dark::-webkit-scrollbar{
+.dark::-webkit-scrollbar {
 	background: var(--bg-primary-gradient);
 }
 .dark header {
-  background: var(--bg-primary-gradient);
+	background: var(--bg-primary-gradient);
 }
 
 .dark header .content .logo-title {
@@ -240,16 +252,15 @@ body.dark{
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
-.dark h2{
+.dark h2 {
 	color: var(--text-white);
 }
-.dark header nav ul li a {
+.dark header > nav ul li a {
 	color: var(--color-blanco);
 }
-.dark header nav ul li a:hover {
+.dark header > nav ul li a:hover {
 	color: var(--primary-color);
 }
-
 
 .dark .content a {
 	color: var(--color-blanco);
@@ -259,12 +270,12 @@ body.dark{
 	color: var(--text-white);
 }
 /* lang-dropdown */
-.dark .lang-menu  {
+.dark .lang-menu {
 	background: var(--bg-primary-gradient);
 	border: 1px solid var(--border-light);
 }
 
-.dark .lang-option{
+.dark .lang-option {
 	color: var(--text-white);
 }
 .dark .lang-option.active {
@@ -274,13 +285,13 @@ body.dark{
 }
 .dark .lang-option:hover {
 	background: var(--bg-primary-gradient);
-	color: var(--text-white); 
-} 
-.dark .lang-option a:nth-child(2):hover{
-		background: var(--bg-primary-gradient);
-		color: var(--text-primary);
-} 
-.dark .lang-toggle{
+	color: var(--text-white);
+}
+.dark .lang-option a:nth-child(2):hover {
+	background: var(--bg-primary-gradient);
+	color: var(--text-primary);
+}
+.dark .lang-toggle {
 	color: var(--bg-tertiary);
 	background: var(--bg-primary-gradient);
 }
@@ -290,30 +301,32 @@ body.dark{
 		height: auto;
 	}
 
-	header nav {
+	header > nav {
 		width: 60%;
 		background: var(--bg-tertiary);
 		transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		opacity: 0.9;
 		position: absolute;
+		top: 100%;
 		padding-bottom: 40rem;
 		left: -100%;
 	}
-	header nav ul li a {
+	header > nav ul li a {
 		color: var(--text-primary);
 	}
-	header nav ul li {
+	header > nav ul li {
 		display: block;
 		text-align: left;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 
-	header nav ul li:nth-child(5) {
+	header > nav ul li:nth-child(5) {
 		background: none;
 	}
 
 	.switch {
-		margin-bottom: 1em;
+		margin-bottom: 0;
+		margin-left: 0.5rem;
 	}
 
 	.menu_bar {
@@ -327,79 +340,115 @@ body.dark{
 		text-decoration: none;
 	}
 
-	span {
-		float: right;
-	}
 	#langDropdown {
 		display: flex;
 		position: relative;
 		align-items: center;
-		left: 30%;
+		left: auto;
+		margin-left: auto;
+		margin-right: 0.25rem;
+	}
+
+	header .content .logo-title {
+		position: static;
+		top: auto;
+		left: auto;
+		width: auto;
+		height: auto;
+		font-size: clamp(1.4rem, 5vw, 1.7rem);
+	}
+
+	header > nav ul li a {
+		display: block;
+		padding: 12px 16px;
+		text-align: left;
 	}
 
 	.icon-bars {
+		float: right;
 		padding-right: 0.3rem;
 	}
-	.dark header nav {
-		background: var(--bg-menu-dark);
+	.dark header > nav {
+		background: var(--secondary-color-dark);
+	}
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	header > nav {
+		width: 40%;
+		height: 100vh;
+		text-align: start;
+		background: var(--bg-tertiary);
+		margin: 0;
+		position: absolute;
+		top: 100%;
+		left: -100%;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 991px) {
-		header nav {
-			width: 40%;
-			height: 450px;
-			text-align: start;
+	header > nav ul li {
+		display: block;
 
-			margin: 0;
-			position: absolute;
-			left: -100%;
-		}
-
-		header nav ul li {
-			display: block;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-		}
-
-		header nav ul li a:hover {
-			width: 100%;
-			color: #000;
-			background-color: var(--color-5);
-		}
-
-	
-
-		header nav ul li:nth-child(5) a:hover {
-			color: var(--color4);
-		}
-
-		.menu_bar {
-			display: block;
-			width: 100%;
-		}
-
-		.menu_bar .btn-menu {
-			display: block;
-			padding: 5px;
-			
-			text-decoration: none;
-			background: none;
-			font-weight: bold;
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			margin-top: 1.5rem;
-		}
-
-		.icon-bars {
-			float: right;
-			padding-right: 0.2rem;
-		}
-	}
-	.dark header nav {
-		background: var(--bg-menu-dark);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 
-	@media (min-width: 1200px) and (max-width: 1440px) {
-		/* Desktop-specific adjustments */
+	header > nav ul li a:hover {
+		width: 100%;
+		color: #000;
+		background-color: var(--color-5);
 	}
+
+	header > nav ul li:nth-child(5) a:hover {
+		color: var(--color4);
+	}
+	.menu_bar {
+		display: block;
+		width: 100%;
+	}
+
+	.menu_bar .btn-menu {
+		display: block;
+		padding: 5px;
+		text-decoration: none;
+		background: none;
+		font-weight: bold;
+		box-sizing: border-box;
+		margin-top: 1.5rem;
+	}
+
+	#langDropdown {
+		left: auto;
+		margin-left: auto;
+		margin-right: 0.25rem;
+	}
+
+	.switch {
+		margin-left: 0.5rem;
+	}
+
+	header .content .logo-title {
+		position: static;
+		top: auto;
+		left: auto;
+		width: auto;
+		height: auto;
+		font-size: clamp(1.5rem, 3vw, 1.8rem);
+	}
+
+	header > nav ul li a {
+		display: block;
+		padding: 12px 16px;
+		text-align: left;
+	}
+	.icon-bars {
+		float: right;
+		padding-right: 0.2rem;
+	}
+
+	.dark header > nav {
+		background: var(--secondary-color-dark);
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+	/* Desktop-specific adjustments */
 }

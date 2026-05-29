@@ -13,15 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	 * so we can run custom logic (SweetAlert) first.
 	 * @param {SubmitEvent} e
 	 */
-	form.addEventListener('submit', function (e) {
+	form.addEventListener('submit', async function (e) {
 		e.preventDefault();
+
+		const lang = window.getCurrentLanguage ? window.getCurrentLanguage() : 'es';
+		const translations = window.translate
+			? (key) => window.translate(key, lang)
+			: (key) => Promise.resolve(key);
 
 		Swal.fire({
 			icon: 'success',
-			title: 'Message sending',
-			html: 'Thanks for <b>contacting</b> me.<br>¡I’ll <u>reply soon!</u>',
+			title: await translations('form_success_title'),
+			html: await translations('form_success_message'),
 			draggable: true,
-			confirmButtonText: 'Got it',
+			confirmButtonText: await translations('form_success_confirm'),
 			footer: '<span style="font-size: 12px;">Hazel Portfolio</span>',
 		}).then(() => {
 			form.submit();

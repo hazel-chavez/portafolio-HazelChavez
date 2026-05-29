@@ -280,6 +280,7 @@ p.higthlight{
 	font-size: 1.1rem;
 	line-height: 1.8;
 	color: var(--color-gray-2);
+	text-align: left;
 }
 
 .about-text p {
@@ -339,18 +340,19 @@ p.higthlight{
 	.about-content {
 		grid-template-columns: 1fr;
 		gap: 2rem;
-		text-align: center;
+		text-align: left;
 	}
 	.about-text {
-		margin: 0 auto;
+		margin: 0;
+		width: 100%;
 	}
 	.section-title{
-		text-align: center;
+		text-align: left;
 	}
 	.section-title::before{
 		top: 38px;
-		left: 5%;
-		transform: translateX(-50%);
+		left: 0;
+		transform: none;
 		width: 35px;
 	}
 	.about-content{

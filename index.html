@@ -31,13 +31,13 @@
                     <span id="currentLang">ES</span>
                     <span class="caret">▾</span>
                 </button>
-                <nav class="lang-menu" id="langMenu" role="menu"
+                <div class="lang-menu" id="langMenu" role="menu"
                     aria-label="Menú de idiomas">
                     <a role="menuitem" href="#" data-lang="es"
                         class="lang-option active"><span>🇪🇸</span> Español</a>
                     <a role="menuitem" href="#" data-lang="en"
                         class="lang-option"><span>🇺🇸</span> English</a>
-                </nav>
+                </div>
             </div>
             <button class="switch  active" id="switch">
                 <span><i class="fas fa-sun"></i></span>
@@ -48,7 +48,7 @@
             <a href="#" class="btn-menu"><span
                     class="icon-bars"></span>&nbsp;</a>
         </div>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a id="Inicio" data-i18n="home">Home</a></li>
                 <li><a href="#about" data-i18n="about">About Me</a></li>
@@ -58,7 +58,7 @@
                 </li>
                 <li><a href=" #experience" data-i18n="projects">Projects</a>
                 </li>
-                <li><a href="#form-contacto" data-i18n="contact">Contact me</a>
+                <li><a href="#form-contact" data-i18n="contact">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -84,7 +84,7 @@
                                 data-i18n="stat_projects">Proyectos</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">1+</span>
+                            <span class="stat-number">1</span>
                             <span class="stat-label"
                                 data-i18n="stat_experience">Años
                                 Exp.</span>
@@ -101,7 +101,8 @@
                             <span data-i18n="btn_view_projects">Ver
                                 Proyectos</span>
                         </a>
-                        <a href="assets/cv-hazel-chavez.pdf"
+                        <a href="assets/CV-Hazel Chavez Alvarado.pdf"
+                            data-i18n-href="cv_file"
                             class="btn btn-secondary" target="_blank">
                             <i class="fas fa-download"></i>
                             <span data-i18n="btn_download_cv">Descargar
@@ -247,7 +248,7 @@
                         </div>
                         <p class="project-description"
                             data-i18n="ecommerce_technology_website_description">
-                            Desarrollo de un sitio web tecnológico responsivo utilizando WordPress, Astra, Elementor y WooCommerce. El proyecto incluye tienda en línea, calendario de eventos, integración de WhatsApp y optimización básica SEO, con enfoque en experiencia de usuario y navegación intuitiva.
+                            Desarrollo de un sitio web tecnológico responsivo utilizando WordPress, Astra, Elementor y WooCommerce. El proyecto incluye tienda en línea, calendario de eventos, integración de WhatsApp y optimización básica SEO, con enfoque en experiencia de usuario y navegación intuitiva
                         </p>
                         <div class="project-tech">
                             <span class="tech-item">WordPress</span>
@@ -257,7 +258,7 @@
                             <span class="tech-item">MySQL</span>
                             <span class="tech-item">PHP</span>
                         </div>
-                        <div class="btn-links">
+                        <div class="btn-links view-site-ecommerce">
                             <a href="https://www.upwork.com/freelancers/~01f0e42cd94ecb1bb0?p=2028223754429902848" class="btn-link link-primary" target="_blank">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span data-i18n="view_demo">Ver Demo</span>
@@ -288,7 +289,7 @@
                         </div>
                         <p class="project-description"
                             data-i18n="mobile_inventory_system_description">
-                            Sistema de inventario para una tienda de dispositivos móviles y accesorios desarrollado con Vue 3 y Vite. La aplicación permite autenticación frontend, administración de productos, búsqueda en tiempo real y gestión de inventario mediante funcionalidades CRUD y navegación protegida a nivel de interfaz.
+                            Sistema de inventario para una tienda de dispositivos móviles y accesorios desarrollado con Vue 3 y Vite. La aplicación permite autenticación frontend, administración de productos, búsqueda en tiempo real y gestión de inventario mediante funcionalidades CRUD y navegación protegida a nivel de interfaz
                         </p>
                         <div class="project-tech">
                             <span class="tech-item">HTML</span>
@@ -433,7 +434,7 @@
                     Estoy disponible para oportunidades junior, prácticas profesionales o proyectos freelance. Si mi perfil encaja con tu equipo o proyecto, me encantaría conversar contigo.
                 </p>
                 <div class="container-button" >
-                    <a href="#form-contacto" class="btn-contact">
+                    <a href="#form-contact" class="btn-contact">
                         <i class="fas fa-envelope"></i>
                         <span data-i18n="contact_button">Hablemos y agendemos una entrevista.</span>
                     </a>

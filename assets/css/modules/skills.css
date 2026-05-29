@@ -168,3 +168,23 @@ font-family: var(--font-subtitle);
 	 background-color: var(--secondary-color-dark);
   border-color: var(--border-accent);
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.skills-title {
+		font-size: 2rem;
+	}
+
+	.skills-cards {
+		grid-template-columns: minmax(0, 1fr);
+		margin: 3rem 1rem;
+		gap: 1.25rem;
+	}
+
+	.card-category {
+		padding: 1.25rem;
+	}
+
+	.container-list {
+		justify-content: center;
+	}
+}

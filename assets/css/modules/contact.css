@@ -275,8 +275,8 @@ i#github:hover {
         textarea {
             width: 100%;
             padding: 15px 20px;
-            border: 2px solid transparent;
-            border-radius: 12px;
+            border: 2px solid var(--border-light);
+            border-radius: 12px ;
             background: var(--bg-light);
             color: var(--text-primary-light);
             font-size: 0.8rem;
@@ -284,7 +284,7 @@ i#github:hover {
             font-family: inherit;
 			font-family: var(--font-subtitle);
         }
-
+        
         
 
         input[type="text"]:focus,
@@ -357,9 +357,30 @@ i#github:hover {
             transform: translateX(5px);
         }
 		@media screen and (min-width: 320px) and (max-width: 767px){
-			.form-contacto{
+			.form-contact{
 				display: grid;
 				grid-template-columns: 1fr;
+				gap: 24px;
+				margin: 40px auto;
+				padding: 16px;
+			}
+
+			.info {
+				grid-template-columns: 1fr;
+			}
+
+			.data-container,
+			.form-content {
+				padding: 24px;
+			}
+
+			.contact-title,
+			.form-content h2 {
+				font-size: 2rem;
+			}
+
+			.submit {
+				text-align: center;
 			}
 		}
 	/* Dark theme */
@@ -387,6 +408,7 @@ i#github:hover {
 .dark input[type="text"],
         .dark input[type="email"],
         .dark textarea {
+			border: 1px solid var(--border-accent);
 			background-color: var(--bg-dark);
 				color: var(--text-white);
 		}

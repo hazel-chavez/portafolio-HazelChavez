@@ -1,7 +1,6 @@
 @import url(../css/global/main.css);
 /* Modular section imports */
 @import url(../css/modules/header.css);
-@import url(../css/modules/home.css);
 @import url(../css/modules/about.css);
 @import url(../css/modules/skills.css);
 @import url(../css/modules/formation.css);

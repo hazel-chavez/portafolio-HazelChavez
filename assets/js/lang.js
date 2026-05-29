@@ -10,6 +10,34 @@ function getLanguageFromURL() {
 }
 
 let currentLang = getLanguageFromURL();
+let translations = null;
+
+/**
+ * Loads the translation dictionary once and reuses it.
+ * @returns {Promise<Record<string, Record<string, string>>>}
+ */
+function getTranslations() {
+	if (translations) {
+		return Promise.resolve(translations);
+	}
+
+	return fetch('/json/lang.json')
+		.then((response) => response.json())
+		.then((data) => {
+			translations = data;
+			return translations;
+		});
+}
+
+/**
+ * Reads one translation from lang.json.
+ * @param {string} key Translation key.
+ * @param {"es" | "en"} [lang=currentLang] Language to read.
+ * @returns {Promise<string>}
+ */
+function translate(key, lang = currentLang) {
+	return getTranslations().then((data) => data?.[lang]?.[key] || key);
+}
 
 /**
  * Loads translation data and applies text to all `[data-i18n]` elements.
@@ -22,10 +50,10 @@ let currentLang = getLanguageFromURL();
  * @returns {Promise<void>}
  */
 function loadLanguage(lang) {
-	return fetch('/json/lang.json')
-		.then((response) => response.json())
+	return getTranslations()
 		.then((data) => {
 			const texts = document.querySelectorAll('[data-i18n]');
+			const links = document.querySelectorAll('[data-i18n-href]');
 
 			texts.forEach((element) => {
 				const key = element.getAttribute('data-i18n');
@@ -43,18 +71,41 @@ function loadLanguage(lang) {
 					return;
 				}
 
+				if ('placeholder' in element) {
+					element.placeholder = value;
+					return;
+				}
+
 				element.textContent = value;
 			});
+
+			links.forEach((element) => {
+				const key = element.getAttribute('data-i18n-href');
+				const value = key && data?.[lang]?.[key];
+
+				if (value) {
+					element.href = value;
+				}
+			});
+
+			document.documentElement.lang = lang;
 
 			const currentLangElement = document.getElementById('currentLang');
 			if (currentLangElement) {
 				currentLangElement.textContent = lang.toUpperCase();
 			}
+
+			document.querySelectorAll('.lang-option').forEach((option) => {
+				option.classList.toggle('active', option.dataset.lang === lang);
+			});
 		})
 		.catch((error) => {
 			console.error('Error loading language file:', error);
 		});
 }
+
+window.getCurrentLanguage = () => currentLang;
+window.translate = translate;
 
 /**
  * Toggles the language dropdown visibility.

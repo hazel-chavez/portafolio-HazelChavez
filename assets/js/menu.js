@@ -9,14 +9,16 @@ let menuState = 1;
  * Initializes the mobile hamburger menu behavior.
  */
 function initializeMobileMenu() {
+	const mainNav = $('header > nav.main-nav');
+
 	$('.btn-menu').on('click', function () {
 		if (menuState === 1) {
-			$('nav').animate({ left: '0' });
+			mainNav.animate({ left: '0' });
 			menuState = 0;
 			return;
 		}
 
-		$('nav').animate({ left: '-100%' });
+		mainNav.animate({ left: '-100%' });
 		menuState = 1;
 	});
 }
