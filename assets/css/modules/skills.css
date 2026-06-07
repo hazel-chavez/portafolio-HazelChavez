@@ -42,55 +42,60 @@
 	transition: all 0.3s ease;
 	box-shadow: var(--shadow-sm);
 }
-/* Frontend technology icons */
+/* Skill icon colors */
 i.ti.ti-brand-html5{
-	color: #E34F26;
+	color: var(--skill-icon-html);
 }
 i.ti.ti-brand-css3{
-	color: #1572B6;
+	color: var(--skill-icon-css);
 }
 i.ti.ti-brand-javascript{
-	color: #F7DF1E;
+	color: var(--skill-icon-javascript);
 }
 i.ti.ti-brand-vue{
-	color: #4FC08D;
+	color: var(--skill-icon-vue);
 }
 i.ti.ti-brand-bootstrap{
-	color: #7952B3;
+	color: var(--skill-icon-bootstrap);
 }
-/* Backend technology icons */
 i.ti.ti-brand-nodejs{
-	color: #339933;
+	color: var(--skill-icon-nodejs);
 }
 i.ti.ti-brand-mongodb{
-	color: #47A248;
+	color: var(--skill-icon-mongodb);
 }
 i.ti.ti-brand-php{
-	color: #777BB4;
+	color: var(--skill-icon-php);
 }
 i.ti.ti-brand-mysql{
-	color: #4479A1;
+	color: var(--skill-icon-mysql);
 }
 i.ti.ti-file-type-sql{
-	color: #3B82F6;
+	color: var(--skill-icon-sql);
 }
 i.ti.ti-api{
-	color: #818CF8;
+	color: var(--skill-icon-api);
 }
-/* General tools icons */
 i.ti.ti-brand-git{
-	color: #F05032;
+	color: var(--skill-icon-git);
 }
 i.ti.ti-brand-github{
-	color: #181717;
+	color: var(--skill-icon-github);
+}
+
+i.ti.ti-brand-github-copilot{
+	color: var(--skill-icon-github-copilot);
+}
+
+i.ti.ti-sparkles-2.icon-google-stitch{
+	color: var(--skill-icon-google-stitch);
 }
 
 i.ti.ti-brand-wordpress{
-	color: #21759B;
+	color: var(--skill-icon-wordpress);
 }
-/* Soft skills icons */
 i.ti.ti-circle-check{
-	color: #10B981;
+	color: var(--skill-icon-soft-skill);
 }
 .category-title i{
   background: var(--bg-primary);

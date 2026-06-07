@@ -16,7 +16,7 @@
     "stat_technologies": "Tecnologías",
     "btn_view_projects": "Ver Proyectos",
     "btn_download_cv": "Descargar CV",
-    "cv_file": "../assets/cv/CV_Hazel_Chavez_Alvarado_ES.pdf",
+    "cv_file": "../assets/cv/CV_Hazel_Chavez_ES.pdf",
 
     "about_me": "Sobre Mí",
     "about_description1": "Desarrolladora Full-Stack enfocada en tecnologías MEVN y WordPress. Me interesa crear aplicaciones funcionales y experiencias intuitivas combinando lógica backend y desarrollo frontend. Disfruto resolver problemas, aprender constantemente y transformar ideas en soluciones prácticas mediante código limpio y estructuras escalables.",
@@ -90,7 +90,7 @@
     "stat_technologies": "Technologies",
     "btn_view_projects": "View Projects",
     "btn_download_cv": "Download CV",
-    "cv_file": "../assets/cv/CV_Hazel_Chavez_Alvarado_EN.pdf",
+    "cv_file": "../assets/cv/CV_Hazel_Chavez_EN.pdf",
 
     "about_me": "About Me",
     "about_description1": "Full-Stack developer focused on MEVN technologies and WordPress. I enjoy building functional applications and intuitive experiences by combining backend logic and frontend development. I like solving problems, learning continuously, and turning ideas into practical solutions through clean code and scalable structures.",

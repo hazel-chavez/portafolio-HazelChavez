@@ -323,7 +323,9 @@ body.dark {
 	header > nav ul li:nth-child(5) {
 		background: none;
 	}
-
+header > nav ul li a::after{
+	background: none;
+}
 	.switch {
 		margin-bottom: 0;
 		margin-left: 0.5rem;
@@ -393,13 +395,16 @@ body.dark {
 
 	header > nav ul li a:hover {
 		width: 100%;
-		color: #000;
-		background-color: var(--color-5);
+		color: var(--primary-color);
+		background: none;
 	}
 
 	header > nav ul li:nth-child(5) a:hover {
-		color: var(--color4);
+		color: var(--primary-color);
 	}
+	header > nav ul li a::after{
+	background: none;
+}
 	.menu_bar {
 		display: block;
 		width: 100%;

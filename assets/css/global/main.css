@@ -103,4 +103,23 @@
    --status-completed-color: #2FBF71;
    --status-inprogress-color: #7C6EE6;
    --status-onhold-color: #9CA3AF;
+
+	/* Skill icon colors */
+	--skill-icon-html: #E34F26;
+	--skill-icon-css: #1572B6;
+	--skill-icon-javascript: #F7DF1E;
+	--skill-icon-vue: #4FC08D;
+	--skill-icon-bootstrap: #7952B3;
+	--skill-icon-nodejs: #339933;
+	--skill-icon-mongodb: #47A248;
+	--skill-icon-php: #777BB4;
+	--skill-icon-mysql: #4479A1;
+	--skill-icon-sql: #3B82F6;
+	--skill-icon-api: #818CF8;
+	--skill-icon-git: #F05032;
+	--skill-icon-github: #181717;
+	--skill-icon-github-copilot: #8A63D2;
+	--skill-icon-google-stitch: #4285F4;
+	--skill-icon-wordpress: #21759B;
+	--skill-icon-soft-skill: #10B981;
 }
