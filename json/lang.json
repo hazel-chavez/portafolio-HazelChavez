@@ -7,10 +7,10 @@
     "skills": "Habilidades",
     "contact": "Contáctame",
 
-    "higthlight": "Junior Full-Stack Developer",
+    "higthlight": "Desarrolladora Web Full Stack",
     "greeting": "Hola👋 Soy Hazel Chavez",
-    "hero_subtitle": "JavaScript | Vue.js • Node.js • MongoDB • WordPress",
-    "hero_description": "Desarrollo aplicaciones web interactivas y funcionales utilizando tecnologías MEVN y WordPress, combinando frontend intuitivo con lógica backend escalable",
+    "hero_subtitle": "JavaScript | Vue.js • Node.js • Express • MongoDB • WordPress",
+    "hero_description": "Desarrollo aplicaciones web full stack y soluciones e-commerce utilizando tecnologías JavaScript modernas, combinando interfaces frontend responsivas con lógica backend escalable y APIs REST.Enfocada en arquitectura limpia, funcionalidad y resolución de problemas reales.",
     "stat_projects": "Proyectos",
     "stat_experience": "Años Exp.",
     "stat_technologies": "Tecnologías",
@@ -19,27 +19,23 @@
     "cv_file": "../assets/cv/CV_Hazel_Chavez_ES.pdf",
 
     "about_me": "Sobre Mí",
-    "about_description1": "Desarrolladora Full-Stack enfocada en tecnologías MEVN y WordPress. Me interesa crear aplicaciones funcionales y experiencias intuitivas combinando lógica backend y desarrollo frontend. Disfruto resolver problemas, aprender constantemente y transformar ideas en soluciones prácticas mediante código limpio y estructuras escalables.",
+    "about_description1": "Desarrolladora Full Stack especializada en tecnologías MEVN (MongoDB, Express, Vue.js, Node.js) y WordPress, con experiencia en el desarrollo de aplicaciones web funcionales y soluciones e-commerce.He trabajado en proyectos que incluyen desarrollo de sistemas web con autenticación, APIs REST, gestión de datos y creación de interfaces responsivas con enfoque en experiencia de usuario.Me enfoco en construir aplicaciones con arquitectura limpia, código mantenible y estructuras escalables, combinando lógica de backend con interfaces frontend intuitivas.Tengo interés en seguir creciendo en el desarrollo web, resolviendo problemas reales y mejorando continuamente mis habilidades técnicas.",
 
     "tools": "Herramientas",
     "experience": "Experiencia",
 
     "school_management_system_title": "Sistema de gestión escolar",
+    "backend_developer": "Desarrolladora Backend",
     "in_production": "En producción",
-    "school_management_system_description": "Plataforma académica diseñada para centralizar la gestión escolar y facilitar el acceso a información educativa para instituciones, padres y estudiantes. Desarrollé una arquitectura backend modular con Node.js, Express y MongoDB, implementando autenticación JWT, relaciones con Mongoose y una API REST para administrar usuarios, escuelas, grados y materiales educativos",
-
-    "ecommerce_technology_website_title": "Sitio web de tecnología para ecommerce",
-    "wordpress_web_developer": "Desarrollador Web Wordpress",
+    "school_management_system_description": "Plataforma académica diseñada para centralizar la gestión escolar y mejorar el acceso a la información educativa para instituciones, padres de familia y estudiantes.Diseñé y desarrollé una arquitectura backend modular utilizando Node.js, Express y MongoDB, implementando autenticación con JWT, control de acceso basado en roles y relaciones con Mongoose.Construí una API REST para gestionar usuarios, escuelas, grados y materiales educativos utilizando una estructura escalable con separación clara de responsabilidades.",
     "completed": "Completado",
-    "ecommerce_technology_website_description": "Desarrollo de un sitio web tecnológico responsivo utilizando WordPress, Astra, Elementor y WooCommerce. El proyecto incluye tienda en línea, calendario de eventos, integración de WhatsApp y optimización básica SEO, con enfoque en experiencia de usuario y navegación intuitiva",
-
-    "mobile_inventory_system_title": "Sistema de gestión de inventario de teléfonos móviles",
+    "ecommerce_technology_website_title": "Sitio web de tecnología con e-commerce",
+    "wordpress_web_developer": "Desarrolladora Web WordPress",
+    "ecommerce_technology_website_description": "Desarrollé un sitio web responsivo enfocado en tecnología con funcionalidad de tienda en línea utilizando WordPress, WooCommerce, Astra y Elementor.Implementé una tienda en línea, calendario de eventos e integración con WhatsApp para brindar soporte directo al cliente.El proyecto se enfocó en usabilidad, navegación intuitiva y optimización SEO básica para mejorar la experiencia del usuario y la accesibilidad.",
     "frontend_developer": "Desarrolladora Frontend",
-    "mobile_inventory_system_description": "Sistema de inventario para una tienda de dispositivos móviles y accesorios desarrollado con Vue 3 y Vite. La aplicación permite autenticación frontend, administración de productos, búsqueda en tiempo real y gestión de inventario mediante funcionalidades CRUD y navegación protegida a nivel de interfaz",
 
-    "task_management_app_title": "Aplicación de gestión de tareas",
-    "task_management_app_description": "Aplicación de gestión de tareas desarrollada con Vue.js, enfocada en la reactividad, manejo de componentes y experiencia de usuario. El proyecto permite organizar tareas dinámicamente mediante interacción en tiempo real y administración básica del estado en el frontend",
-
+    "mobile_inventory_system_description": "Aplicación tipo SPA desarrollada con Vue 3 y Vite para gestionar inventario de dispositivos móviles y accesorios.Implementé operaciones CRUD, búsqueda en tiempo real y organización de productos mediante una interfaz dinámica.Incluye autenticación simulada en frontend utilizando LocalStorage para gestionar acceso basado en roles y navegación protegida, recreando lógica comúnmente utilizada en sistemas más complejos.",
+    "task_management_app_description": "Aplicación web desarrollada con Vue.js enfocada en la construcción de interfaces dinámicas y manejo básico de estado en frontend.Permite crear, organizar y eliminar tareas en tiempo real utilizando componentes reutilizables y patrones reactivos en la interfaz.El proyecto se enfoca en arquitectura basada en componentes y en mejorar la experiencia de usuario dentro de aplicaciones de una sola página.",
     "view_demo": "Ver Demo",
     "code": "Código",
 
@@ -55,8 +51,8 @@
     "english_for_it": "English for IT 1 & 2 - Cisco/MICITT",
 
     "contact_title": "¿Listo para trabajar juntos?",
-    "contact_description": "Estoy disponible para oportunidades junior, prácticas profesionales o proyectos freelance. Si mi perfil encaja con tu equipo o proyecto, me encantaría conversar contigo.",
-    "contact_button": "Hablemos y agendemos una entrevista.",
+    "contact_description": "Estoy disponible para proyectos freelance y nuevas oportunidades donde pueda aportar desarrollando soluciones web funcionales y escalables.Si mi perfil encaja con tu equipo o proyecto, estaré encantada de conversar sobre cómo puedo aportar valor a tus ideas",
+    "contact_button": "Conectemos y construyamos algo increíble juntos.",
 
     "address": "Dirección",
     "social_networks": "Redes Sociales",
@@ -81,10 +77,10 @@
     "skills": "Skills",
     "contact": "Contact Me",
 
-    "higthlight": "Junior Full-Stack Developer",
+    "higthlight": "Full Stack Web Developer",
     "greeting": "Hi👋 I'm Hazel Chavez",
-    "hero_subtitle": "JavaScript | Vue.js • Node.js • MongoDB • WordPress",
-    "hero_description": "I build interactive and functional web applications using MEVN and WordPress technologies, combining intuitive frontend with scalable backend logic",
+    "hero_subtitle": "JavaScript | Vue.js • Node.js • Express • MongoDB • WordPress",
+    "hero_description": "I build full-stack web applications and e-commerce solutions using modern JavaScript technologies, combining responsive frontend interfaces with scalable backend logic and REST APIs.Focused on clean architecture, functionality, and real-world problem solving.",
     "stat_projects": "Projects",
     "stat_experience": "Years Exp.",
     "stat_technologies": "Technologies",
@@ -93,27 +89,25 @@
     "cv_file": "../assets/cv/CV_Hazel_Chavez_EN.pdf",
 
     "about_me": "About Me",
-    "about_description1": "Full-Stack developer focused on MEVN technologies and WordPress. I enjoy building functional applications and intuitive experiences by combining backend logic and frontend development. I like solving problems, learning continuously, and turning ideas into practical solutions through clean code and scalable structures.",
+    "about_description1": "Full Stack Web Developer specialized in MEVN stack (MongoDB, Express, Vue.js, Node.js) and WordPress, with experience building functional web applications and e-commerce solutions.I have worked on projects involving web systems with authentication, REST APIs, data management, and responsive user interfaces focused on user experience.I focus on building applications with clean architecture, maintainable code, and scalable structures, combining backend logic with intuitive frontend interfaces.I am committed to continuous learning, solving real-world problems, and improving my technical skills through hands-on development experience.",
 
     "tools": "Tools",
     "experience": "Experience",
 
     "school_management_system_title": "School Management System",
+    "backend_developer": "Backend Developer",
     "in_production": "In production",
-    "school_management_system_description": "Academic platform designed to centralize school management and improve access to educational information for institutions, parents, and students. I developed a modular backend architecture with Node.js, Express, and MongoDB, implementing JWT authentication, Mongoose relationships, and a REST API to manage users, schools, grades, and educational materials",
-
+    "school_management_system_description": "Academic platform designed to centralize school management and improve access to educational information for institutions, parents, and students.Designed and developed a modular backend architecture using Node.js, Express, and MongoDB, implementing JWT authentication, role-based access control, and Mongoose relationships.Built a REST API to manage users, schools, grades, and educational materials using a scalable structure with clear separation of responsibilities.",
     "ecommerce_technology_website_title": "Ecommerce Technology Website",
     "wordpress_web_developer": "WordPress Web Developer",
     "completed": "Completed",
-    "ecommerce_technology_website_description": "Development of a responsive technology website using WordPress, Astra, Elementor, and WooCommerce. The project includes an online store, event calendar, WhatsApp integration, and basic SEO optimization, focused on user experience and intuitive navigation",
+    "ecommerce_technology_website_description": "Developed a responsive technology website with e-commerce functionality using WordPress, WooCommerce, Astra, and Elementor.Implemented an online store, event calendar, and WhatsApp integration for direct customer support.Focused on usability, intuitive navigation, and basic SEO optimization to improve user experience and accessibility.",
 
     "mobile_inventory_system_title": "Mobile Phone Inventory System",
     "frontend_developer": "Frontend Developer",
-    "mobile_inventory_system_description": "Inventory system for a mobile devices and accessories store built with Vue 3 and Vite. The application includes frontend authentication, product management, real-time search, and inventory management through CRUD features and protected navigation at the interface level",
-
-    "task_management_app_title": "Task Management App",
-    "task_management_app_description": "Task management application built with Vue.js, focused on reactivity, component handling, and user experience. The project allows dynamic task organization through real-time interaction and basic frontend state management",
-
+    "mobile_inventory_system_description": "Single-page application developed with Vue 3 and Vite for managing mobile devices and accessories inventory.Implemented CRUD operations, real-time search, and product organization through a dynamic user interface.Includes simulated frontend authentication using LocalStorage to manage role-based access and protected navigation, recreating logic commonly used in more complex systems.",
+    "task_management_app_title": "Task Management Application",
+    "task_management_app_description": "Web application developed with Vue.js focused on building dynamic interfaces and basic frontend state management.Allows users to create, organize, and delete tasks in real time using reusable components and reactive UI patterns.The project focuses on component-based architecture and improving user experience in single-page applications.",
     "view_demo": "View Demo",
     "code": "Code",
 
@@ -129,8 +123,8 @@
     "english_for_it": "English for IT 1 & 2 - Cisco/MICITT",
 
     "contact_title": "Ready to work together?",
-    "contact_description": "I'm available for junior opportunities, internships, or freelance projects. If my profile matches your team or project, I would love to talk with you.",
-    "contact_button": "Let's talk and schedule an interview.",
+    "contact_description": "I’m available for freelance projects and new opportunities where I can contribute by building functional and scalable web solutions.If my profile matches your team or project, I’d be glad to connect and discuss how I can bring value to your ideas.",
+    "contact_button": "Let’s connect and build something great together.",
 
     "address": "Address",
     "social_networks": "Social Networks",
