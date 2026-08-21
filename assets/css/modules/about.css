@@ -39,7 +39,7 @@
 /* Hero content container */
 .hero-content {
 	display: flex;
-	gap: 16rem; 
+	gap: 12rem; 
 	align-items: center; 
 	justify-content: center; 
 	z-index: 2; 

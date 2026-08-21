@@ -7,9 +7,9 @@
 ![Responsive](https://img.shields.io/badge/Responsive-Design-20C997?style=for-the-badge)
 ![Bilingual](https://img.shields.io/badge/Bilingual-ES%20%7C%20EN-6C63FF?style=for-the-badge)
 
-Personal portfolio website for **Hazel Chavez Alvarado**, a Junior Full-Stack Developer focused on building practical, responsive, and user-friendly web experiences with JavaScript, Vue.js, Node.js, MongoDB, and WordPress.
+Personal portfolio website for **Hazel Chavez Alvarado**, a Full Stack Web Developer focused on building and improving practical, responsive, and user-friendly web applications, websites, and business solutions with JavaScript, Vue.js, Node.js, Express, MongoDB, and WordPress.
 
-This portfolio brings together my professional profile, technical skills, education, selected projects, and contact information in a clean bilingual experience.
+This portfolio brings together my professional profile, technical skills, education, selected projects, updated CV files, and contact information in a clean bilingual experience.
 
 ## Live Demo
 
@@ -17,7 +17,7 @@ This portfolio brings together my professional profile, technical skills, educat
 
 ## About The Project
 
-This website was designed as a professional space to present who I am, what I build, and the technologies I enjoy working with. It includes a modern landing section, dark/light theme support, language switching between Spanish and English, animated sections, project cards, education history, and a contact form.
+This website was designed as a professional space to present who I am, what I build, and the technologies I enjoy working with. It includes a modern landing section, dark/light theme support, language switching between Spanish and English, animated sections, project cards, education history, updated CV downloads, social links, and a contact form.
 
 The goal is simple: make it easy for recruiters, teams, and collaborators to understand my background, explore my work, and get in touch.
 
@@ -29,24 +29,27 @@ The goal is simple: make it easy for recruiters, teams, and collaborators to und
 - Smooth scroll and animated sections with AOS
 - Modular CSS organization by section
 - Project showcase with live demos and source code links
+- Updated experience content focused on MEVN, WordPress, e-commerce, SEO, and technical documentation
 - Contact form integrated with FormSubmit
+- Social contact links for LinkedIn, Upwork, Gmail, and GitHub
 - Professional education and complementary training section
 
 ## Featured Projects
 
 | Project | Role | Technologies | Status |
 | --- | --- | --- | --- |
-| School Management System | Backend Developer | Node.js, Express, MongoDB, Mongoose, JWT, REST API | In production |
+| School Management System | Full Stack Developer | Node.js, Express, MongoDB, Mongoose, JWT, REST API | In development |
+| Gaincommerce Website Improvements and Documentation | WordPress Web Developer | WordPress, JavaScript, PHP, Kadence, SEO, HTML, CSS | Completed |
 | Ecommerce Technology Website | WordPress Web Developer | WordPress, WooCommerce, Elementor, Astra, PHP, MySQL | Completed |
 | Mobile Phone Inventory System | Frontend Developer | Vue 3, Vite, JavaScript, HTML, CSS | Completed |
-| Task Management App | Frontend Developer | Vue.js, JavaScript, Bootstrap, HTML, CSS | Completed |
 
 ## Tech Stack
 
-**Frontend:** HTML5, CSS3, JavaScript, Vue.js, Bootstrap  
-**Backend & Databases:** Node.js, Express, PHP, MySQL, MongoDB, SQL  
-**CMS & Tools:** WordPress, WooCommerce, Elementor, Git, GitHub, REST APIs  
-**Libraries & Services:** AOS, Font Awesome, Tabler Icons, FormSubmit, Vercel
+**Frontend:** HTML5, CSS3, JavaScript ES6+, Vue.js, Bootstrap  
+**Backend & Databases:** Node.js, Express.js, REST APIs, MongoDB, MySQL, SQL  
+**CMS & E-commerce:** WordPress, WooCommerce, Elementor, Kadence  
+**Tools & Services:** Git, GitHub, GitHub Copilot, Render, Vercel, FormSubmit  
+**Libraries & Icons:** AOS, Font Awesome, Tabler Icons
 
 ## Project Structure
 
@@ -57,8 +60,12 @@ The goal is simple: make it easy for recruiters, teams, and collaborators to und
 |   |   +-- global/
 |   |   +-- modules/
 |   +-- img/
+|   |   +-- docs.webp
 |   +-- js/
 |   +-- fonts/
+|   +-- cv/
+|       +-- CV_Hazel_Chavez_ES.pdf
+|       +-- CV_Hazel_Chavez_EN.pdf
 +-- json/
 |   +-- lang.json
 +-- index.html
@@ -92,10 +99,12 @@ npx serve .
 ## Contact
 
 **Hazel Chavez Alvarado**  
-Junior Full-Stack Developer  
+Full Stack Web Developer  
 Canas, Guanacaste, Costa Rica
 
 - GitHub: [hazel-chavez](https://github.com/hazel-chavez)
+- LinkedIn: [hazel-chavez-alvarado](https://www.linkedin.com/in/hazel-chavez-alvarado/)
+- Upwork: [Hazel Chavez](https://www.upwork.com/freelancers/~01f0e42cd94ecb1bb0?mp_source=share)
 - Email: [hazelchavez56@gmail.com](mailto:hazelchavez56@gmail.com)
 - Portfolio: [portafolio-hazel-chavez.vercel.app](https://portafolio-hazel-chavez.vercel.app/)
 

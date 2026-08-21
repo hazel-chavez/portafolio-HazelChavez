@@ -86,7 +86,13 @@ div.container-experience .title-experience {
 	padding: 0.35rem;
 	box-sizing: border-box;
 }
-
+.project-image img.gaincommerce-img {
+	object-fit: contain;
+	object-position: center;
+	background-color: var(--bg-tertiary);
+	padding: 0.25rem;
+	box-sizing: border-box;
+}
 
 .project-image img.ecommerce-technology-img {
 	object-fit: contain;
@@ -219,9 +225,13 @@ div.container-experience .title-experience {
 	background-color: var(--secondary-color-dark);
 	border-color: var(--border-accent);
 }
+.dark .project-image img.gaincommerce-img {
+	background-color: var(--bg-dark);
+}
 .dark .project-image img.ecommerce-technology-img {
 	background-color: var(--bg-dark);
 }
+
 .dark .project-description,
 .dark .link-secondary {
 	background-color: var(--secondary-color-dark);
